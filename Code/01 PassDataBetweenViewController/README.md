@@ -1,5 +1,3 @@
-README.md
-
 **1 功能**
 1 在HomeScreen输入名字，并将名字传到FormScreen
 2 在FormScreen显示由HomeScreen传过来的名字，然后输入年龄，传回HomeScreen
