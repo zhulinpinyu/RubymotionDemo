@@ -1,6 +1,6 @@
 # RubyMotionDemo - 常用的RubyMotion代码及例子
 
-[**01：在ViewController间传递数据**](https://coding.net/u/smartweb/p/MotionNight/git/blob/master/vol3.md)
+[**01：在ViewController间传递数据**](https://coding.net/u/smartweb/p/RubyMotionDemo/git/tree/master/Code/01%20PassDataBetweenViewController)
 
 [**02：使用AFMotion进行网络接口的REST操作**](https://coding.net/u/smartweb/p/RubyMotionDemo/git/tree/master/Code/02%20RestWithAFmotion)
 
@@ -10,7 +10,7 @@
 
 [**05：使用NanoStore来储存本地数据**](https://coding.net/u/smartweb/p/RubyMotionDemo/git/tree/master/Code/05%20StoreDataWithNanoStore)
 
-[**06：蓝牙4.0 常见使用方法**](https://coding.net/u/smartweb/p/RubyMotionDemo/git/tree/master/Code/07%20IMWithMob)
+[**06：蓝牙4.0 常见使用方法**](https://coding.net/u/smartweb/p/RubyMotionDemo/git/tree/master/Code/06%20BLE)
 
 [**07：用环信来做IM功能**](https://coding.net/u/smartweb/p/RubyMotionDemo/git/tree/master/Code/07%20IMWithMob)
 
@@ -18,4 +18,4 @@
 
 [**09: DiggMotion iPhone App源代码**](https://coding.net/u/smartweb/p/RubyMotionDemo/git/tree/master/Code/09%20DiggMotion)
 
-[**10: 创建一个Gem**](https://coding.net/u/smartweb/p/RubyMotionDemo/git/tree/master/Code/09%20WriteAGem)
+[**10: 创建一个Gem**](https://coding.net/u/smartweb/p/RubyMotionDemo/git/tree/master/Code/10%20WriteAGem)
