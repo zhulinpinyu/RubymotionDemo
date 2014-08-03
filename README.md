@@ -1,27 +1,21 @@
 # RubyMotionDemo - 常用的RubyMotion代码及例子
 
-[**第1期：Hello，RubyMotion**](https://coding.net/u/smartweb/p/MotionNight/git/blob/master/vol1.md)
-
-[**第2期：RubyMotion 3.0 vs Swift**](https://coding.net/u/smartweb/p/MotionNight/git/blob/master/vol2.md)
-
 [**01：在ViewController间传递数据**](https://coding.net/u/smartweb/p/MotionNight/git/blob/master/vol3.md)
 
-[**01：在ViewController间传递数据 **](https://coding.net/u/smartweb/p/MotionNight/git/blob/master/vol3.md)
+[**02：使用AFMotion进行网络接口的REST操作**](https://coding.net/u/smartweb/p/RubyMotionDemo/git/tree/master/Code/02%20RestWithAFmotion)
 
-[**02：使用AFMotion进行网络接口的REST操作 **](https://coding.net/u/smartweb/p/RubyMotionDemo/git/tree/master/Code/02%20RestWithAFmotion)
+[**03：用友盟分享到社交网络**](https://coding.net/u/smartweb/p/RubyMotionDemo/git/tree/master/Code/03%20ShareWithUmeng)
 
-[**03：用友盟分享到社交网络 **](https://coding.net/u/smartweb/p/RubyMotionDemo/git/tree/master/Code/03%20ShareWithUmeng)
+[**04：使用AVOSCloud来存取数据**](https://coding.net/u/smartweb/p/RubyMotionDemo/git/tree/master/Code/04%20DataWithAVOS)
 
-[**04：使用AVOSCloud来存取数据 **](https://coding.net/u/smartweb/p/RubyMotionDemo/git/tree/master/Code/04%20DataWithAVOS)
+[**05：使用NanoStore来储存本地数据**](https://coding.net/u/smartweb/p/RubyMotionDemo/git/tree/master/Code/05%20StoreDataWithNanoStore)
 
-[**05：使用NanoStore来储存本地数据 **](https://coding.net/u/smartweb/p/RubyMotionDemo/git/tree/master/Code/05%20StoreDataWithNanoStore)
+[**06：蓝牙4.0 常见使用方法**](https://coding.net/u/smartweb/p/RubyMotionDemo/git/tree/master/Code/07%20IMWithMob)
 
-[**06：蓝牙4.0 常见使用方法 **](https://coding.net/u/smartweb/p/RubyMotionDemo/git/tree/master/Code/07%20IMWithMob)
+[**07：用环信来做IM功能**](https://coding.net/u/smartweb/p/RubyMotionDemo/git/tree/master/Code/07%20IMWithMob)
 
-[**07：用环信来做IM功能 **](https://coding.net/u/smartweb/p/RubyMotionDemo/git/tree/master/Code/07%20IMWithMob)
+[**08：使用极光推送**](https://coding.net/u/smartweb/p/RubyMotionDemo/git/tree/master/Code/08%20Push)
 
-[**08：使用极光推送 **](https://coding.net/u/smartweb/p/RubyMotionDemo/git/tree/master/Code/08%20Push)
+[**09: DiggMotion iPhone App源代码**](https://coding.net/u/smartweb/p/RubyMotionDemo/git/tree/master/Code/09%20DiggMotion)
 
-[**09: DiggMotion iPhone App源代码 **](https://coding.net/u/smartweb/p/RubyMotionDemo/git/tree/master/Code/09%20DiggMotion)
-
-[**10: 创建一个Gem **](https://coding.net/u/smartweb/p/RubyMotionDemo/git/tree/master/Code/09%20WriteAGem)
+[**10: 创建一个Gem**](https://coding.net/u/smartweb/p/RubyMotionDemo/git/tree/master/Code/09%20WriteAGem)
