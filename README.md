@@ -4,7 +4,7 @@
 
 [**第2期：RubyMotion 3.0 vs Swift**](https://coding.net/u/smartweb/p/MotionNight/git/blob/master/vol2.md)
 
-[**第1期：Hello，RubyMotion**](https://coding.net/u/smartweb/p/MotionNight/git/blob/master/vol3.md)
+[**01：在ViewController间传递数据**](https://coding.net/u/smartweb/p/MotionNight/git/blob/master/vol3.md)
 
 [**01：在ViewController间传递数据 **](https://coding.net/u/smartweb/p/MotionNight/git/blob/master/vol3.md)
 
