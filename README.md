@@ -10,7 +10,7 @@
 
 [**05：使用NanoStore来储存本地数据 **](https://coding.net/u/smartweb/p/RubyMotionDemo/git/tree/master/Code/05%20StoreDataWithNanoStore)
 
-[**06：蓝牙4.0 常见使用方法 **]()
+[**06：蓝牙4.0 常见使用方法 **](https://coding.net/u/smartweb/p/RubyMotionDemo/git/tree/master/Code/07%20IMWithMob)
 
 [**07：用环信来做IM功能 **](https://coding.net/u/smartweb/p/RubyMotionDemo/git/tree/master/Code/07%20IMWithMob)
 
