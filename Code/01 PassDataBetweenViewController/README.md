@@ -1,3 +1,8 @@
+<img src="/demo/_screen/01.png" width="200">
+<img src="/demo/_screen/02.png" width="200">
+<img src="/demo/_screen/03.png" width="200">
+
+
 **1 功能**
 1 在HomeScreen输入名字，并将名字传到FormScreen
 2 在FormScreen显示由HomeScreen传过来的名字，然后输入年龄，传回HomeScreen
