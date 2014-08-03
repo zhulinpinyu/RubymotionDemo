@@ -1,0 +1,3823 @@
+<?xml version='1.0'?>
+<signatures version='1.0'>
+<string_constant name='kSDKPassword' nsstring='true' value='password'/>
+<string_constant name='kSDKToken' nsstring='true' value='token'/>
+<string_constant name='kSDKUsername' nsstring='true' value='username'/>
+<enum name='eAudioOutputDevice_earphone' value='0'/>
+<enum name='eAudioOutputDevice_speaker' value='1'/>
+<enum name='eAudioPlayMode_PersistPlay' value='2'/>
+<enum name='eAudioPlayMode_PlayAndRecord' value='4'/>
+<enum name='eAudioPlayMode_RecordOnly' value='3'/>
+<enum name='eAudioPlayMode_Simple' value='0'/>
+<enum name='eAudioPlayMode_SimpleExclusive' value='1'/>
+<enum name='eChatState_Composing' value='1'/>
+<enum name='eChatState_Paused' value='2'/>
+<enum name='eChatState_Stopped' value='0'/>
+<enum name='eGroupLeaveReason_BeRemoved' value='1'/>
+<enum name='eGroupLeaveReason_Destroyed' value='3'/>
+<enum name='eGroupLeaveReason_UserLeave' value='2'/>
+<enum name='eGroupMemberRole_Admin' value='0'/>
+<enum name='eGroupMemberRole_Member' value='2'/>
+<enum name='eGroupMemberRole_Owner' value='1'/>
+<enum name='eMessageBodyType_Command' value='7'/>
+<enum name='eMessageBodyType_File' value='6'/>
+<enum name='eMessageBodyType_Image' value='2'/>
+<enum name='eMessageBodyType_Location' value='4'/>
+<enum name='eMessageBodyType_Text' value='1'/>
+<enum name='eMessageBodyType_Video' value='3'/>
+<enum name='eMessageBodyType_Voice' value='5'/>
+<enum name='eMessageDeliveryState_Delivered' value='2'/>
+<enum name='eMessageDeliveryState_Delivering' value='1'/>
+<enum name='eMessageDeliveryState_Failure' value='3'/>
+<enum name='eMessageDeliveryState_Pending' value='0'/>
+<enum name='eOnlineStatus_Away' value='2'/>
+<enum name='eOnlineStatus_Busy' value='3'/>
+<enum name='eOnlineStatus_Do_Not_Disturb' value='5'/>
+<enum name='eOnlineStatus_Invisible' value='4'/>
+<enum name='eOnlineStatus_OffLine' value='0'/>
+<enum name='eOnlineStatus_Online' value='1'/>
+<class name='EMBuddy'>
+<method class_method='true' selector='buddyWithUsername:'>
+<arg declared_type='NSString*' index='0' name='username' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='followState'>
+<retval declared_type='int' type='i'/>
+</method>
+<method selector='isOnline'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='isPendingApproval'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='setFollowState:'>
+<arg declared_type='int' index='0' name='followState' type='i'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setIsOnline:'>
+<arg declared_type='BOOL' index='0' name='isOnline' type='B'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setIsPendingApproval:'>
+<arg declared_type='BOOL' index='0' name='isPendingApproval' type='B'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='username'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+</class>
+<class name='EMBuddyGroup'>
+<method class_method='true' selector='buddyGroupWithGroupName:'>
+<arg declared_type='NSString*' index='0' name='groupName' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='groupName'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='members'>
+<retval declared_type='NSArray*' type='@'/>
+</method>
+<method selector='setMembers:'>
+<arg declared_type='NSArray*' index='0' name='members' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+</class>
+<class name='EMChatFile'>
+<method selector='displayName'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='fileLength'>
+<retval declared_type='long long' type='q'/>
+</method>
+<method selector='initWithData:displayName:'>
+<arg declared_type='NSData*' index='0' name='aData' type='@'/>
+<arg declared_type='NSString*' index='1' name='aDisplayName' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='initWithFile:displayName:'>
+<arg declared_type='NSString*' index='0' name='filePath' type='@'/>
+<arg declared_type='NSString*' index='1' name='aDisplayName' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='localPath'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='messageBody'>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='setDisplayName:'>
+<arg declared_type='NSString*' index='0' name='displayName' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setFileLength:'>
+<arg declared_type='long long' index='0' name='fileLength' type='q'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setLocalPath:'>
+<arg declared_type='NSString*' index='0' name='localPath' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setMessageBody:'>
+<arg declared_type='id' index='0' name='messageBody' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+</class>
+<class name='EMChatImage'>
+<method selector='displayName'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='fileLength'>
+<retval declared_type='long long' type='q'/>
+</method>
+<method selector='initWithData:displayName:'>
+<arg declared_type='NSData*' index='0' name='aData' type='@'/>
+<arg declared_type='NSString*' index='1' name='aDisplayName' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='initWithFile:displayName:'>
+<arg declared_type='NSString*' index='0' name='filePath' type='@'/>
+<arg declared_type='NSString*' index='1' name='aDisplayName' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='initWithUIImage:displayName:'>
+<arg declared_type='UIImage*' index='0' name='aImage' type='@'/>
+<arg declared_type='NSString*' index='1' name='aDisplayName' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='localPath'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='messageBody'>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='setDisplayName:'>
+<arg declared_type='NSString*' index='0' name='displayName' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setFileLength:'>
+<arg declared_type='long long' index='0' name='fileLength' type='q'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setLocalPath:'>
+<arg declared_type='NSString*' index='0' name='localPath' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setMessageBody:'>
+<arg declared_type='id' index='0' name='messageBody' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setSize:'>
+<arg declared_type='CGSize' index='0' name='size' type='{CGSize=ff}' type64='{CGSize=dd}'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='size'>
+<retval declared_type='CGSize' type='{CGSize=ff}' type64='{CGSize=dd}'/>
+</method>
+</class>
+<class name='EMChatLocation'>
+<method selector='address'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='initWithCLLocation:'>
+<arg declared_type='CLLocation*' index='0' name='location' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='initWithLatitude:longitude:address:'>
+<arg declared_type='double' index='0' name='latitude' type='d'/>
+<arg declared_type='double' index='1' name='longitude' type='d'/>
+<arg declared_type='NSString*' index='2' name='address' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='latitude'>
+<retval declared_type='double' type='d'/>
+</method>
+<method selector='location'>
+<retval declared_type='CLLocation*' type='@'/>
+</method>
+<method selector='longitude'>
+<retval declared_type='double' type='d'/>
+</method>
+<method selector='messageBody'>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='setAddress:'>
+<arg declared_type='NSString*' index='0' name='address' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setLatitude:'>
+<arg declared_type='double' index='0' name='latitude' type='d'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setLocation:'>
+<arg declared_type='CLLocation*' index='0' name='location' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setLongitude:'>
+<arg declared_type='double' index='0' name='longitude' type='d'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setMessageBody:'>
+<arg declared_type='id' index='0' name='messageBody' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+</class>
+<class name='EMChatText'>
+<method selector='initWithText:'>
+<arg declared_type='NSString*' index='0' name='text' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='messageBody'>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='setMessageBody:'>
+<arg declared_type='id' index='0' name='messageBody' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setText:'>
+<arg declared_type='NSString*' index='0' name='text' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='text'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+</class>
+<class name='EMChatVideo'>
+<method selector='displayName'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='duration'>
+<retval declared_type='NSInteger' type='i' type64='q'/>
+</method>
+<method selector='fileLength'>
+<retval declared_type='long long' type='q'/>
+</method>
+<method selector='initWithData:displayName:'>
+<arg declared_type='NSData*' index='0' name='aData' type='@'/>
+<arg declared_type='NSString*' index='1' name='aDisplayName' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='initWithFile:displayName:'>
+<arg declared_type='NSString*' index='0' name='filePath' type='@'/>
+<arg declared_type='NSString*' index='1' name='aDisplayName' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='localPath'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='messageBody'>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='setDisplayName:'>
+<arg declared_type='NSString*' index='0' name='displayName' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setDuration:'>
+<arg declared_type='NSInteger' index='0' name='duration' type='i' type64='q'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setFileLength:'>
+<arg declared_type='long long' index='0' name='fileLength' type='q'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setLocalPath:'>
+<arg declared_type='NSString*' index='0' name='localPath' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setMessageBody:'>
+<arg declared_type='id' index='0' name='messageBody' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setShouldGenerateThumbnail:'>
+<arg declared_type='BOOL' index='0' name='shouldGenerateThumbnail' type='B'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setSize:'>
+<arg declared_type='CGSize' index='0' name='size' type='{CGSize=ff}' type64='{CGSize=dd}'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setThumbnailPath:'>
+<arg declared_type='NSString*' index='0' name='thumbnailPath' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='shouldGenerateThumbnail'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='size'>
+<retval declared_type='CGSize' type='{CGSize=ff}' type64='{CGSize=dd}'/>
+</method>
+<method selector='thumbnailPath'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+</class>
+<class name='EMChatVoice'>
+<method selector='displayName'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='duration'>
+<retval declared_type='NSInteger' type='i' type64='q'/>
+</method>
+<method selector='fileLength'>
+<retval declared_type='long long' type='q'/>
+</method>
+<method selector='initWithData:displayName:'>
+<arg declared_type='NSData*' index='0' name='aData' type='@'/>
+<arg declared_type='NSString*' index='1' name='aDisplayName' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='initWithFile:displayName:'>
+<arg declared_type='NSString*' index='0' name='filePath' type='@'/>
+<arg declared_type='NSString*' index='1' name='aDisplayName' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='localPath'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='messageBody'>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='setDisplayName:'>
+<arg declared_type='NSString*' index='0' name='displayName' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setDuration:'>
+<arg declared_type='NSInteger' index='0' name='duration' type='i' type64='q'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setFileLength:'>
+<arg declared_type='long long' index='0' name='fileLength' type='q'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setLocalPath:'>
+<arg declared_type='NSString*' index='0' name='localPath' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setMessageBody:'>
+<arg declared_type='id' index='0' name='messageBody' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+</class>
+<class name='EMConversation'>
+<method selector='chatter'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='enableReceiveMessage'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='enableUnreadMessagesCountEvent'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='isGroup'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='latestMessage'>
+<retval declared_type='EMMessage*' type='@'/>
+</method>
+<method selector='latestMessageFromOthers'>
+<retval declared_type='EMMessage*' type='@'/>
+</method>
+<method selector='loadAllMessages'>
+<retval declared_type='NSArray*' type='@'/>
+</method>
+<method selector='loadMessage:'>
+<arg declared_type='NSString*' index='0' name='aMessageId' type='@'/>
+<retval declared_type='EMMessage*' type='@'/>
+</method>
+<method selector='loadMessages:'>
+<arg declared_type='NSArray*' index='0' name='aMessageIds' type='@'/>
+<retval declared_type='NSArray*' type='@'/>
+</method>
+<method selector='loadNumbersOfMessages:before:'>
+<arg declared_type='NSUInteger' index='0' name='aCount' type='I' type64='Q'/>
+<arg declared_type='long long' index='1' name='timestamp' type='q'/>
+<retval declared_type='NSArray*' type='@'/>
+</method>
+<method selector='markMessage:asRead:'>
+<arg declared_type='NSString*' index='0' name='aMessageId' type='@'/>
+<arg declared_type='BOOL' index='1' name='isRead' type='B'/>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='markMessagesAsRead:'>
+<arg declared_type='BOOL' index='0' name='isRead' type='B'/>
+<retval declared_type='NSUInteger' type='I' type64='Q'/>
+</method>
+<method selector='messages'>
+<retval declared_type='NSArray*' type='@'/>
+</method>
+<method selector='removeAllMessages'>
+<retval declared_type='NSUInteger' type='I' type64='Q'/>
+</method>
+<method selector='removeMessage:'>
+<arg declared_type='NSString*' index='0' name='aMessageId' type='@'/>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='removeMessages:'>
+<arg declared_type='NSArray*' index='0' name='aMessageIds' type='@'/>
+<retval declared_type='NSUInteger' type='I' type64='Q'/>
+</method>
+<method selector='setChatter:'>
+<arg declared_type='NSString*' index='0' name='chatter' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setEnableReceiveMessage:'>
+<arg declared_type='BOOL' index='0' name='enableReceiveMessage' type='B'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setEnableUnreadMessagesCountEvent:'>
+<arg declared_type='BOOL' index='0' name='enableUnreadMessagesCountEvent' type='B'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setMessages:'>
+<arg declared_type='NSArray*' index='0' name='messages' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='unreadMessagesCount'>
+<retval declared_type='NSUInteger' type='I' type64='Q'/>
+</method>
+</class>
+<class name='EMError'>
+<method selector='description'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='errorCode'>
+<retval declared_type='int' type='i'/>
+</method>
+<method class_method='true' selector='errorWithCode:andDescription:'>
+<arg declared_type='id' index='0' name='errCode' type='@'/>
+<arg declared_type='NSString*' index='1' name='description' type='@'/>
+<retval declared_type='EMError*' type='@'/>
+</method>
+<method class_method='true' selector='errorWithNSError:'>
+<arg declared_type='NSError*' index='0' name='error' type='@'/>
+<retval declared_type='EMError*' type='@'/>
+</method>
+<method selector='setDescription:'>
+<arg declared_type='NSString*' index='0' name='description' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setErrorCode:'>
+<arg declared_type='int' index='0' name='errorCode' type='i'/>
+<retval declared_type='void' type='v'/>
+</method>
+</class>
+<class name='EMFileMessageBody'>
+<method selector='attachmentDownloadStatus'>
+<retval declared_type='int' type='i'/>
+</method>
+<method selector='chatObject'>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='displayName'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='fileLength'>
+<retval declared_type='long long' type='q'/>
+</method>
+<method selector='initWithChatObject:'>
+<arg declared_type='EMChatFile*' index='0' name='aChatFile' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='localPath'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='message'>
+<retval declared_type='EMMessage*' type='@'/>
+</method>
+<method selector='messageBodyType'>
+<retval declared_type='MessageBodyType' type='i'/>
+</method>
+<method selector='remotePath'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='secretKey'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='setAttachmentDownloadStatus:'>
+<arg declared_type='int' index='0' name='attachmentDownloadStatus' type='i'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setChatObject:'>
+<arg declared_type='id' index='0' name='chatObject' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setDisplayName:'>
+<arg declared_type='NSString*' index='0' name='displayName' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setFileLength:'>
+<arg declared_type='long long' index='0' name='fileLength' type='q'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setLocalPath:'>
+<arg declared_type='NSString*' index='0' name='localPath' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setMessage:'>
+<arg declared_type='EMMessage*' index='0' name='message' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setRemotePath:'>
+<arg declared_type='NSString*' index='0' name='remotePath' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setSecretKey:'>
+<arg declared_type='NSString*' index='0' name='secretKey' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+</class>
+<class name='EMGroup'>
+<method selector='admins'>
+<retval declared_type='NSArray*' type='@'/>
+</method>
+<method selector='bans'>
+<retval declared_type='NSArray*' type='@'/>
+</method>
+<method selector='groupDescription'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='groupId'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='groupSubject'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='initWithGroupId:'>
+<arg declared_type='NSString*' index='0' name='groupId' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='isPublic'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='members'>
+<retval declared_type='NSArray*' type='@'/>
+</method>
+<method selector='occupants'>
+<retval declared_type='NSArray*' type='@'/>
+</method>
+<method selector='owners'>
+<retval declared_type='NSArray*' type='@'/>
+</method>
+<method selector='password'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='setAdmins:'>
+<arg declared_type='NSArray*' index='0' name='admins' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setBans:'>
+<arg declared_type='NSArray*' index='0' name='bans' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setGroupDescription:'>
+<arg declared_type='NSString*' index='0' name='groupDescription' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setGroupId:'>
+<arg declared_type='NSString*' index='0' name='groupId' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setGroupSubject:'>
+<arg declared_type='NSString*' index='0' name='groupSubject' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setMembers:'>
+<arg declared_type='NSArray*' index='0' name='members' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setOccupants:'>
+<arg declared_type='NSArray*' index='0' name='occupants' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setOwners:'>
+<arg declared_type='NSArray*' index='0' name='owners' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setPassword:'>
+<arg declared_type='NSString*' index='0' name='password' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+</class>
+<class name='EMImageMessageBody'>
+<method selector='attachmentDownloadStatus'>
+<retval declared_type='int' type='i'/>
+</method>
+<method selector='chatObject'>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='displayName'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='fileLength'>
+<retval declared_type='long long' type='q'/>
+</method>
+<method selector='image'>
+<retval declared_type='EMChatImage*' type='@'/>
+</method>
+<method selector='initWithChatObject:'>
+<arg declared_type='EMChatImage*' index='0' name='aChatObject' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='initWithImage:thumbnailImage:'>
+<arg declared_type='EMChatImage*' index='0' name='aImage' type='@'/>
+<arg declared_type='EMChatImage*' index='1' name='aThumbnialImage' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='localPath'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='message'>
+<retval declared_type='EMMessage*' type='@'/>
+</method>
+<method selector='messageBodyType'>
+<retval declared_type='MessageBodyType' type='i'/>
+</method>
+<method selector='remotePath'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='secretKey'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='setAttachmentDownloadStatus:'>
+<arg declared_type='int' index='0' name='attachmentDownloadStatus' type='i'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setChatObject:'>
+<arg declared_type='id' index='0' name='chatObject' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setDisplayName:'>
+<arg declared_type='NSString*' index='0' name='displayName' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setFileLength:'>
+<arg declared_type='long long' index='0' name='fileLength' type='q'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setLocalPath:'>
+<arg declared_type='NSString*' index='0' name='localPath' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setMessage:'>
+<arg declared_type='EMMessage*' index='0' name='message' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setRemotePath:'>
+<arg declared_type='NSString*' index='0' name='remotePath' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setSecretKey:'>
+<arg declared_type='NSString*' index='0' name='secretKey' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setSize:'>
+<arg declared_type='CGSize' index='0' name='size' type='{CGSize=ff}' type64='{CGSize=dd}'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setThumbnailDisplayName:'>
+<arg declared_type='NSString*' index='0' name='thumbnailDisplayName' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setThumbnailDownloadSatus:'>
+<arg declared_type='int' index='0' name='thumbnailDownloadSatus' type='i'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setThumbnailFileLength:'>
+<arg declared_type='long long' index='0' name='thumbnailFileLength' type='q'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setThumbnailLocalPath:'>
+<arg declared_type='NSString*' index='0' name='thumbnailLocalPath' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setThumbnailRemotePath:'>
+<arg declared_type='NSString*' index='0' name='thumbnailRemotePath' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setThumbnailSecretKey:'>
+<arg declared_type='NSString*' index='0' name='thumbnailSecretKey' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setThumbnailSize:'>
+<arg declared_type='CGSize' index='0' name='thumbnailSize' type='{CGSize=ff}' type64='{CGSize=dd}'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='size'>
+<retval declared_type='CGSize' type='{CGSize=ff}' type64='{CGSize=dd}'/>
+</method>
+<method selector='thumbnailDisplayName'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='thumbnailDownloadSatus'>
+<retval declared_type='int' type='i'/>
+</method>
+<method selector='thumbnailFileLength'>
+<retval declared_type='long long' type='q'/>
+</method>
+<method selector='thumbnailImage'>
+<retval declared_type='EMChatImage*' type='@'/>
+</method>
+<method selector='thumbnailLocalPath'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='thumbnailRemotePath'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='thumbnailSecretKey'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='thumbnailSize'>
+<retval declared_type='CGSize' type='{CGSize=ff}' type64='{CGSize=dd}'/>
+</method>
+</class>
+<class name='EMLocationMessageBody'>
+<method selector='address'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='chatObject'>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='initWithChatObject:'>
+<arg declared_type='EMChatLocation*' index='0' name='aChatLocation' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='latitude'>
+<retval declared_type='double' type='d'/>
+</method>
+<method selector='longitude'>
+<retval declared_type='double' type='d'/>
+</method>
+<method selector='message'>
+<retval declared_type='EMMessage*' type='@'/>
+</method>
+<method selector='messageBodyType'>
+<retval declared_type='MessageBodyType' type='i'/>
+</method>
+<method selector='setAddress:'>
+<arg declared_type='NSString*' index='0' name='address' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setChatObject:'>
+<arg declared_type='id' index='0' name='chatObject' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setLatitude:'>
+<arg declared_type='double' index='0' name='latitude' type='d'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setLongitude:'>
+<arg declared_type='double' index='0' name='longitude' type='d'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setMessage:'>
+<arg declared_type='EMMessage*' index='0' name='message' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+</class>
+<class name='EMMessage'>
+<method selector='addMessageBody:'>
+<arg declared_type='id' index='0' name='body' type='@'/>
+<retval declared_type='NSArray*' type='@'/>
+</method>
+<method selector='conversation'>
+<retval declared_type='EMConversation*' type='@'/>
+</method>
+<method selector='deliveryState'>
+<retval declared_type='MessageDeliveryState' type='i'/>
+</method>
+<method selector='ext'>
+<retval declared_type='NSDictionary*' type='@'/>
+</method>
+<method selector='from'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='groupSenderName'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='initWithReceiver:bodies:'>
+<arg declared_type='NSString*' index='0' name='receiver' type='@'/>
+<arg declared_type='NSArray*' index='1' name='bodies' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='isAcked'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='isEncryptedOnServer'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='isGroup'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='isRead'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='messageBodies'>
+<retval declared_type='NSArray*' type='@'/>
+</method>
+<method selector='messageId'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='removeMessageBody:'>
+<arg declared_type='id' index='0' name='body' type='@'/>
+<retval declared_type='NSArray*' type='@'/>
+</method>
+<method selector='requireEncryption'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='setConversation:'>
+<arg declared_type='EMConversation*' index='0' name='conversation' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setDeliveryState:'>
+<arg declared_type='MessageDeliveryState' index='0' name='deliveryState' type='i'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setExt:'>
+<arg declared_type='NSDictionary*' index='0' name='ext' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setFrom:'>
+<arg declared_type='NSString*' index='0' name='from' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setGroupSenderName:'>
+<arg declared_type='NSString*' index='0' name='groupSenderName' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setIsAcked:'>
+<arg declared_type='BOOL' index='0' name='isAcked' type='B'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setIsEncryptedOnServer:'>
+<arg declared_type='BOOL' index='0' name='isEncryptedOnServer' type='B'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setIsGroup:'>
+<arg declared_type='BOOL' index='0' name='isGroup' type='B'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setIsRead:'>
+<arg declared_type='BOOL' index='0' name='isRead' type='B'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setMessageBodies:'>
+<arg declared_type='NSArray*' index='0' name='messageBodies' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setMessageId:'>
+<arg declared_type='NSString*' index='0' name='messageId' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setRequireEncryption:'>
+<arg declared_type='BOOL' index='0' name='requireEncryption' type='B'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setTimestamp:'>
+<arg declared_type='long long' index='0' name='timestamp' type='q'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setTo:'>
+<arg declared_type='NSString*' index='0' name='to' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='timestamp'>
+<retval declared_type='long long' type='q'/>
+</method>
+<method selector='to'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+</class>
+<class name='EMReceiptBase'>
+<method selector='chatId'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='from'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='isGroup'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='setChatId:'>
+<arg declared_type='NSString*' index='0' name='chatId' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setFrom:'>
+<arg declared_type='NSString*' index='0' name='from' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setIsGroup:'>
+<arg declared_type='BOOL' index='0' name='isGroup' type='B'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setTimestamp:'>
+<arg declared_type='long long' index='0' name='timestamp' type='q'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setTo:'>
+<arg declared_type='NSString*' index='0' name='to' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='timestamp'>
+<retval declared_type='long long' type='q'/>
+</method>
+<method selector='to'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+</class>
+<class name='EMReceiptReq'>
+<method class_method='true' selector='createFromMessage:'>
+<arg declared_type='EMMessage*' index='0' name='message' type='@'/>
+<retval declared_type='EMReceiptReq*' type='@'/>
+</method>
+</class>
+<class name='EMReceiptResp'>
+<method class_method='true' selector='createFromMessage:'>
+<arg declared_type='EMMessage*' index='0' name='message' type='@'/>
+<retval declared_type='EMReceiptResp*' type='@'/>
+</method>
+</class>
+<class name='EMTextMessageBody'>
+<method selector='chatObject'>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='initWithChatObject:'>
+<arg declared_type='EMChatText*' index='0' name='aChatText' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='message'>
+<retval declared_type='EMMessage*' type='@'/>
+</method>
+<method selector='messageBodyType'>
+<retval declared_type='MessageBodyType' type='i'/>
+</method>
+<method selector='setChatObject:'>
+<arg declared_type='id' index='0' name='chatObject' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setMessage:'>
+<arg declared_type='EMMessage*' index='0' name='message' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setText:'>
+<arg declared_type='NSString*' index='0' name='text' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='text'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+</class>
+<class name='EMVideoMessageBody'>
+<method selector='attachmentDownloadStatus'>
+<retval declared_type='int' type='i'/>
+</method>
+<method selector='chatObject'>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='displayName'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='duration'>
+<retval declared_type='NSInteger' type='i' type64='q'/>
+</method>
+<method selector='fileLength'>
+<retval declared_type='long long' type='q'/>
+</method>
+<method selector='initWithChatObject:'>
+<arg declared_type='EMChatVideo*' index='0' name='aChatVideo' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='localPath'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='message'>
+<retval declared_type='EMMessage*' type='@'/>
+</method>
+<method selector='messageBodyType'>
+<retval declared_type='MessageBodyType' type='i'/>
+</method>
+<method selector='remotePath'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='secretKey'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='setAttachmentDownloadStatus:'>
+<arg declared_type='int' index='0' name='attachmentDownloadStatus' type='i'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setChatObject:'>
+<arg declared_type='id' index='0' name='chatObject' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setDisplayName:'>
+<arg declared_type='NSString*' index='0' name='displayName' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setDuration:'>
+<arg declared_type='NSInteger' index='0' name='duration' type='i' type64='q'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setFileLength:'>
+<arg declared_type='long long' index='0' name='fileLength' type='q'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setLocalPath:'>
+<arg declared_type='NSString*' index='0' name='localPath' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setMessage:'>
+<arg declared_type='EMMessage*' index='0' name='message' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setRemotePath:'>
+<arg declared_type='NSString*' index='0' name='remotePath' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setSecretKey:'>
+<arg declared_type='NSString*' index='0' name='secretKey' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setSize:'>
+<arg declared_type='CGSize' index='0' name='size' type='{CGSize=ff}' type64='{CGSize=dd}'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setThumbnailDownloadSatus:'>
+<arg declared_type='int' index='0' name='thumbnailDownloadSatus' type='i'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setThumbnailLocalPath:'>
+<arg declared_type='NSString*' index='0' name='thumbnailLocalPath' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setThumbnailRemotePath:'>
+<arg declared_type='NSString*' index='0' name='thumbnailRemotePath' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setThumbnailSecretKey:'>
+<arg declared_type='NSString*' index='0' name='thumbnailSecretKey' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='size'>
+<retval declared_type='CGSize' type='{CGSize=ff}' type64='{CGSize=dd}'/>
+</method>
+<method selector='thumbnailDownloadSatus'>
+<retval declared_type='int' type='i'/>
+</method>
+<method selector='thumbnailLocalPath'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='thumbnailRemotePath'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='thumbnailSecretKey'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+</class>
+<class name='EMVoiceMessageBody'>
+<method selector='attachmentDownloadStatus'>
+<retval declared_type='int' type='i'/>
+</method>
+<method selector='chatObject'>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='displayName'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='duration'>
+<retval declared_type='NSInteger' type='i' type64='q'/>
+</method>
+<method selector='fileLength'>
+<retval declared_type='long long' type='q'/>
+</method>
+<method selector='initWithChatObject:'>
+<arg declared_type='EMChatVoice*' index='0' name='aChatVoice' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='localPath'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='message'>
+<retval declared_type='EMMessage*' type='@'/>
+</method>
+<method selector='messageBodyType'>
+<retval declared_type='MessageBodyType' type='i'/>
+</method>
+<method selector='remotePath'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='secretKey'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='setAttachmentDownloadStatus:'>
+<arg declared_type='int' index='0' name='attachmentDownloadStatus' type='i'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setChatObject:'>
+<arg declared_type='id' index='0' name='chatObject' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setDisplayName:'>
+<arg declared_type='NSString*' index='0' name='displayName' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setDuration:'>
+<arg declared_type='NSInteger' index='0' name='duration' type='i' type64='q'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setFileLength:'>
+<arg declared_type='long long' index='0' name='fileLength' type='q'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setLocalPath:'>
+<arg declared_type='NSString*' index='0' name='localPath' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setMessage:'>
+<arg declared_type='EMMessage*' index='0' name='message' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setRemotePath:'>
+<arg declared_type='NSString*' index='0' name='remotePath' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setSecretKey:'>
+<arg declared_type='NSString*' index='0' name='secretKey' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+</class>
+<class name='EaseMob'>
+<method selector='chatManager'>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='deviceManager'>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='enableBackgroundReceiveMessage'>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='registerSDKWithAppKey:'>
+<arg declared_type='NSString*' index='0' name='anAppKey' type='@'/>
+<retval declared_type='EMError*' type='@'/>
+</method>
+<method selector='registerSDKWithAppKey:apnsCertName:'>
+<arg declared_type='NSString*' index='0' name='anAppKey' type='@'/>
+<arg declared_type='NSString*' index='1' name='anAPNSCertName' type='@'/>
+<retval declared_type='EMError*' type='@'/>
+</method>
+<method class_method='true' selector='sharedInstance'>
+<retval declared_type='EaseMob*' type='@'/>
+</method>
+</class>
+<class name='Emoji'>
+<method class_method='true' selector='allEmoji'>
+<retval declared_type='NSArray*' type='@'/>
+</method>
+<method class_method='true' selector='emojiWithCode:'>
+<arg declared_type='int' index='0' name='code' type='i'/>
+<retval declared_type='NSString*' type='@'/>
+</method>
+</class>
+<class name='NSObject'>
+<method selector='acceptBuddyRequest:error:'>
+<arg declared_type='NSString*' index='0' name='username' type='@'/>
+<arg declared_type='EMError**' index='1' name='pError' type='^@'/>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='acceptInvitationFromGroup:error:'>
+<arg declared_type='NSString*' index='0' name='groupId' type='@'/>
+<arg declared_type='EMError**' index='1' name='pError' type='^@'/>
+<retval declared_type='EMGroup*' type='@'/>
+</method>
+<method selector='addBuddy:withNickname:message:error:'>
+<arg declared_type='NSString*' index='0' name='username' type='@'/>
+<arg declared_type='NSString*' index='1' name='nickname' type='@'/>
+<arg declared_type='NSString*' index='2' name='message' type='@'/>
+<arg declared_type='EMError**' index='3' name='pError' type='^@'/>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='addBuddy:withNickname:message:toGroups:error:'>
+<arg declared_type='NSString*' index='0' name='username' type='@'/>
+<arg declared_type='NSString*' index='1' name='nickname' type='@'/>
+<arg declared_type='NSString*' index='2' name='message' type='@'/>
+<arg declared_type='NSArray*' index='3' name='groupNames' type='@'/>
+<arg declared_type='EMError**' index='4' name='pError' type='^@'/>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='addDelegate:delegateQueue:'>
+<arg declared_type='id' index='0' name='delegate' type='@'/>
+<arg declared_type='dispatch_queue_t' index='1' name='queue' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='addDelegate:onQueue:'>
+<arg declared_type='id' index='0' name='delegate' type='@'/>
+<arg declared_type='dispatch_queue_t' index='1' name='aQueue' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='addOccupants:toGroup:welcomeMessage:error:'>
+<arg declared_type='NSArray*' index='0' name='occupants' type='@'/>
+<arg declared_type='NSString*' index='1' name='groupId' type='@'/>
+<arg declared_type='NSString*' index='2' name='welcomeMessage' type='@'/>
+<arg declared_type='EMError**' index='3' name='pError' type='^@'/>
+<retval declared_type='EMGroup*' type='@'/>
+</method>
+<method selector='asynBlockCancelRecordingWithCompletion:onQueue:'>
+<arg declared_type='void (^)(NSString *, NSError *)' function_pointer='true' index='0' name='completion' type='@?'>
+<arg declared_type='NSString*' type='@'/>
+<arg declared_type='NSError*' type='@'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<arg declared_type='dispatch_queue_t' index='1' name='aQueue' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='asynBlockPlayingAudioWithPath:completion:onQueue:'>
+<arg declared_type='NSString*' index='0' name='aFilePath' type='@'/>
+<arg declared_type='void (^)(NSError *)' function_pointer='true' index='1' name='completion' type='@?'>
+<arg declared_type='NSError*' type='@'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<arg declared_type='dispatch_queue_t' index='2' name='aQueue' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='asynBlockStopRecordingWithCompletion:onQueue:'>
+<arg declared_type='void (^)(NSString *, NSInteger, NSError *)' function_pointer='true' index='0' name='completion' type='@?'>
+<arg declared_type='NSString*' type='@'/>
+<arg declared_type='NSInteger' type='i' type64='q'/>
+<arg declared_type='NSError*' type='@'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<arg declared_type='dispatch_queue_t' index='1' name='aQueue' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='asynDelegateCancelRecording'>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='asynDelegatePlayingAudioWithPath:'>
+<arg declared_type='NSString*' index='0' name='aFilePath' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='asynDelegateStopRecording'>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='asyncAcceptInvitationFromGroup:'>
+<arg declared_type='NSString*' index='0' name='groupId' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='asyncAcceptInvitationFromGroup:completion:onQueue:'>
+<arg declared_type='NSString*' index='0' name='groupId' type='@'/>
+<arg declared_type='void (^)(EMGroup *, EMError *)' function_pointer='true' index='1' name='completion' type='@?'>
+<arg declared_type='EMGroup*' type='@'/>
+<arg declared_type='EMError*' type='@'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<arg declared_type='dispatch_queue_t' index='2' name='aQueue' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='asyncAddOccupants:toGroup:welcomeMessage:'>
+<arg declared_type='NSArray*' index='0' name='occupants' type='@'/>
+<arg declared_type='NSString*' index='1' name='groupId' type='@'/>
+<arg declared_type='NSString*' index='2' name='welcomeMessage' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='asyncAddOccupants:toGroup:welcomeMessage:completion:onQueue:'>
+<arg declared_type='NSArray*' index='0' name='occupants' type='@'/>
+<arg declared_type='NSString*' index='1' name='groupId' type='@'/>
+<arg declared_type='NSString*' index='2' name='welcomeMessage' type='@'/>
+<arg declared_type='void (^)(NSArray *, EMGroup *, NSString *, EMError *)' function_pointer='true' index='3' name='completion' type='@?'>
+<arg declared_type='NSArray*' type='@'/>
+<arg declared_type='EMGroup*' type='@'/>
+<arg declared_type='NSString*' type='@'/>
+<arg declared_type='EMError*' type='@'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<arg declared_type='dispatch_queue_t' index='4' name='aQueue' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='asyncBlockOccupants:fromGroup:'>
+<arg declared_type='NSArray*' index='0' name='occupants' type='@'/>
+<arg declared_type='NSString*' index='1' name='groupId' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='asyncBlockOccupants:fromGroup:completion:onQueue:'>
+<arg declared_type='NSArray*' index='0' name='occupants' type='@'/>
+<arg declared_type='NSString*' index='1' name='groupId' type='@'/>
+<arg declared_type='void (^)(EMGroup *, EMError *)' function_pointer='true' index='2' name='completion' type='@?'>
+<arg declared_type='EMGroup*' type='@'/>
+<arg declared_type='EMError*' type='@'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<arg declared_type='dispatch_queue_t' index='3' name='aQueue' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='asyncBlockPlayNewMessageWithCompletion:onQueue:'>
+<arg declared_type='void (^)(SystemSoundID)' function_pointer='true' index='0' name='completion' type='@?'>
+<arg declared_type='SystemSoundID' type='L' type64='I'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<arg declared_type='dispatch_queue_t' index='1' name='aQueue' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='asyncBlockPlayVibrationWithCompletion:onQueue:'>
+<arg declared_type='void (^)(SystemSoundID)' function_pointer='true' index='0' name='completion' type='@?'>
+<arg declared_type='SystemSoundID' type='L' type64='I'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<arg declared_type='dispatch_queue_t' index='1' name='aQueue' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='asyncCancelRecordingAudio'>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='asyncCancelRecordingAudioWithCompletion:onQueue:'>
+<arg declared_type='void (^)(EMChatVoice *, EMError *)' function_pointer='true' index='0' name='completion' type='@?'>
+<arg declared_type='EMChatVoice*' type='@'/>
+<arg declared_type='EMError*' type='@'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<arg declared_type='dispatch_queue_t' index='1' name='aQueue' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='asyncChangeAffiliation:forOccupants:inGroup:'>
+<arg declared_type='EMGroupMemberRole' index='0' name='newAffiliation' type='i'/>
+<arg declared_type='NSArray*' index='1' name='occupants' type='@'/>
+<arg declared_type='NSString*' index='2' name='groupId' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='asyncChangeAffiliation:forOccupants:inGroup:completion:onQueue:'>
+<arg declared_type='EMGroupMemberRole' index='0' name='newAffiliation' type='i'/>
+<arg declared_type='NSArray*' index='1' name='occupants' type='@'/>
+<arg declared_type='NSString*' index='2' name='groupId' type='@'/>
+<arg declared_type='void (^)(EMGroup *, EMError *)' function_pointer='true' index='3' name='completion' type='@?'>
+<arg declared_type='EMGroup*' type='@'/>
+<arg declared_type='EMError*' type='@'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<arg declared_type='dispatch_queue_t' index='4' name='aQueue' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='asyncChangeDescription:forGroup:'>
+<arg declared_type='NSString*' index='0' name='newDescription' type='@'/>
+<arg declared_type='NSString*' index='1' name='groupId' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='asyncChangeDescription:forGroup:completion:onQueue:'>
+<arg declared_type='NSString*' index='0' name='newDescription' type='@'/>
+<arg declared_type='NSString*' index='1' name='groupId' type='@'/>
+<arg declared_type='void (^)(EMGroup *, EMError *)' function_pointer='true' index='2' name='completion' type='@?'>
+<arg declared_type='EMGroup*' type='@'/>
+<arg declared_type='EMError*' type='@'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<arg declared_type='dispatch_queue_t' index='3' name='aQueue' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='asyncChangeGroupSubject:forGroup:'>
+<arg declared_type='NSString*' index='0' name='subject' type='@'/>
+<arg declared_type='NSString*' index='1' name='groupId' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='asyncChangeGroupSubject:forGroup:completion:onQueue:'>
+<arg declared_type='NSString*' index='0' name='subject' type='@'/>
+<arg declared_type='NSString*' index='1' name='groupId' type='@'/>
+<arg declared_type='void (^)(EMGroup *, EMError *)' function_pointer='true' index='2' name='completion' type='@?'>
+<arg declared_type='EMGroup*' type='@'/>
+<arg declared_type='EMError*' type='@'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<arg declared_type='dispatch_queue_t' index='3' name='aQueue' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='asyncChangePassword:forGroup:'>
+<arg declared_type='NSString*' index='0' name='newPassword' type='@'/>
+<arg declared_type='NSString*' index='1' name='groupId' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='asyncChangePassword:forGroup:completion:onQueue:'>
+<arg declared_type='NSString*' index='0' name='newPassword' type='@'/>
+<arg declared_type='NSString*' index='1' name='groupId' type='@'/>
+<arg declared_type='void (^)(EMGroup *, EMError *)' function_pointer='true' index='2' name='completion' type='@?'>
+<arg declared_type='EMGroup*' type='@'/>
+<arg declared_type='EMError*' type='@'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<arg declared_type='dispatch_queue_t' index='3' name='aQueue' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='asyncCreatePrivateGroupWithSubject:description:invitees:initialWelcomeMessage:'>
+<arg declared_type='NSString*' index='0' name='subject' type='@'/>
+<arg declared_type='NSString*' index='1' name='description' type='@'/>
+<arg declared_type='NSArray*' index='2' name='invitees' type='@'/>
+<arg declared_type='NSString*' index='3' name='welcomeMessage' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='asyncCreatePrivateGroupWithSubject:description:invitees:initialWelcomeMessage:completion:onQueue:'>
+<arg declared_type='NSString*' index='0' name='subject' type='@'/>
+<arg declared_type='NSString*' index='1' name='description' type='@'/>
+<arg declared_type='NSArray*' index='2' name='invitees' type='@'/>
+<arg declared_type='NSString*' index='3' name='welcomeMessage' type='@'/>
+<arg declared_type='void (^)(EMGroup *, EMError *)' function_pointer='true' index='4' name='completion' type='@?'>
+<arg declared_type='EMGroup*' type='@'/>
+<arg declared_type='EMError*' type='@'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<arg declared_type='dispatch_queue_t' index='5' name='aQueue' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='asyncCreatePublicGroupWithSubject:description:invitees:initialWelcomeMessage:'>
+<arg declared_type='NSString*' index='0' name='subject' type='@'/>
+<arg declared_type='NSString*' index='1' name='description' type='@'/>
+<arg declared_type='NSArray*' index='2' name='invitees' type='@'/>
+<arg declared_type='NSString*' index='3' name='welcomeMessage' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='asyncCreatePublicGroupWithSubject:description:invitees:initialWelcomeMessage:completion:onQueue:'>
+<arg declared_type='NSString*' index='0' name='subject' type='@'/>
+<arg declared_type='NSString*' index='1' name='description' type='@'/>
+<arg declared_type='NSArray*' index='2' name='invitees' type='@'/>
+<arg declared_type='NSString*' index='3' name='welcomeMessage' type='@'/>
+<arg declared_type='void (^)(EMGroup *, EMError *)' function_pointer='true' index='4' name='completion' type='@?'>
+<arg declared_type='EMGroup*' type='@'/>
+<arg declared_type='EMError*' type='@'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<arg declared_type='dispatch_queue_t' index='5' name='aQueue' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='asyncDecodeAddressFromLatitude:andLongitude:'>
+<arg declared_type='double' index='0' name='latitude' type='d'/>
+<arg declared_type='double' index='1' name='longitude' type='d'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='asyncDecodeAddressFromLatitude:andLongitude:completion:onQueue:'>
+<arg declared_type='double' index='0' name='latitude' type='d'/>
+<arg declared_type='double' index='1' name='longitude' type='d'/>
+<arg declared_type='void (^)(NSString *, EMError *)' function_pointer='true' index='2' name='completion' type='@?'>
+<arg declared_type='NSString*' type='@'/>
+<arg declared_type='EMError*' type='@'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<arg declared_type='dispatch_queue_t' index='3' name='queue' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='asyncFetchAllPrivateGroups'>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='asyncFetchAllPrivateGroupsWithCompletion:onQueue:'>
+<arg declared_type='void (^)(NSArray *, EMError *)' function_pointer='true' index='0' name='completion' type='@?'>
+<arg declared_type='NSArray*' type='@'/>
+<arg declared_type='EMError*' type='@'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<arg declared_type='dispatch_queue_t' index='1' name='aQueue' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='asyncFetchAllPublicGroups'>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='asyncFetchAllPublicGroupsWithCompletion:onQueue:'>
+<arg declared_type='void (^)(NSArray *, EMError *)' function_pointer='true' index='0' name='completion' type='@?'>
+<arg declared_type='NSArray*' type='@'/>
+<arg declared_type='EMError*' type='@'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<arg declared_type='dispatch_queue_t' index='1' name='aQueue' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='asyncFetchGroupInfo:'>
+<arg declared_type='NSString*' index='0' name='groupId' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='asyncFetchGroupInfo:completion:onQueue:'>
+<arg declared_type='NSString*' index='0' name='groupId' type='@'/>
+<arg declared_type='void (^)(EMGroup *, EMError *)' function_pointer='true' index='1' name='completion' type='@?'>
+<arg declared_type='EMGroup*' type='@'/>
+<arg declared_type='EMError*' type='@'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<arg declared_type='dispatch_queue_t' index='2' name='aQueue' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='asyncFetchMessage:progress:'>
+<arg declared_type='EMMessage*' index='0' name='aMessage' type='@'/>
+<arg declared_type='id' index='1' name='progress' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='asyncFetchMessage:progress:completion:onQueue:'>
+<arg declared_type='EMMessage*' index='0' name='aMessage' type='@'/>
+<arg declared_type='id' index='1' name='progress' type='@'/>
+<arg declared_type='void (^)(EMMessage *, EMError *)' function_pointer='true' index='2' name='completion' type='@?'>
+<arg declared_type='EMMessage*' type='@'/>
+<arg declared_type='EMError*' type='@'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<arg declared_type='dispatch_queue_t' index='3' name='aQueue' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='asyncFetchMessageThumbnail:progress:'>
+<arg declared_type='EMMessage*' index='0' name='aMessage' type='@'/>
+<arg declared_type='id' index='1' name='progress' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='asyncFetchMessageThumbnail:progress:completion:onQueue:'>
+<arg declared_type='EMMessage*' index='0' name='aMessage' type='@'/>
+<arg declared_type='id' index='1' name='progress' type='@'/>
+<arg declared_type='void (^)(EMMessage *, EMError *)' function_pointer='true' index='2' name='completion' type='@?'>
+<arg declared_type='EMMessage*' type='@'/>
+<arg declared_type='EMError*' type='@'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<arg declared_type='dispatch_queue_t' index='3' name='aQueue' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='asyncForwardMessage:to:isGroup:progress:'>
+<arg declared_type='EMMessage*' index='0' name='message' type='@'/>
+<arg declared_type='NSString*' index='1' name='username' type='@'/>
+<arg declared_type='BOOL' index='2' name='isGroup' type='B'/>
+<arg declared_type='id' index='3' name='progress' type='@'/>
+<retval declared_type='EMMessage*' type='@'/>
+</method>
+<method selector='asyncForwardMessage:to:isGroup:progress:prepare:onQueue:completion:onQueue:'>
+<arg declared_type='EMMessage*' index='0' name='message' type='@'/>
+<arg declared_type='NSString*' index='1' name='username' type='@'/>
+<arg declared_type='BOOL' index='2' name='isGroup' type='B'/>
+<arg declared_type='id' index='3' name='progress' type='@'/>
+<arg declared_type='void (^)(EMMessage *, EMError *)' function_pointer='true' index='4' name='prepare' type='@?'>
+<arg declared_type='EMMessage*' type='@'/>
+<arg declared_type='EMError*' type='@'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<arg declared_type='dispatch_queue_t' index='5' name='aPrepareQueue' type='@'/>
+<arg declared_type='void (^)(EMMessage *, EMError *)' function_pointer='true' index='6' name='completion' type='@?'>
+<arg declared_type='EMMessage*' type='@'/>
+<arg declared_type='EMError*' type='@'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<arg declared_type='dispatch_queue_t' index='7' name='aCompletionQueue' type='@'/>
+<retval declared_type='EMMessage*' type='@'/>
+</method>
+<method selector='asyncJoinPublicGroup:'>
+<arg declared_type='NSString*' index='0' name='groupId' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='asyncJoinPublicGroup:completion:onQueue:'>
+<arg declared_type='NSString*' index='0' name='groupId' type='@'/>
+<arg declared_type='void (^)(EMGroup *, EMError *)' function_pointer='true' index='1' name='completion' type='@?'>
+<arg declared_type='EMGroup*' type='@'/>
+<arg declared_type='EMError*' type='@'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<arg declared_type='dispatch_queue_t' index='2' name='aQueue' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='asyncLeaveGroup:'>
+<arg declared_type='NSString*' index='0' name='groupId' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='asyncLeaveGroup:completion:onQueue:'>
+<arg declared_type='NSString*' index='0' name='groupId' type='@'/>
+<arg declared_type='void (^)(EMGroup *, EMGroupLeaveReason, EMError *)' function_pointer='true' index='1' name='completion' type='@?'>
+<arg declared_type='EMGroup*' type='@'/>
+<arg declared_type='EMGroupLeaveReason' type='i'/>
+<arg declared_type='EMError*' type='@'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<arg declared_type='dispatch_queue_t' index='2' name='aQueue' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='asyncLoginWithUsername:password:'>
+<arg declared_type='NSString*' index='0' name='username' type='@'/>
+<arg declared_type='NSString*' index='1' name='password' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='asyncLoginWithUsername:password:completion:onQueue:'>
+<arg declared_type='NSString*' index='0' name='username' type='@'/>
+<arg declared_type='NSString*' index='1' name='password' type='@'/>
+<arg declared_type='void (^)(NSDictionary *, EMError *)' function_pointer='true' index='2' name='completion' type='@?'>
+<arg declared_type='NSDictionary*' type='@'/>
+<arg declared_type='EMError*' type='@'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<arg declared_type='dispatch_queue_t' index='3' name='aQueue' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='asyncLogoff'>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='asyncLogoffWithCompletion:onQueue:'>
+<arg declared_type='void (^)(NSDictionary *, EMError *)' function_pointer='true' index='0' name='completion' type='@?'>
+<arg declared_type='NSDictionary*' type='@'/>
+<arg declared_type='EMError*' type='@'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<arg declared_type='dispatch_queue_t' index='1' name='aQueue' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='asyncPlayAudio:'>
+<arg declared_type='EMChatVoice*' index='0' name='aChatVoice' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='asyncPlayAudio:completion:onQueue:'>
+<arg declared_type='EMChatVoice*' index='0' name='aChatVoice' type='@'/>
+<arg declared_type='void (^)(EMError *)' function_pointer='true' index='1' name='completion' type='@?'>
+<arg declared_type='EMError*' type='@'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<arg declared_type='dispatch_queue_t' index='2' name='aQueue' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='asyncPlayNewMessageSound'>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='asyncPlayNewMessageWithCompletion:onQueue:'>
+<arg declared_type='void (^)(SystemSoundID)' function_pointer='true' index='0' name='completion' type='@?'>
+<arg declared_type='SystemSoundID' type='L' type64='I'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<arg declared_type='dispatch_queue_t' index='1' name='aQueue' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='asyncPlayVibration'>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='asyncPlayVibrationWithCompletion:onQueue:'>
+<arg declared_type='void (^)(SystemSoundID)' function_pointer='true' index='0' name='completion' type='@?'>
+<arg declared_type='SystemSoundID' type='L' type64='I'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<arg declared_type='dispatch_queue_t' index='1' name='aQueue' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='asyncRegisterNewAccount:password:'>
+<arg declared_type='NSString*' index='0' name='username' type='@'/>
+<arg declared_type='NSString*' index='1' name='password' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='asyncRegisterNewAccount:password:withCompletion:onQueue:'>
+<arg declared_type='NSString*' index='0' name='username' type='@'/>
+<arg declared_type='NSString*' index='1' name='password' type='@'/>
+<arg declared_type='void (^)(NSString *, NSString *, EMError *)' function_pointer='true' index='2' name='completion' type='@?'>
+<arg declared_type='NSString*' type='@'/>
+<arg declared_type='NSString*' type='@'/>
+<arg declared_type='EMError*' type='@'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<arg declared_type='dispatch_queue_t' index='3' name='aQueue' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='asyncRemoveOccupants:fromGroup:'>
+<arg declared_type='NSArray*' index='0' name='occupants' type='@'/>
+<arg declared_type='NSString*' index='1' name='groupId' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='asyncRemoveOccupants:fromGroup:completion:onQueue:'>
+<arg declared_type='NSArray*' index='0' name='occupants' type='@'/>
+<arg declared_type='NSString*' index='1' name='groupId' type='@'/>
+<arg declared_type='void (^)(EMGroup *, EMError *)' function_pointer='true' index='2' name='completion' type='@?'>
+<arg declared_type='EMGroup*' type='@'/>
+<arg declared_type='EMError*' type='@'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<arg declared_type='dispatch_queue_t' index='3' name='aQueue' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='asyncResendMessage:progress:'>
+<arg declared_type='EMMessage*' index='0' name='message' type='@'/>
+<arg declared_type='id' index='1' name='progress' type='@'/>
+<retval declared_type='EMMessage*' type='@'/>
+</method>
+<method selector='asyncResendMessage:progress:prepare:onQueue:completion:onQueue:'>
+<arg declared_type='EMMessage*' index='0' name='message' type='@'/>
+<arg declared_type='id' index='1' name='progress' type='@'/>
+<arg declared_type='void (^)(EMMessage *, EMError *)' function_pointer='true' index='2' name='prepare' type='@?'>
+<arg declared_type='EMMessage*' type='@'/>
+<arg declared_type='EMError*' type='@'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<arg declared_type='dispatch_queue_t' index='3' name='aPrepareQueue' type='@'/>
+<arg declared_type='void (^)(EMMessage *, EMError *)' function_pointer='true' index='4' name='completion' type='@?'>
+<arg declared_type='EMMessage*' type='@'/>
+<arg declared_type='EMError*' type='@'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<arg declared_type='dispatch_queue_t' index='5' name='aCompletionQueue' type='@'/>
+<retval declared_type='EMMessage*' type='@'/>
+</method>
+<method selector='asyncSendMessage:progress:'>
+<arg declared_type='EMMessage*' index='0' name='message' type='@'/>
+<arg declared_type='id' index='1' name='progress' type='@'/>
+<retval declared_type='EMMessage*' type='@'/>
+</method>
+<method selector='asyncSendMessage:progress:prepare:onQueue:completion:onQueue:'>
+<arg declared_type='EMMessage*' index='0' name='message' type='@'/>
+<arg declared_type='id' index='1' name='progress' type='@'/>
+<arg declared_type='void (^)(EMMessage *, EMError *)' function_pointer='true' index='2' name='prepare' type='@?'>
+<arg declared_type='EMMessage*' type='@'/>
+<arg declared_type='EMError*' type='@'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<arg declared_type='dispatch_queue_t' index='3' name='aPrepareQueue' type='@'/>
+<arg declared_type='void (^)(EMMessage *, EMError *)' function_pointer='true' index='4' name='completion' type='@?'>
+<arg declared_type='EMMessage*' type='@'/>
+<arg declared_type='EMError*' type='@'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<arg declared_type='dispatch_queue_t' index='5' name='aCompletionQueue' type='@'/>
+<retval declared_type='EMMessage*' type='@'/>
+</method>
+<method selector='asyncStopRecordingAudio'>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='asyncStopRecordingAudioWithCompletion:onQueue:'>
+<arg declared_type='void (^)(EMChatVoice *, NSError *)' function_pointer='true' index='0' name='completion' type='@?'>
+<arg declared_type='EMChatVoice*' type='@'/>
+<arg declared_type='NSError*' type='@'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<arg declared_type='dispatch_queue_t' index='1' name='aQueue' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='asyncUnblockOccupants:forGroup:'>
+<arg declared_type='NSArray*' index='0' name='occupants' type='@'/>
+<arg declared_type='NSString*' index='1' name='groupId' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='asyncUnblockOccupants:forGroup:completion:onQueue:'>
+<arg declared_type='NSArray*' index='0' name='occupants' type='@'/>
+<arg declared_type='NSString*' index='1' name='groupId' type='@'/>
+<arg declared_type='void (^)(EMGroup *, EMError *)' function_pointer='true' index='2' name='completion' type='@?'>
+<arg declared_type='EMGroup*' type='@'/>
+<arg declared_type='EMError*' type='@'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<arg declared_type='dispatch_queue_t' index='3' name='aQueue' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='attachmentDownloadStatus'>
+<retval declared_type='int' type='i'/>
+</method>
+<method class_method='true' selector='bd09ToGcj02:'>
+<arg declared_type='CLLocationCoordinate2D' index='0' name='location' type='{_CLLocationCoordinate2D=dd}'/>
+<retval declared_type='CLLocationCoordinate2D' type='{_CLLocationCoordinate2D=dd}'/>
+</method>
+<method class_method='true' selector='bd09ToWgs84:'>
+<arg declared_type='CLLocationCoordinate2D' index='0' name='location' type='{_CLLocationCoordinate2D=dd}'/>
+<retval declared_type='CLLocationCoordinate2D' type='{_CLLocationCoordinate2D=dd}'/>
+</method>
+<method selector='blockOccupants:fromGroup:error:'>
+<arg declared_type='NSArray*' index='0' name='occupants' type='@'/>
+<arg declared_type='NSString*' index='1' name='groupId' type='@'/>
+<arg declared_type='EMError**' index='2' name='pError' type='^@'/>
+<retval declared_type='EMGroup*' type='@'/>
+</method>
+<method selector='buddyGroupList'>
+<retval declared_type='NSArray*' type='@'/>
+</method>
+<method selector='buddyList'>
+<retval declared_type='NSArray*' type='@'/>
+</method>
+<method selector='changeAffiliation:forOccupants:inGroup:error:'>
+<arg declared_type='EMGroupMemberRole' index='0' name='newAffiliation' type='i'/>
+<arg declared_type='NSArray*' index='1' name='occupants' type='@'/>
+<arg declared_type='NSString*' index='2' name='groupId' type='@'/>
+<arg declared_type='EMError**' index='3' name='pError' type='^@'/>
+<retval declared_type='EMGroup*' type='@'/>
+</method>
+<method selector='changeDescription:forGroup:error:'>
+<arg declared_type='NSString*' index='0' name='newDescription' type='@'/>
+<arg declared_type='NSString*' index='1' name='groupId' type='@'/>
+<arg declared_type='EMError**' index='2' name='pError' type='^@'/>
+<retval declared_type='EMGroup*' type='@'/>
+</method>
+<method selector='changeGroupSubject:forGroup:error:'>
+<arg declared_type='NSString*' index='0' name='subject' type='@'/>
+<arg declared_type='NSString*' index='1' name='groupId' type='@'/>
+<arg declared_type='EMError**' index='2' name='pError' type='^@'/>
+<retval declared_type='EMGroup*' type='@'/>
+</method>
+<method selector='changePassword:forGroup:error:'>
+<arg declared_type='NSString*' index='0' name='newPassword' type='@'/>
+<arg declared_type='NSString*' index='1' name='groupId' type='@'/>
+<arg declared_type='EMError**' index='2' name='pError' type='^@'/>
+<retval declared_type='EMGroup*' type='@'/>
+</method>
+<method selector='chatCryptor'>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='chatObject'>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='checkCameraAvailability'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='checkMicrophoneAvailability'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='chooseAudioPlaybackMode:'>
+<arg declared_type='EMAudioPlaybackMode' index='0' name='mode' type='i'/>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='compactUniqueId'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='conversationForChatter:isGroup:'>
+<arg declared_type='NSString*' index='0' name='chatter' type='@'/>
+<arg declared_type='BOOL' index='1' name='isGroup' type='B'/>
+<retval declared_type='EMConversation*' type='@'/>
+</method>
+<method selector='conversations'>
+<retval declared_type='NSArray*' type='@'/>
+</method>
+<method selector='createPrivateGroupWithSubject:description:invitees:initialWelcomeMessage:error:'>
+<arg declared_type='NSString*' index='0' name='subject' type='@'/>
+<arg declared_type='NSString*' index='1' name='description' type='@'/>
+<arg declared_type='NSArray*' index='2' name='invitees' type='@'/>
+<arg declared_type='NSString*' index='3' name='welcomeMessage' type='@'/>
+<arg declared_type='EMError**' index='4' name='pError' type='^@'/>
+<retval declared_type='EMGroup*' type='@'/>
+</method>
+<method selector='createPublicGroupWithSubject:description:invitees:initialWelcomeMessage:error:'>
+<arg declared_type='NSString*' index='0' name='subject' type='@'/>
+<arg declared_type='NSString*' index='1' name='description' type='@'/>
+<arg declared_type='NSArray*' index='2' name='invitees' type='@'/>
+<arg declared_type='NSString*' index='3' name='welcomeMessage' type='@'/>
+<arg declared_type='EMError**' index='4' name='pError' type='^@'/>
+<retval declared_type='EMGroup*' type='@'/>
+</method>
+<method selector='decodeAddressFromLatitude:andLongitude:error:'>
+<arg declared_type='double' index='0' name='latitude' type='d'/>
+<arg declared_type='double' index='1' name='longitude' type='d'/>
+<arg declared_type='EMError**' index='2' name='pError' type='^@'/>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='decryptData:args:'>
+<arg declared_type='NSData*' index='0' name='data' type='@'/>
+<arg declared_type='id' index='1' name='aArgs' type='@'/>
+<retval declared_type='NSData*' type='@'/>
+</method>
+<method selector='deviceVersion'>
+<retval declared_type='float' type='f'/>
+</method>
+<method selector='didAcceptBuddySucceed:'>
+<arg declared_type='NSString*' index='0' name='username' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='didAcceptInvitationFromGroup:error:'>
+<arg declared_type='EMGroup*' index='0' name='group' type='@'/>
+<arg declared_type='EMError*' index='1' name='error' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='didAcceptedByBuddy:'>
+<arg declared_type='NSString*' index='0' name='username' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='didCancelRecordAudio:error:'>
+<arg declared_type='NSString*' index='0' name='aFilePath' type='@'/>
+<arg declared_type='EMError*' index='1' name='error' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='didChangedOnlineStatus:forBuddy:'>
+<arg declared_type='BOOL' index='0' name='isOnline' type='B'/>
+<arg declared_type='NSString*' index='1' name='username' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='didConnectionStateChanged:'>
+<arg declared_type='id' index='0' name='connectionState' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='didDecodeAddress:fromLatitude:andLongitude:error:'>
+<arg declared_type='NSString*' index='0' name='address' type='@'/>
+<arg declared_type='double' index='1' name='latitude' type='d'/>
+<arg declared_type='double' index='2' name='longitude' type='d'/>
+<arg declared_type='EMError*' index='3' name='error' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='didFailToLocateUserWithError:'>
+<arg declared_type='EMError*' index='0' name='error' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='didFetchAllPublicGroups:error:'>
+<arg declared_type='NSArray*' index='0' name='groups' type='@'/>
+<arg declared_type='EMError*' index='1' name='error' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='didFetchGroupInfo:error:'>
+<arg declared_type='EMGroup*' index='0' name='group' type='@'/>
+<arg declared_type='EMError*' index='1' name='error' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='didFetchMessage:error:'>
+<arg declared_type='EMMessage*' index='0' name='aMessage' type='@'/>
+<arg declared_type='EMError*' index='1' name='error' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='didFetchMessageThumbnail:error:'>
+<arg declared_type='EMMessage*' index='0' name='aMessage' type='@'/>
+<arg declared_type='EMError*' index='1' name='error' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='didFetchingMessageAttachments:progress:'>
+<arg declared_type='EMMessage*' index='0' name='message' type='@'/>
+<arg declared_type='float' index='1' name='progress' type='f'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='didInterruptionRecordAudio'>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='didJoinPublicGroup:error:'>
+<arg declared_type='EMGroup*' index='0' name='group' type='@'/>
+<arg declared_type='EMError*' index='1' name='error' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='didLoginFromOtherDevice'>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='didLoginWithInfo:error:'>
+<arg declared_type='NSDictionary*' index='0' name='loginInfo' type='@'/>
+<arg declared_type='EMError*' index='1' name='error' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='didLogoffWithError:'>
+<arg declared_type='EMError*' index='0' name='error' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='didMessageAttachmentsStatusChanged:error:'>
+<arg declared_type='EMMessage*' index='0' name='message' type='@'/>
+<arg declared_type='EMError*' index='1' name='error' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='didPlayAudio:error:'>
+<arg declared_type='NSString*' index='0' name='aFilePath' type='@'/>
+<arg declared_type='NSError*' index='1' name='error' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='didPlaySystemSound:'>
+<arg declared_type='SystemSoundID' index='0' name='soundId' type='L' type64='I'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='didReceiveBuddyRequest:message:'>
+<arg declared_type='NSString*' index='0' name='username' type='@'/>
+<arg declared_type='NSString*' index='1' name='message' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='didReceiveGroupInvitationFrom:inviter:message:'>
+<arg declared_type='NSString*' index='0' name='groupId' type='@'/>
+<arg declared_type='NSString*' index='1' name='username' type='@'/>
+<arg declared_type='NSString*' index='2' name='message' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='didReceiveGroupRejectFrom:invitee:reason:'>
+<arg declared_type='NSString*' index='0' name='groupId' type='@'/>
+<arg declared_type='NSString*' index='1' name='username' type='@'/>
+<arg declared_type='NSString*' index='2' name='reason' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='didReceiveHasReadResponse:'>
+<arg declared_type='EMReceiptResp*' index='0' name='resp' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='didReceiveMessage:'>
+<arg declared_type='EMMessage*' index='0' name='message' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='didReconnect'>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='didRecordAudio:duration:error:'>
+<arg declared_type='NSString*' index='0' name='aFilePath' type='@'/>
+<arg declared_type='NSInteger' index='1' name='duration' type='i' type64='q'/>
+<arg declared_type='NSError*' index='2' name='error' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='didRecordAudio:error:'>
+<arg declared_type='EMChatVoice*' index='0' name='aChatVoice' type='@'/>
+<arg declared_type='NSError*' index='1' name='error' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='didRegisterNewAccount:password:error:'>
+<arg declared_type='NSString*' index='0' name='username' type='@'/>
+<arg declared_type='NSString*' index='1' name='password' type='@'/>
+<arg declared_type='EMError*' index='2' name='error' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='didRejectedByBuddy:'>
+<arg declared_type='NSString*' index='0' name='username' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='didRemovedByBuddy:'>
+<arg declared_type='NSString*' index='0' name='username' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='didSendMessage:error:'>
+<arg declared_type='EMMessage*' index='0' name='message' type='@'/>
+<arg declared_type='EMError*' index='1' name='error' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='didStopLocation'>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='didUnreadMessagesCountChanged'>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='didUpdateBuddyGroupList:'>
+<arg declared_type='NSArray*' index='0' name='buddyGroupList' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='didUpdateBuddyList:changedBuddies:isAdd:'>
+<arg declared_type='NSArray*' index='0' name='buddyList' type='@'/>
+<arg declared_type='NSArray*' index='1' name='changedBuddies' type='@'/>
+<arg declared_type='BOOL' index='2' name='isAdd' type='B'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='didUpdateConversationList:'>
+<arg declared_type='NSArray*' index='0' name='conversationList' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='didUpdateGroupList:error:'>
+<arg declared_type='NSArray*' index='0' name='groupList' type='@'/>
+<arg declared_type='EMError*' index='1' name='error' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='didUpdateLocation:'>
+<arg declared_type='CLLocation*' index='0' name='updatedLocation' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='disableProximitySensor'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='displayName'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='enableProximitySensor'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='encryptData:args:'>
+<arg declared_type='NSData*' index='0' name='data' type='@'/>
+<arg declared_type='id' index='1' name='aArgs' type='@'/>
+<retval declared_type='NSData*' type='@'/>
+</method>
+<method selector='fetchAllPrivateGroupsWithError:'>
+<arg declared_type='EMError**' index='0' name='pError' type='^@'/>
+<retval declared_type='NSArray*' type='@'/>
+</method>
+<method selector='fetchAllPublicGroupsWithError:'>
+<arg declared_type='EMError**' index='0' name='pError' type='^@'/>
+<retval declared_type='NSArray*' type='@'/>
+</method>
+<method selector='fetchGroupInfo:error:'>
+<arg declared_type='NSString*' index='0' name='groupId' type='@'/>
+<arg declared_type='EMError**' index='1' name='pError' type='^@'/>
+<retval declared_type='EMGroup*' type='@'/>
+</method>
+<method selector='fetchMessage:progress:error:'>
+<arg declared_type='EMMessage*' index='0' name='aMessage' type='@'/>
+<arg declared_type='id' index='1' name='progress' type='@'/>
+<arg declared_type='EMError**' index='2' name='pError' type='^@'/>
+<retval declared_type='EMMessage*' type='@'/>
+</method>
+<method selector='fetchMessageThumbnail:progress:error:'>
+<arg declared_type='EMMessage*' index='0' name='aMessage' type='@'/>
+<arg declared_type='id' index='1' name='progress' type='@'/>
+<arg declared_type='EMError**' index='2' name='pError' type='^@'/>
+<retval declared_type='EMMessage*' type='@'/>
+</method>
+<method selector='fileLength'>
+<retval declared_type='long long' type='q'/>
+</method>
+<method selector='forwardMessage:to:isGroup:progress:error:'>
+<arg declared_type='EMMessage*' index='0' name='message' type='@'/>
+<arg declared_type='NSString*' index='1' name='username' type='@'/>
+<arg declared_type='BOOL' index='2' name='isGroup' type='B'/>
+<arg declared_type='id' index='3' name='progress' type='@'/>
+<arg declared_type='EMError**' index='4' name='pError' type='^@'/>
+<retval declared_type='EMMessage*' type='@'/>
+</method>
+<method class_method='true' selector='gcj02ToBd09:'>
+<arg declared_type='CLLocationCoordinate2D' index='0' name='location' type='{_CLLocationCoordinate2D=dd}'/>
+<retval declared_type='CLLocationCoordinate2D' type='{_CLLocationCoordinate2D=dd}'/>
+</method>
+<method class_method='true' selector='gcj02ToWgs84:'>
+<arg declared_type='CLLocationCoordinate2D' index='0' name='location' type='{_CLLocationCoordinate2D=dd}'/>
+<retval declared_type='CLLocationCoordinate2D' type='{_CLLocationCoordinate2D=dd}'/>
+</method>
+<method selector='group:didCreateWithError:'>
+<arg declared_type='EMGroup*' index='0' name='group' type='@'/>
+<arg declared_type='EMError*' index='1' name='error' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='group:didLeave:error:'>
+<arg declared_type='EMGroup*' index='0' name='group' type='@'/>
+<arg declared_type='EMGroupLeaveReason' index='1' name='reason' type='i'/>
+<arg declared_type='EMError*' index='2' name='error' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='groupDidUpdateInfo:error:'>
+<arg declared_type='EMGroup*' index='0' name='group' type='@'/>
+<arg declared_type='EMError*' index='1' name='error' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='groupList'>
+<retval declared_type='NSArray*' type='@'/>
+</method>
+<method selector='initWithChatObject:'>
+<arg declared_type='id' index='0' name='aChatObject' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='initWithData:displayName:'>
+<arg declared_type='NSData*' index='0' name='aData' type='@'/>
+<arg declared_type='NSString*' index='1' name='aDisplayName' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='initWithFile:displayName:'>
+<arg declared_type='NSString*' index='0' name='filePath' type='@'/>
+<arg declared_type='NSString*' index='1' name='aDisplayName' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='isAutoLoginEnabled'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='isCloseToUser'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='isLocationServicesEnabled'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='isLoggedIn'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='isPlaying'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='isPlayingAudio'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='isPlayingAudioChat:'>
+<arg declared_type='EMChatVoice*' index='0' name='aChatVoice' type='@'/>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='isPlayingAudioPath:'>
+<arg declared_type='NSString*' index='0' name='aFilePath' type='@'/>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='isProximitySensorEnabled'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='isSupportProximitySensor'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='joinPublicGroup:error:'>
+<arg declared_type='NSString*' index='0' name='groupId' type='@'/>
+<arg declared_type='EMError**' index='1' name='pError' type='^@'/>
+<retval declared_type='EMGroup*' type='@'/>
+</method>
+<method selector='lastLocation'>
+<retval declared_type='CLLocation*' type='@'/>
+</method>
+<method selector='leaveGroup:error:'>
+<arg declared_type='NSString*' index='0' name='groupId' type='@'/>
+<arg declared_type='EMError**' index='1' name='pError' type='^@'/>
+<retval declared_type='EMGroup*' type='@'/>
+</method>
+<method selector='loadAllConversations'>
+<retval declared_type='NSArray*' type='@'/>
+</method>
+<method selector='localPath'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='loginInfo'>
+<retval declared_type='NSDictionary*' type='@'/>
+</method>
+<method selector='loginWithUsername:password:error:'>
+<arg declared_type='NSString*' index='0' name='username' type='@'/>
+<arg declared_type='NSString*' index='1' name='password' type='@'/>
+<arg declared_type='EMError**' index='2' name='pError' type='^@'/>
+<retval declared_type='NSDictionary*' type='@'/>
+</method>
+<method selector='logoffWithError:'>
+<arg declared_type='EMError**' index='0' name='pError' type='^@'/>
+<retval declared_type='NSDictionary*' type='@'/>
+</method>
+<method selector='message'>
+<retval declared_type='EMMessage*' type='@'/>
+</method>
+<method selector='messageBody'>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='messageBodyType'>
+<retval declared_type='MessageBodyType' type='i'/>
+</method>
+<method selector='nickname'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='peekRecorderVoiceMeter'>
+<retval declared_type='double' type='d'/>
+</method>
+<method selector='playNewMessageSound'>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='playVibration'>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='proximitySensorChanged:'>
+<arg declared_type='BOOL' index='0' name='isCloseToUser' type='B'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='refreshLocation'>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='registerNewAccount:password:error:'>
+<arg declared_type='NSString*' index='0' name='username' type='@'/>
+<arg declared_type='NSString*' index='1' name='password' type='@'/>
+<arg declared_type='EMError**' index='2' name='pError' type='^@'/>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='rejectBuddyRequest:reason:error:'>
+<arg declared_type='NSString*' index='0' name='username' type='@'/>
+<arg declared_type='NSString*' index='1' name='reason' type='@'/>
+<arg declared_type='EMError**' index='2' name='pError' type='^@'/>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='rejectInvitationForGroup:toInviter:reason:'>
+<arg declared_type='NSString*' index='0' name='groupId' type='@'/>
+<arg declared_type='NSString*' index='1' name='username' type='@'/>
+<arg declared_type='NSString*' index='2' name='reason' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='remotePath'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='removeBuddy:removeFromRemote:error:'>
+<arg declared_type='NSString*' index='0' name='username' type='@'/>
+<arg declared_type='BOOL' index='1' name='removeFromRemote' type='B'/>
+<arg declared_type='EMError**' index='2' name='pError' type='^@'/>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='removeConversationByChatter:deleteMessages:'>
+<arg declared_type='NSString*' index='0' name='chatter' type='@'/>
+<arg declared_type='BOOL' index='1' name='aDeleteMessages' type='B'/>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='removeConversationsByChatters:deleteMessages:'>
+<arg declared_type='NSArray*' index='0' name='chatters' type='@'/>
+<arg declared_type='BOOL' index='1' name='aDeleteMessages' type='B'/>
+<retval declared_type='NSUInteger' type='I' type64='Q'/>
+</method>
+<method selector='removeDelegate:'>
+<arg declared_type='id' index='0' name='delegate' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='removeOccupants:fromGroup:error:'>
+<arg declared_type='NSArray*' index='0' name='occupants' type='@'/>
+<arg declared_type='NSString*' index='1' name='groupId' type='@'/>
+<arg declared_type='EMError**' index='2' name='pError' type='^@'/>
+<retval declared_type='EMGroup*' type='@'/>
+</method>
+<method selector='resendMessage:progress:error:'>
+<arg declared_type='EMMessage*' index='0' name='message' type='@'/>
+<arg declared_type='id' index='1' name='progress' type='@'/>
+<arg declared_type='EMError**' index='2' name='pError' type='^@'/>
+<retval declared_type='EMMessage*' type='@'/>
+</method>
+<method selector='saveAllConversations'>
+<retval declared_type='NSInteger' type='i' type64='q'/>
+</method>
+<method selector='saveConversation:'>
+<arg declared_type='EMConversation*' index='0' name='conversation' type='@'/>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='saveConversations:'>
+<arg declared_type='NSArray*' index='0' name='conversations' type='@'/>
+<retval declared_type='NSInteger' type='i' type64='q'/>
+</method>
+<method selector='saveMessage:'>
+<arg declared_type='EMMessage*' index='0' name='message' type='@'/>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='saveMessages:'>
+<arg declared_type='NSArray*' index='0' name='messages' type='@'/>
+<retval declared_type='NSInteger' type='i' type64='q'/>
+</method>
+<method selector='searchMessagesWithCriteria:'>
+<arg declared_type='NSString*' index='0' name='criteria' type='@'/>
+<retval declared_type='NSArray*' type='@'/>
+</method>
+<method selector='searchMessagesWithCriteria:withChatter:'>
+<arg declared_type='NSString*' index='0' name='criteria' type='@'/>
+<arg declared_type='NSString*' index='1' name='chatter' type='@'/>
+<retval declared_type='NSArray*' type='@'/>
+</method>
+<method selector='secretKey'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='sendHasReadResponseForMessage:'>
+<arg declared_type='EMMessage*' index='0' name='message' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='sendMessage:progress:error:'>
+<arg declared_type='EMMessage*' index='0' name='message' type='@'/>
+<arg declared_type='id' index='1' name='progress' type='@'/>
+<arg declared_type='EMError**' index='2' name='pError' type='^@'/>
+<retval declared_type='EMMessage*' type='@'/>
+</method>
+<method selector='setAttachmentDownloadStatus:'>
+<arg declared_type='int' index='0' name='attachmentDownloadStatus' type='i'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setBuddyGroupList:'>
+<arg declared_type='NSArray*' index='0' name='buddyGroupList' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setBuddyList:'>
+<arg declared_type='NSArray*' index='0' name='buddyList' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setChatCryptor:'>
+<arg declared_type='id' index='0' name='chatCryptor' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setChatObject:'>
+<arg declared_type='id' index='0' name='chatObject' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setDisplayName:'>
+<arg declared_type='NSString*' index='0' name='displayName' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setFileLength:'>
+<arg declared_type='long long' index='0' name='fileLength' type='q'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setGroupList:'>
+<arg declared_type='NSArray*' index='0' name='groupList' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setIsAutoLoginEnabled:'>
+<arg declared_type='BOOL' index='0' name='isAutoLoginEnabled' type='B'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setLocalPath:'>
+<arg declared_type='NSString*' index='0' name='localPath' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setLoginInfo:'>
+<arg declared_type='NSDictionary*' index='0' name='loginInfo' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setMessage:'>
+<arg declared_type='EMMessage*' index='0' name='message' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setMessageBody:'>
+<arg declared_type='id' index='0' name='messageBody' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setNickname:'>
+<arg declared_type='NSString*' index='0' name='nickname' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setProgress:'>
+<arg declared_type='float' index='0' name='progress' type='f'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setRemotePath:'>
+<arg declared_type='NSString*' index='0' name='remotePath' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setSecretKey:'>
+<arg declared_type='NSString*' index='0' name='secretKey' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='startRecordingAudioWithError:'>
+<arg declared_type='NSError**' index='0' name='pError' type='^@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='startRecordingWithPreparePath:'>
+<arg declared_type='NSString*' index='0' name='aFilePath' type='@'/>
+<retval declared_type='NSError*' type='@'/>
+</method>
+<method selector='startUpdatingLocation'>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='stopAudioPlaying'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='stopPlayingAudio'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='stopUpdatingLocation'>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='switchAudioOutputDevice:'>
+<arg declared_type='EMAudioOutputDevice' index='0' name='outputDevice' type='i'/>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='totalUnreadMessagesCount'>
+<retval declared_type='NSUInteger' type='I' type64='Q'/>
+</method>
+<method selector='unblockOccupants:forGroup:error:'>
+<arg declared_type='NSArray*' index='0' name='occupants' type='@'/>
+<arg declared_type='NSString*' index='1' name='groupId' type='@'/>
+<arg declared_type='EMError**' index='2' name='pError' type='^@'/>
+<retval declared_type='EMGroup*' type='@'/>
+</method>
+<method selector='uniqueId'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='unreadConversationsCount'>
+<retval declared_type='NSUInteger' type='I' type64='Q'/>
+</method>
+<method selector='unreadMessagesCountForConversation:'>
+<arg declared_type='NSString*' index='0' name='chatter' type='@'/>
+<retval declared_type='NSUInteger' type='I' type64='Q'/>
+</method>
+<method class_method='true' selector='wgs84ToBd09:'>
+<arg declared_type='CLLocationCoordinate2D' index='0' name='location' type='{_CLLocationCoordinate2D=dd}'/>
+<retval declared_type='CLLocationCoordinate2D' type='{_CLLocationCoordinate2D=dd}'/>
+</method>
+<method class_method='true' selector='wgs84ToGcj02:'>
+<arg declared_type='CLLocationCoordinate2D' index='0' name='location' type='{_CLLocationCoordinate2D=dd}'/>
+<retval declared_type='CLLocationCoordinate2D' type='{_CLLocationCoordinate2D=dd}'/>
+</method>
+<method selector='willSendMessage:error:'>
+<arg declared_type='EMMessage*' index='0' name='message' type='@'/>
+<arg declared_type='EMError*' index='1' name='error' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+</class>
+<informal_protocol name='EMChatManagerBuddyDelegate'>
+<method selector='didAcceptBuddySucceed:' type='v12@0:4@8' type64='v24@0:8@16'>
+<arg declared_type='NSString*' index='0' name='username' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='didAcceptedByBuddy:' type='v12@0:4@8' type64='v24@0:8@16'>
+<arg declared_type='NSString*' index='0' name='username' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='didChangedOnlineStatus:forBuddy:' type='v16@0:4B8@12' type64='v28@0:8B16@20'>
+<arg declared_type='BOOL' index='0' name='isOnline' type='B'/>
+<arg declared_type='NSString*' index='1' name='username' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='didReceiveBuddyRequest:message:' type='v16@0:4@8@12' type64='v32@0:8@16@24'>
+<arg declared_type='NSString*' index='0' name='username' type='@'/>
+<arg declared_type='NSString*' index='1' name='message' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='didRejectedByBuddy:' type='v12@0:4@8' type64='v24@0:8@16'>
+<arg declared_type='NSString*' index='0' name='username' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='didRemovedByBuddy:' type='v12@0:4@8' type64='v24@0:8@16'>
+<arg declared_type='NSString*' index='0' name='username' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='didUpdateBuddyGroupList:' type='v12@0:4@8' type64='v24@0:8@16'>
+<arg declared_type='NSArray*' index='0' name='buddyGroupList' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='didUpdateBuddyList:changedBuddies:isAdd:' type='v20@0:4@8@12B16' type64='v36@0:8@16@24B32'>
+<arg declared_type='NSArray*' index='0' name='buddyList' type='@'/>
+<arg declared_type='NSArray*' index='1' name='changedBuddies' type='@'/>
+<arg declared_type='BOOL' index='2' name='isAdd' type='B'/>
+<retval declared_type='void' type='v'/>
+</method>
+</informal_protocol>
+<informal_protocol name='EMChatManagerChatDelegate'>
+<method selector='didFetchingMessageAttachments:progress:' type='v16@0:4@8f12' type64='v28@0:8@16f24'>
+<arg declared_type='EMMessage*' index='0' name='message' type='@'/>
+<arg declared_type='float' index='1' name='progress' type='f'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='didMessageAttachmentsStatusChanged:error:' type='v16@0:4@8@12' type64='v32@0:8@16@24'>
+<arg declared_type='EMMessage*' index='0' name='message' type='@'/>
+<arg declared_type='EMError*' index='1' name='error' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='didReceiveHasReadResponse:' type='v12@0:4@8' type64='v24@0:8@16'>
+<arg declared_type='EMReceiptResp*' index='0' name='resp' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='didReceiveMessage:' type='v12@0:4@8' type64='v24@0:8@16'>
+<arg declared_type='EMMessage*' index='0' name='message' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='didSendMessage:error:' type='v16@0:4@8@12' type64='v32@0:8@16@24'>
+<arg declared_type='EMMessage*' index='0' name='message' type='@'/>
+<arg declared_type='EMError*' index='1' name='error' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='didUnreadMessagesCountChanged' type='v8@0:4' type64='v16@0:8'>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='didUpdateConversationList:' type='v12@0:4@8' type64='v24@0:8@16'>
+<arg declared_type='NSArray*' index='0' name='conversationList' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='willSendMessage:error:' type='v16@0:4@8@12' type64='v32@0:8@16@24'>
+<arg declared_type='EMMessage*' index='0' name='message' type='@'/>
+<arg declared_type='EMError*' index='1' name='error' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+</informal_protocol>
+<informal_protocol name='EMChatManagerGroupDelegate'>
+<method selector='didAcceptInvitationFromGroup:error:' type='v16@0:4@8@12' type64='v32@0:8@16@24'>
+<arg declared_type='EMGroup*' index='0' name='group' type='@'/>
+<arg declared_type='EMError*' index='1' name='error' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='didFetchAllPublicGroups:error:' type='v16@0:4@8@12' type64='v32@0:8@16@24'>
+<arg declared_type='NSArray*' index='0' name='groups' type='@'/>
+<arg declared_type='EMError*' index='1' name='error' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='didFetchGroupInfo:error:' type='v16@0:4@8@12' type64='v32@0:8@16@24'>
+<arg declared_type='EMGroup*' index='0' name='group' type='@'/>
+<arg declared_type='EMError*' index='1' name='error' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='didJoinPublicGroup:error:' type='v16@0:4@8@12' type64='v32@0:8@16@24'>
+<arg declared_type='EMGroup*' index='0' name='group' type='@'/>
+<arg declared_type='EMError*' index='1' name='error' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='didReceiveGroupInvitationFrom:inviter:message:' type='v20@0:4@8@12@16' type64='v40@0:8@16@24@32'>
+<arg declared_type='NSString*' index='0' name='groupId' type='@'/>
+<arg declared_type='NSString*' index='1' name='username' type='@'/>
+<arg declared_type='NSString*' index='2' name='message' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='didReceiveGroupRejectFrom:invitee:reason:' type='v20@0:4@8@12@16' type64='v40@0:8@16@24@32'>
+<arg declared_type='NSString*' index='0' name='groupId' type='@'/>
+<arg declared_type='NSString*' index='1' name='username' type='@'/>
+<arg declared_type='NSString*' index='2' name='reason' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='didUpdateGroupList:error:' type='v16@0:4@8@12' type64='v32@0:8@16@24'>
+<arg declared_type='NSArray*' index='0' name='groupList' type='@'/>
+<arg declared_type='EMError*' index='1' name='error' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='group:didCreateWithError:' type='v16@0:4@8@12' type64='v32@0:8@16@24'>
+<arg declared_type='EMGroup*' index='0' name='group' type='@'/>
+<arg declared_type='EMError*' index='1' name='error' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='group:didLeave:error:' type='v20@0:4@8i12@16' type64='v36@0:8@16i24@28'>
+<arg declared_type='EMGroup*' index='0' name='group' type='@'/>
+<arg declared_type='EMGroupLeaveReason' index='1' name='reason' type='i'/>
+<arg declared_type='EMError*' index='2' name='error' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='groupDidUpdateInfo:error:' type='v16@0:4@8@12' type64='v32@0:8@16@24'>
+<arg declared_type='EMGroup*' index='0' name='group' type='@'/>
+<arg declared_type='EMError*' index='1' name='error' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+</informal_protocol>
+<informal_protocol name='EMChatManagerLoginDelegate'>
+<method selector='didLoginFromOtherDevice' type='v8@0:4' type64='v16@0:8'>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='didLoginWithInfo:error:' type='v16@0:4@8@12' type64='v32@0:8@16@24'>
+<arg declared_type='NSDictionary*' index='0' name='loginInfo' type='@'/>
+<arg declared_type='EMError*' index='1' name='error' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='didLogoffWithError:' type='v12@0:4@8' type64='v24@0:8@16'>
+<arg declared_type='EMError*' index='0' name='error' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='didReconnect' type='v8@0:4' type64='v16@0:8'>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='didRegisterNewAccount:password:error:' type='v20@0:4@8@12@16' type64='v40@0:8@16@24@32'>
+<arg declared_type='NSString*' index='0' name='username' type='@'/>
+<arg declared_type='NSString*' index='1' name='password' type='@'/>
+<arg declared_type='EMError*' index='2' name='error' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+</informal_protocol>
+<informal_protocol name='EMChatManagerMediaDelegate'>
+<method selector='didCancelRecordAudio:error:' type='v16@0:4@8@12' type64='v32@0:8@16@24'>
+<arg declared_type='NSString*' index='0' name='aFilePath' type='@'/>
+<arg declared_type='EMError*' index='1' name='error' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='didInterruptionRecordAudio' type='v8@0:4' type64='v16@0:8'>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='didPlayAudio:error:' type='v16@0:4@8@12' type64='v32@0:8@16@24'>
+<arg declared_type='NSString*' index='0' name='aFilePath' type='@'/>
+<arg declared_type='NSError*' index='1' name='error' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='didPlaySystemSound:' type='v12@0:4L8' type64='v20@0:8I16'>
+<arg declared_type='SystemSoundID' index='0' name='soundId' type='L' type64='I'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='didRecordAudio:error:' type='v16@0:4@8@12' type64='v32@0:8@16@24'>
+<arg declared_type='EMChatVoice*' index='0' name='aChatVoice' type='@'/>
+<arg declared_type='NSError*' index='1' name='error' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+</informal_protocol>
+<informal_protocol name='EMChatManagerUtilDelegate'>
+<method selector='didConnectionStateChanged:' type='v12@0:4@8' type64='v24@0:8@16'>
+<arg declared_type='id' index='0' name='connectionState' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='didFetchMessage:error:' type='v16@0:4@8@12' type64='v32@0:8@16@24'>
+<arg declared_type='EMMessage*' index='0' name='aMessage' type='@'/>
+<arg declared_type='EMError*' index='1' name='error' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='didFetchMessageThumbnail:error:' type='v16@0:4@8@12' type64='v32@0:8@16@24'>
+<arg declared_type='EMMessage*' index='0' name='aMessage' type='@'/>
+<arg declared_type='EMError*' index='1' name='error' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+</informal_protocol>
+<informal_protocol name='EMDeviceManagerLocationDelegate'>
+<method selector='didDecodeAddress:fromLatitude:andLongitude:error:' type='v32@0:4@8d12d20@28' type64='v48@0:8@16d24d32@40'>
+<arg declared_type='NSString*' index='0' name='address' type='@'/>
+<arg declared_type='double' index='1' name='latitude' type='d'/>
+<arg declared_type='double' index='2' name='longitude' type='d'/>
+<arg declared_type='EMError*' index='3' name='error' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='didFailToLocateUserWithError:' type='v12@0:4@8' type64='v24@0:8@16'>
+<arg declared_type='EMError*' index='0' name='error' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='didStopLocation' type='v8@0:4' type64='v16@0:8'>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='didUpdateLocation:' type='v12@0:4@8' type64='v24@0:8@16'>
+<arg declared_type='CLLocation*' index='0' name='updatedLocation' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+</informal_protocol>
+<informal_protocol name='EMDeviceManagerMediaDelegate'>
+<method selector='didCancelRecordAudio:error:' type='v16@0:4@8@12' type64='v32@0:8@16@24'>
+<arg declared_type='NSString*' index='0' name='aFilePath' type='@'/>
+<arg declared_type='EMError*' index='1' name='error' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='didInterruptionRecordAudio' type='v8@0:4' type64='v16@0:8'>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='didPlayAudio:error:' type='v16@0:4@8@12' type64='v32@0:8@16@24'>
+<arg declared_type='NSString*' index='0' name='aFilePath' type='@'/>
+<arg declared_type='NSError*' index='1' name='error' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='didPlaySystemSound:' type='v12@0:4L8' type64='v20@0:8I16'>
+<arg declared_type='SystemSoundID' index='0' name='soundId' type='L' type64='I'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='didRecordAudio:duration:error:' type='v20@0:4@8i12@16' type64='v40@0:8@16q24@32'>
+<arg declared_type='NSString*' index='0' name='aFilePath' type='@'/>
+<arg declared_type='NSInteger' index='1' name='duration' type='i' type64='q'/>
+<arg declared_type='NSError*' index='2' name='error' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+</informal_protocol>
+<informal_protocol name='EMDeviceManagerProximitySensorDelegate'>
+<method selector='proximitySensorChanged:' type='v12@0:4B8' type64='v20@0:8B16'>
+<arg declared_type='BOOL' index='0' name='isCloseToUser' type='B'/>
+<retval declared_type='void' type='v'/>
+</method>
+</informal_protocol>
+<informal_protocol name='IChatManagerBase'>
+<method selector='addDelegate:delegateQueue:' type='v16@0:4@8@12' type64='v32@0:8@16@24'>
+<arg declared_type='id' index='0' name='delegate' type='@'/>
+<arg declared_type='dispatch_queue_t' index='1' name='queue' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='removeDelegate:' type='v12@0:4@8' type64='v24@0:8@16'>
+<arg declared_type='id' index='0' name='delegate' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+</informal_protocol>
+<informal_protocol name='IChatManagerBuddy'>
+<method selector='acceptBuddyRequest:error:' type='B16@0:4@8^@12' type64='B32@0:8@16^@24'>
+<arg declared_type='NSString*' index='0' name='username' type='@'/>
+<arg declared_type='EMError**' index='1' name='pError' type='^@'/>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='addBuddy:withNickname:message:error:' type='B24@0:4@8@12@16^@20' type64='B48@0:8@16@24@32^@40'>
+<arg declared_type='NSString*' index='0' name='username' type='@'/>
+<arg declared_type='NSString*' index='1' name='nickname' type='@'/>
+<arg declared_type='NSString*' index='2' name='message' type='@'/>
+<arg declared_type='EMError**' index='3' name='pError' type='^@'/>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='addBuddy:withNickname:message:toGroups:error:' type='B28@0:4@8@12@16@20^@24' type64='B56@0:8@16@24@32@40^@48'>
+<arg declared_type='NSString*' index='0' name='username' type='@'/>
+<arg declared_type='NSString*' index='1' name='nickname' type='@'/>
+<arg declared_type='NSString*' index='2' name='message' type='@'/>
+<arg declared_type='NSArray*' index='3' name='groupNames' type='@'/>
+<arg declared_type='EMError**' index='4' name='pError' type='^@'/>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='buddyGroupList' type='@8@0:4' type64='@16@0:8'>
+<retval declared_type='NSArray*' type='@'/>
+</method>
+<method selector='buddyList' type='@8@0:4' type64='@16@0:8'>
+<retval declared_type='NSArray*' type='@'/>
+</method>
+<method selector='rejectBuddyRequest:reason:error:' type='B20@0:4@8@12^@16' type64='B40@0:8@16@24^@32'>
+<arg declared_type='NSString*' index='0' name='username' type='@'/>
+<arg declared_type='NSString*' index='1' name='reason' type='@'/>
+<arg declared_type='EMError**' index='2' name='pError' type='^@'/>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='removeBuddy:removeFromRemote:error:' type='B20@0:4@8B12^@16' type64='B36@0:8@16B24^@28'>
+<arg declared_type='NSString*' index='0' name='username' type='@'/>
+<arg declared_type='BOOL' index='1' name='removeFromRemote' type='B'/>
+<arg declared_type='EMError**' index='2' name='pError' type='^@'/>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='setBuddyGroupList:' type='v12@0:4@8' type64='v24@0:8@16'>
+<arg declared_type='NSArray*' index='0' name='buddyGroupList' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setBuddyList:' type='v12@0:4@8' type64='v24@0:8@16'>
+<arg declared_type='NSArray*' index='0' name='buddyList' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+</informal_protocol>
+<informal_protocol name='IChatManagerChat'>
+<method selector='asyncForwardMessage:to:isGroup:progress:' type='@24@0:4@8@12B16@20' type64='@44@0:8@16@24B32@36'>
+<arg declared_type='EMMessage*' index='0' name='message' type='@'/>
+<arg declared_type='NSString*' index='1' name='username' type='@'/>
+<arg declared_type='BOOL' index='2' name='isGroup' type='B'/>
+<arg declared_type='id' index='3' name='progress' type='@'/>
+<retval declared_type='EMMessage*' type='@'/>
+</method>
+<method selector='asyncForwardMessage:to:isGroup:progress:prepare:onQueue:completion:onQueue:' type='@40@0:4@8@12B16@20@?24@28@?32@36' type64='@76@0:8@16@24B32@36@?44@52@?60@68'>
+<arg declared_type='EMMessage*' index='0' name='message' type='@'/>
+<arg declared_type='NSString*' index='1' name='username' type='@'/>
+<arg declared_type='BOOL' index='2' name='isGroup' type='B'/>
+<arg declared_type='id' index='3' name='progress' type='@'/>
+<arg declared_type='void (^)(EMMessage *, EMError *)' function_pointer='true' index='4' name='prepare' type='@?'>
+<arg declared_type='EMMessage*' type='@'/>
+<arg declared_type='EMError*' type='@'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<arg declared_type='dispatch_queue_t' index='5' name='aPrepareQueue' type='@'/>
+<arg declared_type='void (^)(EMMessage *, EMError *)' function_pointer='true' index='6' name='completion' type='@?'>
+<arg declared_type='EMMessage*' type='@'/>
+<arg declared_type='EMError*' type='@'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<arg declared_type='dispatch_queue_t' index='7' name='aCompletionQueue' type='@'/>
+<retval declared_type='EMMessage*' type='@'/>
+</method>
+<method selector='asyncResendMessage:progress:' type='@16@0:4@8@12' type64='@32@0:8@16@24'>
+<arg declared_type='EMMessage*' index='0' name='message' type='@'/>
+<arg declared_type='id' index='1' name='progress' type='@'/>
+<retval declared_type='EMMessage*' type='@'/>
+</method>
+<method selector='asyncResendMessage:progress:prepare:onQueue:completion:onQueue:' type='@32@0:4@8@12@?16@20@?24@28' type64='@64@0:8@16@24@?32@40@?48@56'>
+<arg declared_type='EMMessage*' index='0' name='message' type='@'/>
+<arg declared_type='id' index='1' name='progress' type='@'/>
+<arg declared_type='void (^)(EMMessage *, EMError *)' function_pointer='true' index='2' name='prepare' type='@?'>
+<arg declared_type='EMMessage*' type='@'/>
+<arg declared_type='EMError*' type='@'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<arg declared_type='dispatch_queue_t' index='3' name='aPrepareQueue' type='@'/>
+<arg declared_type='void (^)(EMMessage *, EMError *)' function_pointer='true' index='4' name='completion' type='@?'>
+<arg declared_type='EMMessage*' type='@'/>
+<arg declared_type='EMError*' type='@'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<arg declared_type='dispatch_queue_t' index='5' name='aCompletionQueue' type='@'/>
+<retval declared_type='EMMessage*' type='@'/>
+</method>
+<method selector='asyncSendMessage:progress:' type='@16@0:4@8@12' type64='@32@0:8@16@24'>
+<arg declared_type='EMMessage*' index='0' name='message' type='@'/>
+<arg declared_type='id' index='1' name='progress' type='@'/>
+<retval declared_type='EMMessage*' type='@'/>
+</method>
+<method selector='asyncSendMessage:progress:prepare:onQueue:completion:onQueue:' type='@32@0:4@8@12@?16@20@?24@28' type64='@64@0:8@16@24@?32@40@?48@56'>
+<arg declared_type='EMMessage*' index='0' name='message' type='@'/>
+<arg declared_type='id' index='1' name='progress' type='@'/>
+<arg declared_type='void (^)(EMMessage *, EMError *)' function_pointer='true' index='2' name='prepare' type='@?'>
+<arg declared_type='EMMessage*' type='@'/>
+<arg declared_type='EMError*' type='@'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<arg declared_type='dispatch_queue_t' index='3' name='aPrepareQueue' type='@'/>
+<arg declared_type='void (^)(EMMessage *, EMError *)' function_pointer='true' index='4' name='completion' type='@?'>
+<arg declared_type='EMMessage*' type='@'/>
+<arg declared_type='EMError*' type='@'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<arg declared_type='dispatch_queue_t' index='5' name='aCompletionQueue' type='@'/>
+<retval declared_type='EMMessage*' type='@'/>
+</method>
+<method selector='forwardMessage:to:isGroup:progress:error:' type='@28@0:4@8@12B16@20^@24' type64='@52@0:8@16@24B32@36^@44'>
+<arg declared_type='EMMessage*' index='0' name='message' type='@'/>
+<arg declared_type='NSString*' index='1' name='username' type='@'/>
+<arg declared_type='BOOL' index='2' name='isGroup' type='B'/>
+<arg declared_type='id' index='3' name='progress' type='@'/>
+<arg declared_type='EMError**' index='4' name='pError' type='^@'/>
+<retval declared_type='EMMessage*' type='@'/>
+</method>
+<method selector='resendMessage:progress:error:' type='@20@0:4@8@12^@16' type64='@40@0:8@16@24^@32'>
+<arg declared_type='EMMessage*' index='0' name='message' type='@'/>
+<arg declared_type='id' index='1' name='progress' type='@'/>
+<arg declared_type='EMError**' index='2' name='pError' type='^@'/>
+<retval declared_type='EMMessage*' type='@'/>
+</method>
+<method selector='sendHasReadResponseForMessage:' type='v12@0:4@8' type64='v24@0:8@16'>
+<arg declared_type='EMMessage*' index='0' name='message' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='sendMessage:progress:error:' type='@20@0:4@8@12^@16' type64='@40@0:8@16@24^@32'>
+<arg declared_type='EMMessage*' index='0' name='message' type='@'/>
+<arg declared_type='id' index='1' name='progress' type='@'/>
+<arg declared_type='EMError**' index='2' name='pError' type='^@'/>
+<retval declared_type='EMMessage*' type='@'/>
+</method>
+</informal_protocol>
+<informal_protocol name='IChatManagerConversation'>
+<method selector='conversationForChatter:isGroup:' type='@16@0:4@8B12' type64='@28@0:8@16B24'>
+<arg declared_type='NSString*' index='0' name='chatter' type='@'/>
+<arg declared_type='BOOL' index='1' name='isGroup' type='B'/>
+<retval declared_type='EMConversation*' type='@'/>
+</method>
+<method selector='conversations' type='@8@0:4' type64='@16@0:8'>
+<retval declared_type='NSArray*' type='@'/>
+</method>
+<method selector='loadAllConversations' type='@8@0:4' type64='@16@0:8'>
+<retval declared_type='NSArray*' type='@'/>
+</method>
+<method selector='removeConversationByChatter:deleteMessages:' type='B16@0:4@8B12' type64='B28@0:8@16B24'>
+<arg declared_type='NSString*' index='0' name='chatter' type='@'/>
+<arg declared_type='BOOL' index='1' name='aDeleteMessages' type='B'/>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='removeConversationsByChatters:deleteMessages:' type='I16@0:4@8B12' type64='Q28@0:8@16B24'>
+<arg declared_type='NSArray*' index='0' name='chatters' type='@'/>
+<arg declared_type='BOOL' index='1' name='aDeleteMessages' type='B'/>
+<retval declared_type='NSUInteger' type='I' type64='Q'/>
+</method>
+<method selector='saveAllConversations' type='i8@0:4' type64='q16@0:8'>
+<retval declared_type='NSInteger' type='i' type64='q'/>
+</method>
+<method selector='saveConversation:' type='B12@0:4@8' type64='B24@0:8@16'>
+<arg declared_type='EMConversation*' index='0' name='conversation' type='@'/>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='saveConversations:' type='i12@0:4@8' type64='q24@0:8@16'>
+<arg declared_type='NSArray*' index='0' name='conversations' type='@'/>
+<retval declared_type='NSInteger' type='i' type64='q'/>
+</method>
+<method selector='saveMessage:' type='B12@0:4@8' type64='B24@0:8@16'>
+<arg declared_type='EMMessage*' index='0' name='message' type='@'/>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='saveMessages:' type='i12@0:4@8' type64='q24@0:8@16'>
+<arg declared_type='NSArray*' index='0' name='messages' type='@'/>
+<retval declared_type='NSInteger' type='i' type64='q'/>
+</method>
+<method selector='searchMessagesWithCriteria:' type='@12@0:4@8' type64='@24@0:8@16'>
+<arg declared_type='NSString*' index='0' name='criteria' type='@'/>
+<retval declared_type='NSArray*' type='@'/>
+</method>
+<method selector='searchMessagesWithCriteria:withChatter:' type='@16@0:4@8@12' type64='@32@0:8@16@24'>
+<arg declared_type='NSString*' index='0' name='criteria' type='@'/>
+<arg declared_type='NSString*' index='1' name='chatter' type='@'/>
+<retval declared_type='NSArray*' type='@'/>
+</method>
+<method selector='totalUnreadMessagesCount' type='I8@0:4' type64='Q16@0:8'>
+<retval declared_type='NSUInteger' type='I' type64='Q'/>
+</method>
+<method selector='unreadConversationsCount' type='I8@0:4' type64='Q16@0:8'>
+<retval declared_type='NSUInteger' type='I' type64='Q'/>
+</method>
+<method selector='unreadMessagesCountForConversation:' type='I12@0:4@8' type64='Q24@0:8@16'>
+<arg declared_type='NSString*' index='0' name='chatter' type='@'/>
+<retval declared_type='NSUInteger' type='I' type64='Q'/>
+</method>
+</informal_protocol>
+<informal_protocol name='IChatManagerEncryption'>
+<method selector='chatCryptor' type='@8@0:4' type64='@16@0:8'>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='setChatCryptor:' type='v12@0:4@8' type64='v24@0:8@16'>
+<arg declared_type='id' index='0' name='chatCryptor' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+</informal_protocol>
+<informal_protocol name='IChatManagerGroup'>
+<method selector='acceptInvitationFromGroup:error:' type='@16@0:4@8^@12' type64='@32@0:8@16^@24'>
+<arg declared_type='NSString*' index='0' name='groupId' type='@'/>
+<arg declared_type='EMError**' index='1' name='pError' type='^@'/>
+<retval declared_type='EMGroup*' type='@'/>
+</method>
+<method selector='addOccupants:toGroup:welcomeMessage:error:' type='@24@0:4@8@12@16^@20' type64='@48@0:8@16@24@32^@40'>
+<arg declared_type='NSArray*' index='0' name='occupants' type='@'/>
+<arg declared_type='NSString*' index='1' name='groupId' type='@'/>
+<arg declared_type='NSString*' index='2' name='welcomeMessage' type='@'/>
+<arg declared_type='EMError**' index='3' name='pError' type='^@'/>
+<retval declared_type='EMGroup*' type='@'/>
+</method>
+<method selector='asyncAcceptInvitationFromGroup:' type='v12@0:4@8' type64='v24@0:8@16'>
+<arg declared_type='NSString*' index='0' name='groupId' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='asyncAcceptInvitationFromGroup:completion:onQueue:' type='v20@0:4@8@?12@16' type64='v40@0:8@16@?24@32'>
+<arg declared_type='NSString*' index='0' name='groupId' type='@'/>
+<arg declared_type='void (^)(EMGroup *, EMError *)' function_pointer='true' index='1' name='completion' type='@?'>
+<arg declared_type='EMGroup*' type='@'/>
+<arg declared_type='EMError*' type='@'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<arg declared_type='dispatch_queue_t' index='2' name='aQueue' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='asyncAddOccupants:toGroup:welcomeMessage:' type='v20@0:4@8@12@16' type64='v40@0:8@16@24@32'>
+<arg declared_type='NSArray*' index='0' name='occupants' type='@'/>
+<arg declared_type='NSString*' index='1' name='groupId' type='@'/>
+<arg declared_type='NSString*' index='2' name='welcomeMessage' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='asyncAddOccupants:toGroup:welcomeMessage:completion:onQueue:' type='v28@0:4@8@12@16@?20@24' type64='v56@0:8@16@24@32@?40@48'>
+<arg declared_type='NSArray*' index='0' name='occupants' type='@'/>
+<arg declared_type='NSString*' index='1' name='groupId' type='@'/>
+<arg declared_type='NSString*' index='2' name='welcomeMessage' type='@'/>
+<arg declared_type='void (^)(NSArray *, EMGroup *, NSString *, EMError *)' function_pointer='true' index='3' name='completion' type='@?'>
+<arg declared_type='NSArray*' type='@'/>
+<arg declared_type='EMGroup*' type='@'/>
+<arg declared_type='NSString*' type='@'/>
+<arg declared_type='EMError*' type='@'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<arg declared_type='dispatch_queue_t' index='4' name='aQueue' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='asyncBlockOccupants:fromGroup:' type='v16@0:4@8@12' type64='v32@0:8@16@24'>
+<arg declared_type='NSArray*' index='0' name='occupants' type='@'/>
+<arg declared_type='NSString*' index='1' name='groupId' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='asyncBlockOccupants:fromGroup:completion:onQueue:' type='v24@0:4@8@12@?16@20' type64='v48@0:8@16@24@?32@40'>
+<arg declared_type='NSArray*' index='0' name='occupants' type='@'/>
+<arg declared_type='NSString*' index='1' name='groupId' type='@'/>
+<arg declared_type='void (^)(EMGroup *, EMError *)' function_pointer='true' index='2' name='completion' type='@?'>
+<arg declared_type='EMGroup*' type='@'/>
+<arg declared_type='EMError*' type='@'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<arg declared_type='dispatch_queue_t' index='3' name='aQueue' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='asyncChangeAffiliation:forOccupants:inGroup:' type='v20@0:4i8@12@16' type64='v36@0:8i16@20@28'>
+<arg declared_type='EMGroupMemberRole' index='0' name='newAffiliation' type='i'/>
+<arg declared_type='NSArray*' index='1' name='occupants' type='@'/>
+<arg declared_type='NSString*' index='2' name='groupId' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='asyncChangeAffiliation:forOccupants:inGroup:completion:onQueue:' type='v28@0:4i8@12@16@?20@24' type64='v52@0:8i16@20@28@?36@44'>
+<arg declared_type='EMGroupMemberRole' index='0' name='newAffiliation' type='i'/>
+<arg declared_type='NSArray*' index='1' name='occupants' type='@'/>
+<arg declared_type='NSString*' index='2' name='groupId' type='@'/>
+<arg declared_type='void (^)(EMGroup *, EMError *)' function_pointer='true' index='3' name='completion' type='@?'>
+<arg declared_type='EMGroup*' type='@'/>
+<arg declared_type='EMError*' type='@'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<arg declared_type='dispatch_queue_t' index='4' name='aQueue' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='asyncChangeDescription:forGroup:' type='v16@0:4@8@12' type64='v32@0:8@16@24'>
+<arg declared_type='NSString*' index='0' name='newDescription' type='@'/>
+<arg declared_type='NSString*' index='1' name='groupId' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='asyncChangeDescription:forGroup:completion:onQueue:' type='v24@0:4@8@12@?16@20' type64='v48@0:8@16@24@?32@40'>
+<arg declared_type='NSString*' index='0' name='newDescription' type='@'/>
+<arg declared_type='NSString*' index='1' name='groupId' type='@'/>
+<arg declared_type='void (^)(EMGroup *, EMError *)' function_pointer='true' index='2' name='completion' type='@?'>
+<arg declared_type='EMGroup*' type='@'/>
+<arg declared_type='EMError*' type='@'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<arg declared_type='dispatch_queue_t' index='3' name='aQueue' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='asyncChangeGroupSubject:forGroup:' type='v16@0:4@8@12' type64='v32@0:8@16@24'>
+<arg declared_type='NSString*' index='0' name='subject' type='@'/>
+<arg declared_type='NSString*' index='1' name='groupId' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='asyncChangeGroupSubject:forGroup:completion:onQueue:' type='v24@0:4@8@12@?16@20' type64='v48@0:8@16@24@?32@40'>
+<arg declared_type='NSString*' index='0' name='subject' type='@'/>
+<arg declared_type='NSString*' index='1' name='groupId' type='@'/>
+<arg declared_type='void (^)(EMGroup *, EMError *)' function_pointer='true' index='2' name='completion' type='@?'>
+<arg declared_type='EMGroup*' type='@'/>
+<arg declared_type='EMError*' type='@'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<arg declared_type='dispatch_queue_t' index='3' name='aQueue' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='asyncChangePassword:forGroup:' type='v16@0:4@8@12' type64='v32@0:8@16@24'>
+<arg declared_type='NSString*' index='0' name='newPassword' type='@'/>
+<arg declared_type='NSString*' index='1' name='groupId' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='asyncChangePassword:forGroup:completion:onQueue:' type='v24@0:4@8@12@?16@20' type64='v48@0:8@16@24@?32@40'>
+<arg declared_type='NSString*' index='0' name='newPassword' type='@'/>
+<arg declared_type='NSString*' index='1' name='groupId' type='@'/>
+<arg declared_type='void (^)(EMGroup *, EMError *)' function_pointer='true' index='2' name='completion' type='@?'>
+<arg declared_type='EMGroup*' type='@'/>
+<arg declared_type='EMError*' type='@'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<arg declared_type='dispatch_queue_t' index='3' name='aQueue' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='asyncCreatePrivateGroupWithSubject:description:invitees:initialWelcomeMessage:' type='v24@0:4@8@12@16@20' type64='v48@0:8@16@24@32@40'>
+<arg declared_type='NSString*' index='0' name='subject' type='@'/>
+<arg declared_type='NSString*' index='1' name='description' type='@'/>
+<arg declared_type='NSArray*' index='2' name='invitees' type='@'/>
+<arg declared_type='NSString*' index='3' name='welcomeMessage' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='asyncCreatePrivateGroupWithSubject:description:invitees:initialWelcomeMessage:completion:onQueue:' type='v32@0:4@8@12@16@20@?24@28' type64='v64@0:8@16@24@32@40@?48@56'>
+<arg declared_type='NSString*' index='0' name='subject' type='@'/>
+<arg declared_type='NSString*' index='1' name='description' type='@'/>
+<arg declared_type='NSArray*' index='2' name='invitees' type='@'/>
+<arg declared_type='NSString*' index='3' name='welcomeMessage' type='@'/>
+<arg declared_type='void (^)(EMGroup *, EMError *)' function_pointer='true' index='4' name='completion' type='@?'>
+<arg declared_type='EMGroup*' type='@'/>
+<arg declared_type='EMError*' type='@'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<arg declared_type='dispatch_queue_t' index='5' name='aQueue' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='asyncCreatePublicGroupWithSubject:description:invitees:initialWelcomeMessage:' type='v24@0:4@8@12@16@20' type64='v48@0:8@16@24@32@40'>
+<arg declared_type='NSString*' index='0' name='subject' type='@'/>
+<arg declared_type='NSString*' index='1' name='description' type='@'/>
+<arg declared_type='NSArray*' index='2' name='invitees' type='@'/>
+<arg declared_type='NSString*' index='3' name='welcomeMessage' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='asyncCreatePublicGroupWithSubject:description:invitees:initialWelcomeMessage:completion:onQueue:' type='v32@0:4@8@12@16@20@?24@28' type64='v64@0:8@16@24@32@40@?48@56'>
+<arg declared_type='NSString*' index='0' name='subject' type='@'/>
+<arg declared_type='NSString*' index='1' name='description' type='@'/>
+<arg declared_type='NSArray*' index='2' name='invitees' type='@'/>
+<arg declared_type='NSString*' index='3' name='welcomeMessage' type='@'/>
+<arg declared_type='void (^)(EMGroup *, EMError *)' function_pointer='true' index='4' name='completion' type='@?'>
+<arg declared_type='EMGroup*' type='@'/>
+<arg declared_type='EMError*' type='@'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<arg declared_type='dispatch_queue_t' index='5' name='aQueue' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='asyncFetchAllPrivateGroups' type='v8@0:4' type64='v16@0:8'>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='asyncFetchAllPrivateGroupsWithCompletion:onQueue:' type='v16@0:4@?8@12' type64='v32@0:8@?16@24'>
+<arg declared_type='void (^)(NSArray *, EMError *)' function_pointer='true' index='0' name='completion' type='@?'>
+<arg declared_type='NSArray*' type='@'/>
+<arg declared_type='EMError*' type='@'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<arg declared_type='dispatch_queue_t' index='1' name='aQueue' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='asyncFetchAllPublicGroups' type='v8@0:4' type64='v16@0:8'>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='asyncFetchAllPublicGroupsWithCompletion:onQueue:' type='v16@0:4@?8@12' type64='v32@0:8@?16@24'>
+<arg declared_type='void (^)(NSArray *, EMError *)' function_pointer='true' index='0' name='completion' type='@?'>
+<arg declared_type='NSArray*' type='@'/>
+<arg declared_type='EMError*' type='@'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<arg declared_type='dispatch_queue_t' index='1' name='aQueue' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='asyncFetchGroupInfo:' type='v12@0:4@8' type64='v24@0:8@16'>
+<arg declared_type='NSString*' index='0' name='groupId' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='asyncFetchGroupInfo:completion:onQueue:' type='v20@0:4@8@?12@16' type64='v40@0:8@16@?24@32'>
+<arg declared_type='NSString*' index='0' name='groupId' type='@'/>
+<arg declared_type='void (^)(EMGroup *, EMError *)' function_pointer='true' index='1' name='completion' type='@?'>
+<arg declared_type='EMGroup*' type='@'/>
+<arg declared_type='EMError*' type='@'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<arg declared_type='dispatch_queue_t' index='2' name='aQueue' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='asyncJoinPublicGroup:' type='v12@0:4@8' type64='v24@0:8@16'>
+<arg declared_type='NSString*' index='0' name='groupId' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='asyncJoinPublicGroup:completion:onQueue:' type='v20@0:4@8@?12@16' type64='v40@0:8@16@?24@32'>
+<arg declared_type='NSString*' index='0' name='groupId' type='@'/>
+<arg declared_type='void (^)(EMGroup *, EMError *)' function_pointer='true' index='1' name='completion' type='@?'>
+<arg declared_type='EMGroup*' type='@'/>
+<arg declared_type='EMError*' type='@'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<arg declared_type='dispatch_queue_t' index='2' name='aQueue' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='asyncLeaveGroup:' type='v12@0:4@8' type64='v24@0:8@16'>
+<arg declared_type='NSString*' index='0' name='groupId' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='asyncLeaveGroup:completion:onQueue:' type='v20@0:4@8@?12@16' type64='v40@0:8@16@?24@32'>
+<arg declared_type='NSString*' index='0' name='groupId' type='@'/>
+<arg declared_type='void (^)(EMGroup *, EMGroupLeaveReason, EMError *)' function_pointer='true' index='1' name='completion' type='@?'>
+<arg declared_type='EMGroup*' type='@'/>
+<arg declared_type='EMGroupLeaveReason' type='i'/>
+<arg declared_type='EMError*' type='@'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<arg declared_type='dispatch_queue_t' index='2' name='aQueue' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='asyncRemoveOccupants:fromGroup:' type='v16@0:4@8@12' type64='v32@0:8@16@24'>
+<arg declared_type='NSArray*' index='0' name='occupants' type='@'/>
+<arg declared_type='NSString*' index='1' name='groupId' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='asyncRemoveOccupants:fromGroup:completion:onQueue:' type='v24@0:4@8@12@?16@20' type64='v48@0:8@16@24@?32@40'>
+<arg declared_type='NSArray*' index='0' name='occupants' type='@'/>
+<arg declared_type='NSString*' index='1' name='groupId' type='@'/>
+<arg declared_type='void (^)(EMGroup *, EMError *)' function_pointer='true' index='2' name='completion' type='@?'>
+<arg declared_type='EMGroup*' type='@'/>
+<arg declared_type='EMError*' type='@'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<arg declared_type='dispatch_queue_t' index='3' name='aQueue' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='asyncUnblockOccupants:forGroup:' type='v16@0:4@8@12' type64='v32@0:8@16@24'>
+<arg declared_type='NSArray*' index='0' name='occupants' type='@'/>
+<arg declared_type='NSString*' index='1' name='groupId' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='asyncUnblockOccupants:forGroup:completion:onQueue:' type='v24@0:4@8@12@?16@20' type64='v48@0:8@16@24@?32@40'>
+<arg declared_type='NSArray*' index='0' name='occupants' type='@'/>
+<arg declared_type='NSString*' index='1' name='groupId' type='@'/>
+<arg declared_type='void (^)(EMGroup *, EMError *)' function_pointer='true' index='2' name='completion' type='@?'>
+<arg declared_type='EMGroup*' type='@'/>
+<arg declared_type='EMError*' type='@'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<arg declared_type='dispatch_queue_t' index='3' name='aQueue' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='blockOccupants:fromGroup:error:' type='@20@0:4@8@12^@16' type64='@40@0:8@16@24^@32'>
+<arg declared_type='NSArray*' index='0' name='occupants' type='@'/>
+<arg declared_type='NSString*' index='1' name='groupId' type='@'/>
+<arg declared_type='EMError**' index='2' name='pError' type='^@'/>
+<retval declared_type='EMGroup*' type='@'/>
+</method>
+<method selector='changeAffiliation:forOccupants:inGroup:error:' type='@24@0:4i8@12@16^@20' type64='@44@0:8i16@20@28^@36'>
+<arg declared_type='EMGroupMemberRole' index='0' name='newAffiliation' type='i'/>
+<arg declared_type='NSArray*' index='1' name='occupants' type='@'/>
+<arg declared_type='NSString*' index='2' name='groupId' type='@'/>
+<arg declared_type='EMError**' index='3' name='pError' type='^@'/>
+<retval declared_type='EMGroup*' type='@'/>
+</method>
+<method selector='changeDescription:forGroup:error:' type='@20@0:4@8@12^@16' type64='@40@0:8@16@24^@32'>
+<arg declared_type='NSString*' index='0' name='newDescription' type='@'/>
+<arg declared_type='NSString*' index='1' name='groupId' type='@'/>
+<arg declared_type='EMError**' index='2' name='pError' type='^@'/>
+<retval declared_type='EMGroup*' type='@'/>
+</method>
+<method selector='changeGroupSubject:forGroup:error:' type='@20@0:4@8@12^@16' type64='@40@0:8@16@24^@32'>
+<arg declared_type='NSString*' index='0' name='subject' type='@'/>
+<arg declared_type='NSString*' index='1' name='groupId' type='@'/>
+<arg declared_type='EMError**' index='2' name='pError' type='^@'/>
+<retval declared_type='EMGroup*' type='@'/>
+</method>
+<method selector='changePassword:forGroup:error:' type='@20@0:4@8@12^@16' type64='@40@0:8@16@24^@32'>
+<arg declared_type='NSString*' index='0' name='newPassword' type='@'/>
+<arg declared_type='NSString*' index='1' name='groupId' type='@'/>
+<arg declared_type='EMError**' index='2' name='pError' type='^@'/>
+<retval declared_type='EMGroup*' type='@'/>
+</method>
+<method selector='createPrivateGroupWithSubject:description:invitees:initialWelcomeMessage:error:' type='@28@0:4@8@12@16@20^@24' type64='@56@0:8@16@24@32@40^@48'>
+<arg declared_type='NSString*' index='0' name='subject' type='@'/>
+<arg declared_type='NSString*' index='1' name='description' type='@'/>
+<arg declared_type='NSArray*' index='2' name='invitees' type='@'/>
+<arg declared_type='NSString*' index='3' name='welcomeMessage' type='@'/>
+<arg declared_type='EMError**' index='4' name='pError' type='^@'/>
+<retval declared_type='EMGroup*' type='@'/>
+</method>
+<method selector='createPublicGroupWithSubject:description:invitees:initialWelcomeMessage:error:' type='@28@0:4@8@12@16@20^@24' type64='@56@0:8@16@24@32@40^@48'>
+<arg declared_type='NSString*' index='0' name='subject' type='@'/>
+<arg declared_type='NSString*' index='1' name='description' type='@'/>
+<arg declared_type='NSArray*' index='2' name='invitees' type='@'/>
+<arg declared_type='NSString*' index='3' name='welcomeMessage' type='@'/>
+<arg declared_type='EMError**' index='4' name='pError' type='^@'/>
+<retval declared_type='EMGroup*' type='@'/>
+</method>
+<method selector='fetchAllPrivateGroupsWithError:' type='@12@0:4^@8' type64='@24@0:8^@16'>
+<arg declared_type='EMError**' index='0' name='pError' type='^@'/>
+<retval declared_type='NSArray*' type='@'/>
+</method>
+<method selector='fetchAllPublicGroupsWithError:' type='@12@0:4^@8' type64='@24@0:8^@16'>
+<arg declared_type='EMError**' index='0' name='pError' type='^@'/>
+<retval declared_type='NSArray*' type='@'/>
+</method>
+<method selector='fetchGroupInfo:error:' type='@16@0:4@8^@12' type64='@32@0:8@16^@24'>
+<arg declared_type='NSString*' index='0' name='groupId' type='@'/>
+<arg declared_type='EMError**' index='1' name='pError' type='^@'/>
+<retval declared_type='EMGroup*' type='@'/>
+</method>
+<method selector='groupList' type='@8@0:4' type64='@16@0:8'>
+<retval declared_type='NSArray*' type='@'/>
+</method>
+<method selector='joinPublicGroup:error:' type='@16@0:4@8^@12' type64='@32@0:8@16^@24'>
+<arg declared_type='NSString*' index='0' name='groupId' type='@'/>
+<arg declared_type='EMError**' index='1' name='pError' type='^@'/>
+<retval declared_type='EMGroup*' type='@'/>
+</method>
+<method selector='leaveGroup:error:' type='@16@0:4@8^@12' type64='@32@0:8@16^@24'>
+<arg declared_type='NSString*' index='0' name='groupId' type='@'/>
+<arg declared_type='EMError**' index='1' name='pError' type='^@'/>
+<retval declared_type='EMGroup*' type='@'/>
+</method>
+<method selector='rejectInvitationForGroup:toInviter:reason:' type='v20@0:4@8@12@16' type64='v40@0:8@16@24@32'>
+<arg declared_type='NSString*' index='0' name='groupId' type='@'/>
+<arg declared_type='NSString*' index='1' name='username' type='@'/>
+<arg declared_type='NSString*' index='2' name='reason' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='removeOccupants:fromGroup:error:' type='@20@0:4@8@12^@16' type64='@40@0:8@16@24^@32'>
+<arg declared_type='NSArray*' index='0' name='occupants' type='@'/>
+<arg declared_type='NSString*' index='1' name='groupId' type='@'/>
+<arg declared_type='EMError**' index='2' name='pError' type='^@'/>
+<retval declared_type='EMGroup*' type='@'/>
+</method>
+<method selector='setGroupList:' type='v12@0:4@8' type64='v24@0:8@16'>
+<arg declared_type='NSArray*' index='0' name='groupList' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='unblockOccupants:forGroup:error:' type='@20@0:4@8@12^@16' type64='@40@0:8@16@24^@32'>
+<arg declared_type='NSArray*' index='0' name='occupants' type='@'/>
+<arg declared_type='NSString*' index='1' name='groupId' type='@'/>
+<arg declared_type='EMError**' index='2' name='pError' type='^@'/>
+<retval declared_type='EMGroup*' type='@'/>
+</method>
+</informal_protocol>
+<informal_protocol name='IChatManagerLogin'>
+<method selector='asyncLoginWithUsername:password:' type='v16@0:4@8@12' type64='v32@0:8@16@24'>
+<arg declared_type='NSString*' index='0' name='username' type='@'/>
+<arg declared_type='NSString*' index='1' name='password' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='asyncLoginWithUsername:password:completion:onQueue:' type='v24@0:4@8@12@?16@20' type64='v48@0:8@16@24@?32@40'>
+<arg declared_type='NSString*' index='0' name='username' type='@'/>
+<arg declared_type='NSString*' index='1' name='password' type='@'/>
+<arg declared_type='void (^)(NSDictionary *, EMError *)' function_pointer='true' index='2' name='completion' type='@?'>
+<arg declared_type='NSDictionary*' type='@'/>
+<arg declared_type='EMError*' type='@'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<arg declared_type='dispatch_queue_t' index='3' name='aQueue' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='asyncLogoff' type='v8@0:4' type64='v16@0:8'>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='asyncLogoffWithCompletion:onQueue:' type='v16@0:4@?8@12' type64='v32@0:8@?16@24'>
+<arg declared_type='void (^)(NSDictionary *, EMError *)' function_pointer='true' index='0' name='completion' type='@?'>
+<arg declared_type='NSDictionary*' type='@'/>
+<arg declared_type='EMError*' type='@'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<arg declared_type='dispatch_queue_t' index='1' name='aQueue' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='asyncRegisterNewAccount:password:' type='v16@0:4@8@12' type64='v32@0:8@16@24'>
+<arg declared_type='NSString*' index='0' name='username' type='@'/>
+<arg declared_type='NSString*' index='1' name='password' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='asyncRegisterNewAccount:password:withCompletion:onQueue:' type='v24@0:4@8@12@?16@20' type64='v48@0:8@16@24@?32@40'>
+<arg declared_type='NSString*' index='0' name='username' type='@'/>
+<arg declared_type='NSString*' index='1' name='password' type='@'/>
+<arg declared_type='void (^)(NSString *, NSString *, EMError *)' function_pointer='true' index='2' name='completion' type='@?'>
+<arg declared_type='NSString*' type='@'/>
+<arg declared_type='NSString*' type='@'/>
+<arg declared_type='EMError*' type='@'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<arg declared_type='dispatch_queue_t' index='3' name='aQueue' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='isAutoLoginEnabled' type='B8@0:4' type64='B16@0:8'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='isLoggedIn' type='B8@0:4' type64='B16@0:8'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='loginInfo' type='@8@0:4' type64='@16@0:8'>
+<retval declared_type='NSDictionary*' type='@'/>
+</method>
+<method selector='loginWithUsername:password:error:' type='@20@0:4@8@12^@16' type64='@40@0:8@16@24^@32'>
+<arg declared_type='NSString*' index='0' name='username' type='@'/>
+<arg declared_type='NSString*' index='1' name='password' type='@'/>
+<arg declared_type='EMError**' index='2' name='pError' type='^@'/>
+<retval declared_type='NSDictionary*' type='@'/>
+</method>
+<method selector='logoffWithError:' type='@12@0:4^@8' type64='@24@0:8^@16'>
+<arg declared_type='EMError**' index='0' name='pError' type='^@'/>
+<retval declared_type='NSDictionary*' type='@'/>
+</method>
+<method selector='nickname' type='@8@0:4' type64='@16@0:8'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='registerNewAccount:password:error:' type='B20@0:4@8@12^@16' type64='B40@0:8@16@24^@32'>
+<arg declared_type='NSString*' index='0' name='username' type='@'/>
+<arg declared_type='NSString*' index='1' name='password' type='@'/>
+<arg declared_type='EMError**' index='2' name='pError' type='^@'/>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='setIsAutoLoginEnabled:' type='v12@0:4B8' type64='v20@0:8B16'>
+<arg declared_type='BOOL' index='0' name='isAutoLoginEnabled' type='B'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setLoginInfo:' type='v12@0:4@8' type64='v24@0:8@16'>
+<arg declared_type='NSDictionary*' index='0' name='loginInfo' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setNickname:' type='v12@0:4@8' type64='v24@0:8@16'>
+<arg declared_type='NSString*' index='0' name='nickname' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+</informal_protocol>
+<informal_protocol name='IChatManagerMedia'>
+<method selector='asyncCancelRecordingAudio' type='v8@0:4' type64='v16@0:8'>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='asyncCancelRecordingAudioWithCompletion:onQueue:' type='v16@0:4@?8@12' type64='v32@0:8@?16@24'>
+<arg declared_type='void (^)(EMChatVoice *, EMError *)' function_pointer='true' index='0' name='completion' type='@?'>
+<arg declared_type='EMChatVoice*' type='@'/>
+<arg declared_type='EMError*' type='@'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<arg declared_type='dispatch_queue_t' index='1' name='aQueue' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='asyncPlayAudio:' type='v12@0:4@8' type64='v24@0:8@16'>
+<arg declared_type='EMChatVoice*' index='0' name='aChatVoice' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='asyncPlayAudio:completion:onQueue:' type='v20@0:4@8@?12@16' type64='v40@0:8@16@?24@32'>
+<arg declared_type='EMChatVoice*' index='0' name='aChatVoice' type='@'/>
+<arg declared_type='void (^)(EMError *)' function_pointer='true' index='1' name='completion' type='@?'>
+<arg declared_type='EMError*' type='@'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<arg declared_type='dispatch_queue_t' index='2' name='aQueue' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='asyncPlayNewMessageSound' type='v8@0:4' type64='v16@0:8'>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='asyncPlayNewMessageWithCompletion:onQueue:' type='v16@0:4@?8@12' type64='v32@0:8@?16@24'>
+<arg declared_type='void (^)(SystemSoundID)' function_pointer='true' index='0' name='completion' type='@?'>
+<arg declared_type='SystemSoundID' type='L' type64='I'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<arg declared_type='dispatch_queue_t' index='1' name='aQueue' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='asyncPlayVibration' type='v8@0:4' type64='v16@0:8'>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='asyncPlayVibrationWithCompletion:onQueue:' type='v16@0:4@?8@12' type64='v32@0:8@?16@24'>
+<arg declared_type='void (^)(SystemSoundID)' function_pointer='true' index='0' name='completion' type='@?'>
+<arg declared_type='SystemSoundID' type='L' type64='I'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<arg declared_type='dispatch_queue_t' index='1' name='aQueue' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='asyncStopRecordingAudio' type='v8@0:4' type64='v16@0:8'>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='asyncStopRecordingAudioWithCompletion:onQueue:' type='v16@0:4@?8@12' type64='v32@0:8@?16@24'>
+<arg declared_type='void (^)(EMChatVoice *, NSError *)' function_pointer='true' index='0' name='completion' type='@?'>
+<arg declared_type='EMChatVoice*' type='@'/>
+<arg declared_type='NSError*' type='@'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<arg declared_type='dispatch_queue_t' index='1' name='aQueue' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='isPlayingAudio' type='B8@0:4' type64='B16@0:8'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='isPlayingAudioChat:' type='B12@0:4@8' type64='B24@0:8@16'>
+<arg declared_type='EMChatVoice*' index='0' name='aChatVoice' type='@'/>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='peekRecorderVoiceMeter' type='d8@0:4' type64='d16@0:8'>
+<retval declared_type='double' type='d'/>
+</method>
+<method selector='playNewMessageSound' type='v8@0:4' type64='v16@0:8'>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='playVibration' type='v8@0:4' type64='v16@0:8'>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='startRecordingAudioWithError:' type='v12@0:4^@8' type64='v24@0:8^@16'>
+<arg declared_type='NSError**' index='0' name='pError' type='^@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='stopPlayingAudio' type='B8@0:4' type64='B16@0:8'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+</informal_protocol>
+<informal_protocol name='IChatManagerUtil'>
+<method selector='asyncFetchMessage:progress:' type='v16@0:4@8@12' type64='v32@0:8@16@24'>
+<arg declared_type='EMMessage*' index='0' name='aMessage' type='@'/>
+<arg declared_type='id' index='1' name='progress' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='asyncFetchMessage:progress:completion:onQueue:' type='v24@0:4@8@12@?16@20' type64='v48@0:8@16@24@?32@40'>
+<arg declared_type='EMMessage*' index='0' name='aMessage' type='@'/>
+<arg declared_type='id' index='1' name='progress' type='@'/>
+<arg declared_type='void (^)(EMMessage *, EMError *)' function_pointer='true' index='2' name='completion' type='@?'>
+<arg declared_type='EMMessage*' type='@'/>
+<arg declared_type='EMError*' type='@'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<arg declared_type='dispatch_queue_t' index='3' name='aQueue' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='asyncFetchMessageThumbnail:progress:' type='v16@0:4@8@12' type64='v32@0:8@16@24'>
+<arg declared_type='EMMessage*' index='0' name='aMessage' type='@'/>
+<arg declared_type='id' index='1' name='progress' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='asyncFetchMessageThumbnail:progress:completion:onQueue:' type='v24@0:4@8@12@?16@20' type64='v48@0:8@16@24@?32@40'>
+<arg declared_type='EMMessage*' index='0' name='aMessage' type='@'/>
+<arg declared_type='id' index='1' name='progress' type='@'/>
+<arg declared_type='void (^)(EMMessage *, EMError *)' function_pointer='true' index='2' name='completion' type='@?'>
+<arg declared_type='EMMessage*' type='@'/>
+<arg declared_type='EMError*' type='@'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<arg declared_type='dispatch_queue_t' index='3' name='aQueue' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='fetchMessage:progress:error:' type='@20@0:4@8@12^@16' type64='@40@0:8@16@24^@32'>
+<arg declared_type='EMMessage*' index='0' name='aMessage' type='@'/>
+<arg declared_type='id' index='1' name='progress' type='@'/>
+<arg declared_type='EMError**' index='2' name='pError' type='^@'/>
+<retval declared_type='EMMessage*' type='@'/>
+</method>
+<method selector='fetchMessageThumbnail:progress:error:' type='@20@0:4@8@12^@16' type64='@40@0:8@16@24^@32'>
+<arg declared_type='EMMessage*' index='0' name='aMessage' type='@'/>
+<arg declared_type='id' index='1' name='progress' type='@'/>
+<arg declared_type='EMError**' index='2' name='pError' type='^@'/>
+<retval declared_type='EMMessage*' type='@'/>
+</method>
+</informal_protocol>
+<informal_protocol name='IDeviceManagerBase'>
+<method selector='addDelegate:onQueue:' type='v16@0:4@8@12' type64='v32@0:8@16@24'>
+<arg declared_type='id' index='0' name='delegate' type='@'/>
+<arg declared_type='dispatch_queue_t' index='1' name='aQueue' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='removeDelegate:' type='v12@0:4@8' type64='v24@0:8@16'>
+<arg declared_type='id' index='0' name='delegate' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+</informal_protocol>
+<informal_protocol name='IDeviceManagerCamera'>
+<method selector='checkCameraAvailability' type='B8@0:4' type64='B16@0:8'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+</informal_protocol>
+<informal_protocol name='IDeviceManagerDevice'>
+<method selector='compactUniqueId' type='@8@0:4' type64='@16@0:8'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='deviceVersion' type='f8@0:4' type64='f16@0:8'>
+<retval declared_type='float' type='f'/>
+</method>
+<method selector='uniqueId' type='@8@0:4' type64='@16@0:8'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+</informal_protocol>
+<informal_protocol name='IDeviceManagerLocation'>
+<method selector='asyncDecodeAddressFromLatitude:andLongitude:' type='v24@0:4d8d16' type64='v32@0:8d16d24'>
+<arg declared_type='double' index='0' name='latitude' type='d'/>
+<arg declared_type='double' index='1' name='longitude' type='d'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='asyncDecodeAddressFromLatitude:andLongitude:completion:onQueue:' type='v32@0:4d8d16@?24@28' type64='v48@0:8d16d24@?32@40'>
+<arg declared_type='double' index='0' name='latitude' type='d'/>
+<arg declared_type='double' index='1' name='longitude' type='d'/>
+<arg declared_type='void (^)(NSString *, EMError *)' function_pointer='true' index='2' name='completion' type='@?'>
+<arg declared_type='NSString*' type='@'/>
+<arg declared_type='EMError*' type='@'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<arg declared_type='dispatch_queue_t' index='3' name='queue' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method class_method='true' selector='bd09ToGcj02:' type='{?=dd}24@0:4{?=dd}8' type64='{?=dd}32@0:8{?=dd}16'>
+<arg declared_type='CLLocationCoordinate2D' index='0' name='location' type='{_CLLocationCoordinate2D=dd}'/>
+<retval declared_type='CLLocationCoordinate2D' type='{_CLLocationCoordinate2D=dd}'/>
+</method>
+<method class_method='true' selector='bd09ToWgs84:' type='{?=dd}24@0:4{?=dd}8' type64='{?=dd}32@0:8{?=dd}16'>
+<arg declared_type='CLLocationCoordinate2D' index='0' name='location' type='{_CLLocationCoordinate2D=dd}'/>
+<retval declared_type='CLLocationCoordinate2D' type='{_CLLocationCoordinate2D=dd}'/>
+</method>
+<method selector='decodeAddressFromLatitude:andLongitude:error:' type='@28@0:4d8d16^@24' type64='@40@0:8d16d24^@32'>
+<arg declared_type='double' index='0' name='latitude' type='d'/>
+<arg declared_type='double' index='1' name='longitude' type='d'/>
+<arg declared_type='EMError**' index='2' name='pError' type='^@'/>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method class_method='true' selector='gcj02ToBd09:' type='{?=dd}24@0:4{?=dd}8' type64='{?=dd}32@0:8{?=dd}16'>
+<arg declared_type='CLLocationCoordinate2D' index='0' name='location' type='{_CLLocationCoordinate2D=dd}'/>
+<retval declared_type='CLLocationCoordinate2D' type='{_CLLocationCoordinate2D=dd}'/>
+</method>
+<method class_method='true' selector='gcj02ToWgs84:' type='{?=dd}24@0:4{?=dd}8' type64='{?=dd}32@0:8{?=dd}16'>
+<arg declared_type='CLLocationCoordinate2D' index='0' name='location' type='{_CLLocationCoordinate2D=dd}'/>
+<retval declared_type='CLLocationCoordinate2D' type='{_CLLocationCoordinate2D=dd}'/>
+</method>
+<method selector='isLocationServicesEnabled' type='B8@0:4' type64='B16@0:8'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='lastLocation' type='@8@0:4' type64='@16@0:8'>
+<retval declared_type='CLLocation*' type='@'/>
+</method>
+<method selector='refreshLocation' type='v8@0:4' type64='v16@0:8'>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='startUpdatingLocation' type='v8@0:4' type64='v16@0:8'>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='stopUpdatingLocation' type='v8@0:4' type64='v16@0:8'>
+<retval declared_type='void' type='v'/>
+</method>
+<method class_method='true' selector='wgs84ToBd09:' type='{?=dd}24@0:4{?=dd}8' type64='{?=dd}32@0:8{?=dd}16'>
+<arg declared_type='CLLocationCoordinate2D' index='0' name='location' type='{_CLLocationCoordinate2D=dd}'/>
+<retval declared_type='CLLocationCoordinate2D' type='{_CLLocationCoordinate2D=dd}'/>
+</method>
+<method class_method='true' selector='wgs84ToGcj02:' type='{?=dd}24@0:4{?=dd}8' type64='{?=dd}32@0:8{?=dd}16'>
+<arg declared_type='CLLocationCoordinate2D' index='0' name='location' type='{_CLLocationCoordinate2D=dd}'/>
+<retval declared_type='CLLocationCoordinate2D' type='{_CLLocationCoordinate2D=dd}'/>
+</method>
+</informal_protocol>
+<informal_protocol name='IDeviceManagerMedia'>
+<method selector='asynBlockCancelRecordingWithCompletion:onQueue:' type='v16@0:4@?8@12' type64='v32@0:8@?16@24'>
+<arg declared_type='void (^)(NSString *, NSError *)' function_pointer='true' index='0' name='completion' type='@?'>
+<arg declared_type='NSString*' type='@'/>
+<arg declared_type='NSError*' type='@'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<arg declared_type='dispatch_queue_t' index='1' name='aQueue' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='asynBlockPlayingAudioWithPath:completion:onQueue:' type='v20@0:4@8@?12@16' type64='v40@0:8@16@?24@32'>
+<arg declared_type='NSString*' index='0' name='aFilePath' type='@'/>
+<arg declared_type='void (^)(NSError *)' function_pointer='true' index='1' name='completion' type='@?'>
+<arg declared_type='NSError*' type='@'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<arg declared_type='dispatch_queue_t' index='2' name='aQueue' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='asynBlockStopRecordingWithCompletion:onQueue:' type='v16@0:4@?8@12' type64='v32@0:8@?16@24'>
+<arg declared_type='void (^)(NSString *, NSInteger, NSError *)' function_pointer='true' index='0' name='completion' type='@?'>
+<arg declared_type='NSString*' type='@'/>
+<arg declared_type='NSInteger' type='i' type64='q'/>
+<arg declared_type='NSError*' type='@'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<arg declared_type='dispatch_queue_t' index='1' name='aQueue' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='asynDelegateCancelRecording' type='v8@0:4' type64='v16@0:8'>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='asynDelegatePlayingAudioWithPath:' type='v12@0:4@8' type64='v24@0:8@16'>
+<arg declared_type='NSString*' index='0' name='aFilePath' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='asynDelegateStopRecording' type='v8@0:4' type64='v16@0:8'>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='asyncBlockPlayNewMessageWithCompletion:onQueue:' type='v16@0:4@?8@12' type64='v32@0:8@?16@24'>
+<arg declared_type='void (^)(SystemSoundID)' function_pointer='true' index='0' name='completion' type='@?'>
+<arg declared_type='SystemSoundID' type='L' type64='I'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<arg declared_type='dispatch_queue_t' index='1' name='aQueue' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='asyncBlockPlayVibrationWithCompletion:onQueue:' type='v16@0:4@?8@12' type64='v32@0:8@?16@24'>
+<arg declared_type='void (^)(SystemSoundID)' function_pointer='true' index='0' name='completion' type='@?'>
+<arg declared_type='SystemSoundID' type='L' type64='I'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<arg declared_type='dispatch_queue_t' index='1' name='aQueue' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='asyncPlayNewMessageSound' type='v8@0:4' type64='v16@0:8'>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='asyncPlayVibration' type='v8@0:4' type64='v16@0:8'>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='checkMicrophoneAvailability' type='B8@0:4' type64='B16@0:8'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='chooseAudioPlaybackMode:' type='B12@0:4i8' type64='B20@0:8i16'>
+<arg declared_type='EMAudioPlaybackMode' index='0' name='mode' type='i'/>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='isPlaying' type='B8@0:4' type64='B16@0:8'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='isPlayingAudioPath:' type='B12@0:4@8' type64='B24@0:8@16'>
+<arg declared_type='NSString*' index='0' name='aFilePath' type='@'/>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='peekRecorderVoiceMeter' type='d8@0:4' type64='d16@0:8'>
+<retval declared_type='double' type='d'/>
+</method>
+<method selector='playNewMessageSound' type='v8@0:4' type64='v16@0:8'>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='playVibration' type='v8@0:4' type64='v16@0:8'>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='startRecordingWithPreparePath:' type='@12@0:4@8' type64='@24@0:8@16'>
+<arg declared_type='NSString*' index='0' name='aFilePath' type='@'/>
+<retval declared_type='NSError*' type='@'/>
+</method>
+<method selector='stopAudioPlaying' type='B8@0:4' type64='B16@0:8'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='switchAudioOutputDevice:' type='B12@0:4i8' type64='B20@0:8i16'>
+<arg declared_type='EMAudioOutputDevice' index='0' name='outputDevice' type='i'/>
+<retval declared_type='BOOL' type='B'/>
+</method>
+</informal_protocol>
+<informal_protocol name='IDeviceManagerProximitySensor'>
+<method selector='disableProximitySensor' type='B8@0:4' type64='B16@0:8'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='enableProximitySensor' type='B8@0:4' type64='B16@0:8'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='isCloseToUser' type='B8@0:4' type64='B16@0:8'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='isProximitySensorEnabled' type='B8@0:4' type64='B16@0:8'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='isSupportProximitySensor' type='B8@0:4' type64='B16@0:8'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+</informal_protocol>
+<informal_protocol name='IEMChatCryptor'>
+<method selector='decryptData:args:' type='@16@0:4@8@12' type64='@32@0:8@16@24'>
+<arg declared_type='NSData*' index='0' name='data' type='@'/>
+<arg declared_type='id' index='1' name='aArgs' type='@'/>
+<retval declared_type='NSData*' type='@'/>
+</method>
+<method selector='encryptData:args:' type='@16@0:4@8@12' type64='@32@0:8@16@24'>
+<arg declared_type='NSData*' index='0' name='data' type='@'/>
+<arg declared_type='id' index='1' name='aArgs' type='@'/>
+<retval declared_type='NSData*' type='@'/>
+</method>
+</informal_protocol>
+<informal_protocol name='IEMChatFile'>
+<method selector='displayName' type='@8@0:4' type64='@16@0:8'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='fileLength' type='q8@0:4' type64='q16@0:8'>
+<retval declared_type='long long' type='q'/>
+</method>
+<method selector='initWithData:displayName:' type='@16@0:4@8@12' type64='@32@0:8@16@24'>
+<arg declared_type='NSData*' index='0' name='aData' type='@'/>
+<arg declared_type='NSString*' index='1' name='aDisplayName' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='initWithFile:displayName:' type='@16@0:4@8@12' type64='@32@0:8@16@24'>
+<arg declared_type='NSString*' index='0' name='filePath' type='@'/>
+<arg declared_type='NSString*' index='1' name='aDisplayName' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='localPath' type='@8@0:4' type64='@16@0:8'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='setDisplayName:' type='v12@0:4@8' type64='v24@0:8@16'>
+<arg declared_type='NSString*' index='0' name='displayName' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setFileLength:' type='v16@0:4q8' type64='v24@0:8q16'>
+<arg declared_type='long long' index='0' name='fileLength' type='q'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setLocalPath:' type='v12@0:4@8' type64='v24@0:8@16'>
+<arg declared_type='NSString*' index='0' name='localPath' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+</informal_protocol>
+<informal_protocol name='IEMChatObject'>
+<method selector='messageBody' type='@8@0:4' type64='@16@0:8'>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='setMessageBody:' type='v12@0:4@8' type64='v24@0:8@16'>
+<arg declared_type='id' index='0' name='messageBody' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+</informal_protocol>
+<informal_protocol name='IEMChatProgressDelegate'>
+<method selector='setProgress:' type='v12@0:4f8' type64='v20@0:8f16'>
+<arg declared_type='float' index='0' name='progress' type='f'/>
+<retval declared_type='void' type='v'/>
+</method>
+</informal_protocol>
+<informal_protocol name='IEMFileMessageBody'>
+<method selector='attachmentDownloadStatus' type='i8@0:4' type64='i16@0:8'>
+<retval declared_type='int' type='i'/>
+</method>
+<method selector='displayName' type='@8@0:4' type64='@16@0:8'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='fileLength' type='q8@0:4' type64='q16@0:8'>
+<retval declared_type='long long' type='q'/>
+</method>
+<method selector='localPath' type='@8@0:4' type64='@16@0:8'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='remotePath' type='@8@0:4' type64='@16@0:8'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='secretKey' type='@8@0:4' type64='@16@0:8'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='setAttachmentDownloadStatus:' type='v12@0:4i8' type64='v20@0:8i16'>
+<arg declared_type='int' index='0' name='attachmentDownloadStatus' type='i'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setDisplayName:' type='v12@0:4@8' type64='v24@0:8@16'>
+<arg declared_type='NSString*' index='0' name='displayName' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setFileLength:' type='v16@0:4q8' type64='v24@0:8q16'>
+<arg declared_type='long long' index='0' name='fileLength' type='q'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setLocalPath:' type='v12@0:4@8' type64='v24@0:8@16'>
+<arg declared_type='NSString*' index='0' name='localPath' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setRemotePath:' type='v12@0:4@8' type64='v24@0:8@16'>
+<arg declared_type='NSString*' index='0' name='remotePath' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setSecretKey:' type='v12@0:4@8' type64='v24@0:8@16'>
+<arg declared_type='NSString*' index='0' name='secretKey' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+</informal_protocol>
+<informal_protocol name='IEMMessageBody'>
+<method selector='chatObject' type='@8@0:4' type64='@16@0:8'>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='initWithChatObject:' type='@12@0:4@8' type64='@24@0:8@16'>
+<arg declared_type='id' index='0' name='aChatObject' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='message' type='@8@0:4' type64='@16@0:8'>
+<retval declared_type='EMMessage*' type='@'/>
+</method>
+<method selector='messageBodyType' type='i8@0:4' type64='i16@0:8'>
+<retval declared_type='MessageBodyType' type='i'/>
+</method>
+<method selector='setChatObject:' type='v12@0:4@8' type64='v24@0:8@16'>
+<arg declared_type='id' index='0' name='chatObject' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setMessage:' type='v12@0:4@8' type64='v24@0:8@16'>
+<arg declared_type='EMMessage*' index='0' name='message' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+</informal_protocol>
+</signatures>

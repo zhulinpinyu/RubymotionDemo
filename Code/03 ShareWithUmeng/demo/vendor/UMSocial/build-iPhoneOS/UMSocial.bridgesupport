@@ -1,0 +1,1862 @@
+<?xml version='1.0'?>
+<signatures version='1.0'>
+<constant const='true' declared_type='NSString*' name='UMSCustomAccountGenderFeMale' type='@'/>
+<constant const='true' declared_type='NSString*' name='UMSCustomAccountGenderMale' type='@'/>
+<constant const='true' declared_type='NSString*' name='UMShareToDouban' type='@'/>
+<constant const='true' declared_type='NSString*' name='UMShareToEmail' type='@'/>
+<constant const='true' declared_type='NSString*' name='UMShareToFacebook' type='@'/>
+<constant const='true' declared_type='NSString*' name='UMShareToInstagram' type='@'/>
+<constant const='true' declared_type='NSString*' name='UMShareToLWSession' type='@'/>
+<constant const='true' declared_type='NSString*' name='UMShareToLWTimeline' type='@'/>
+<constant const='true' declared_type='NSString*' name='UMShareToQQ' type='@'/>
+<constant const='true' declared_type='NSString*' name='UMShareToQzone' type='@'/>
+<constant const='true' declared_type='NSString*' name='UMShareToRenren' type='@'/>
+<constant const='true' declared_type='NSString*' name='UMShareToSina' type='@'/>
+<constant const='true' declared_type='NSString*' name='UMShareToSms' type='@'/>
+<constant const='true' declared_type='NSString*' name='UMShareToTencent' type='@'/>
+<constant const='true' declared_type='NSString*' name='UMShareToTwitter' type='@'/>
+<constant const='true' declared_type='NSString*' name='UMShareToWechatFavorite' type='@'/>
+<constant const='true' declared_type='NSString*' name='UMShareToWechatSession' type='@'/>
+<constant const='true' declared_type='NSString*' name='UMShareToWechatTimeline' type='@'/>
+<constant const='true' declared_type='NSString*' name='UMShareToYXSession' type='@'/>
+<constant const='true' declared_type='NSString*' name='UMShareToYXTimeline' type='@'/>
+<constant const='true' declared_type='NSString*' name='UMSocialAccount' type='@'/>
+<constant const='true' declared_type='NSString*' name='UMSocialComment' type='@'/>
+<constant const='true' declared_type='NSString*' name='UMSocialLike' type='@'/>
+<constant const='true' declared_type='NSString*' name='UMSocialShare' type='@'/>
+<enum name='UMSNumberComment' value='2'/>
+<enum name='UMSNumberLike' value='0'/>
+<enum name='UMSNumberShare' value='1'/>
+<enum name='UMSResponseAddComment' value='0'/>
+<enum name='UMSResponseAddCustomAccount' value='14'/>
+<enum name='UMSResponseAddFollow' value='13'/>
+<enum name='UMSResponseAddLike' value='1'/>
+<enum name='UMSResponseAddSnsAccount' value='15'/>
+<enum name='UMSResponseAnalytics' value='17'/>
+<enum name='UMSResponseBinding' value='6'/>
+<enum name='UMSResponseCodeAccessTokenExpired' value='5027'/>
+<enum name='UMSResponseCodeBaned' value='505'/>
+<enum name='UMSResponseCodeCancel' value='5052'/>
+<enum name='UMSResponseCodeEmptyContent' value='5007'/>
+<enum name='UMSResponseCodeFaild' value='510'/>
+<enum name='UMSResponseCodeGetNoUidFromOauth' value='5020'/>
+<enum name='UMSResponseCodeGetProfileFailed' value='5051'/>
+<enum name='UMSResponseCodeNetworkError' value='5050'/>
+<enum name='UMSResponseCodeNoApiAuthority' value='100031'/>
+<enum name='UMSResponseCodeShareRepeated' value='5016'/>
+<enum name='UMSResponseCodeSuccess' value='200'/>
+<enum name='UMSResponseGetAccount' value='10'/>
+<enum name='UMSResponseGetAppInfo' value='16'/>
+<enum name='UMSResponseGetCommentList' value='2'/>
+<enum name='UMSResponseGetFriends' value='12'/>
+<enum name='UMSResponseGetSnsInfo' value='11'/>
+<enum name='UMSResponseGetSocialData' value='3'/>
+<enum name='UMSResponseOauth' value='9'/>
+<enum name='UMSResponseShareToMutilSNS' value='5'/>
+<enum name='UMSResponseShareToSNS' value='4'/>
+<enum name='UMSResponseUnBinding' value='7'/>
+<enum name='UMSResponseUnOauth' value='8'/>
+<enum name='UMSViewControllerAccount' value='4'/>
+<enum name='UMSViewControllerActionSheet' value='10'/>
+<enum name='UMSViewControllerCommentEdit' value='1'/>
+<enum name='UMSViewControllerCommentList' value='0'/>
+<enum name='UMSViewControllerFriendList' value='9'/>
+<enum name='UMSViewControllerLogin' value='8'/>
+<enum name='UMSViewControllerLoginAccount' value='6'/>
+<enum name='UMSViewControllerOauth' value='7'/>
+<enum name='UMSViewControllerShareEdit' value='3'/>
+<enum name='UMSViewControllerShareList' value='2'/>
+<enum name='UMSViewControllerSnsAccount' value='5'/>
+<enum name='UMSocialQQMessageTypeDefault' value='0'/>
+<enum name='UMSocialQQMessageTypeImage' value='1'/>
+<enum name='UMSocialSnsTypeDouban' value='14'/>
+<enum name='UMSocialSnsTypeEmail' value='15'/>
+<enum name='UMSocialSnsTypeFacebook' value='20'/>
+<enum name='UMSocialSnsTypeInstagram' value='26'/>
+<enum name='UMSocialSnsTypeLaiWangSession' value='24'/>
+<enum name='UMSocialSnsTypeLaiWangTimeline' value='25'/>
+<enum name='UMSocialSnsTypeMobileQQ' value='19'/>
+<enum name='UMSocialSnsTypeNew' value='27'/>
+<enum name='UMSocialSnsTypeNone' value='0'/>
+<enum name='UMSocialSnsTypeQzone' value='10'/>
+<enum name='UMSocialSnsTypeRenr' value='13'/>
+<enum name='UMSocialSnsTypeSina' value='11'/>
+<enum name='UMSocialSnsTypeSms' value='16'/>
+<enum name='UMSocialSnsTypeTenc' value='12'/>
+<enum name='UMSocialSnsTypeTwitter' value='21'/>
+<enum name='UMSocialSnsTypeWechatSession' value='17'/>
+<enum name='UMSocialSnsTypeWechatTimeline' value='18'/>
+<enum name='UMSocialSnsTypeYiXinSession' value='22'/>
+<enum name='UMSocialSnsTypeYiXinTimeline' value='23'/>
+<enum name='UMSocialThemeBlack' value='0'/>
+<enum name='UMSocialThemeWhite' value='1'/>
+<enum name='UMSocialUrlResourceTypeDefault' value='0'/>
+<enum name='UMSocialUrlResourceTypeImage' value='1'/>
+<enum name='UMSocialUrlResourceTypeMusic' value='3'/>
+<enum name='UMSocialUrlResourceTypeVideo' value='2'/>
+<enum name='UMSocialWXMessageTypeApp' value='3'/>
+<enum name='UMSocialWXMessageTypeImage' value='2'/>
+<enum name='UMSocialWXMessageTypeMusic' value='5'/>
+<enum name='UMSocialWXMessageTypeNone' value='0'/>
+<enum name='UMSocialWXMessageTypeOther' value='7'/>
+<enum name='UMSocialWXMessageTypeText' value='1'/>
+<enum name='UMSocialWXMessageTypeVideo' value='6'/>
+<enum name='UMSocialWXMessageTypeWeb' value='4'/>
+<enum name='UMSocialYXMessageTypeApp' value='3'/>
+<enum name='UMSocialYXMessageTypeImage' value='2'/>
+<enum name='UMSocialYXMessageTypeMusic' value='5'/>
+<enum name='UMSocialYXMessageTypeNone' value='0'/>
+<enum name='UMSocialYXMessageTypeText' value='1'/>
+<enum name='UMSocialYXMessageTypeVideo' value='6'/>
+<enum name='UMSocialYXMessageTypeWeb' value='4'/>
+<enum name='UMSocialiToastPositionBottom' value='1000002'/>
+<enum name='UMSocialiToastPositionCenter' value='1000003'/>
+<enum name='UMSocialiToastPositionTop' value='1000001'/>
+<enum name='WXErrCodeAuthDeny' value='-4'/>
+<enum name='WXErrCodeCommon' value='-1'/>
+<enum name='WXErrCodeSentFail' value='-3'/>
+<enum name='WXErrCodeUnsupport' value='-5'/>
+<enum name='WXErrCodeUserCancel' value='-2'/>
+<enum name='WXSceneFavorite' value='2'/>
+<enum name='WXSceneSession' value='0'/>
+<enum name='WXSceneTimeline' value='1'/>
+<enum name='WXSuccess' value='0'/>
+<enum name='kTagSocialIconActionSheet' value='1013'/>
+<enum name='kTagSocialShakeView' value='1014'/>
+<class name='BaseReq'>
+<method selector='setType:'>
+<arg declared_type='int' index='0' name='type' type='i'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='type'>
+<retval declared_type='int' type='i'/>
+</method>
+</class>
+<class name='BaseResp'>
+<method selector='errCode'>
+<retval declared_type='int' type='i'/>
+</method>
+<method selector='errStr'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='setErrCode:'>
+<arg declared_type='int' index='0' name='errCode' type='i'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setErrStr:'>
+<arg declared_type='NSString*' index='0' name='errStr' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setType:'>
+<arg declared_type='int' index='0' name='type' type='i'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='type'>
+<retval declared_type='int' type='i'/>
+</method>
+</class>
+<class name='GetMessageFromWXResp'>
+<method selector='bText'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='message'>
+<retval declared_type='WXMediaMessage*' type='@'/>
+</method>
+<method selector='setBText:'>
+<arg declared_type='BOOL' index='0' name='bText' type='B'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setMessage:'>
+<arg declared_type='WXMediaMessage*' index='0' name='message' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setText:'>
+<arg declared_type='NSString*' index='0' name='text' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='text'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+</class>
+<class name='NSObject'>
+<method selector='closeOauthWebViewController:socialControllerService:'>
+<arg declared_type='UINavigationController*' index='0' name='navigationCtroller' type='@'/>
+<arg declared_type='UMSocialControllerService*' index='1' name='socialControllerService' type='@'/>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='didCloseUIViewController:'>
+<arg declared_type='UMSViewControllerType' index='0' name='fromViewControllerType' type='i'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='didFinishGetUMSocialDataInViewController:'>
+<arg declared_type='UMSocialResponseEntity*' index='0' name='response' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='didFinishGetUMSocialDataResponse:'>
+<arg declared_type='UMSocialResponseEntity*' index='0' name='response' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='didSelectSocialPlatform:withSocialData:'>
+<arg declared_type='NSString*' index='0' name='platformName' type='@'/>
+<arg declared_type='UMSocialData*' index='1' name='socialData' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='isDirectShareInIconActionSheet'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='onReq:'>
+<arg declared_type='BaseReq*' index='0' name='req' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='onResp:'>
+<arg declared_type='BaseResp*' index='0' name='resp' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+</class>
+<class name='SendMessageToWXReq'>
+<method selector='bText'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='message'>
+<retval declared_type='WXMediaMessage*' type='@'/>
+</method>
+<method selector='scene'>
+<retval declared_type='int' type='i'/>
+</method>
+<method selector='setBText:'>
+<arg declared_type='BOOL' index='0' name='bText' type='B'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setMessage:'>
+<arg declared_type='WXMediaMessage*' index='0' name='message' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setScene:'>
+<arg declared_type='int' index='0' name='scene' type='i'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setText:'>
+<arg declared_type='NSString*' index='0' name='text' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='text'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+</class>
+<class name='ShowMessageFromWXReq'>
+<method selector='message'>
+<retval declared_type='WXMediaMessage*' type='@'/>
+</method>
+<method selector='setMessage:'>
+<arg declared_type='WXMediaMessage*' index='0' name='message' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+</class>
+<class name='UMSocialAccountEntity'>
+<method selector='accessToken'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='description'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='expirationDate'>
+<retval declared_type='NSDate*' type='@'/>
+</method>
+<method selector='iconURL'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='initWithPlatformName:'>
+<arg declared_type='NSString*' index='0' name='platformName' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='isFirstOauth'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='openId'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='platformName'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='profileURL'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='setAccessToken:'>
+<arg declared_type='NSString*' index='0' name='accessToken' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setExpirationDate:'>
+<arg declared_type='NSDate*' index='0' name='expirationDate' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setIconURL:'>
+<arg declared_type='NSString*' index='0' name='iconURL' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setIsFirstOauth:'>
+<arg declared_type='BOOL' index='0' name='isFirstOauth' type='B'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setOpenId:'>
+<arg declared_type='NSString*' index='0' name='openId' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setPlatformName:'>
+<arg declared_type='NSString*' index='0' name='platformName' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setProfileURL:'>
+<arg declared_type='NSString*' index='0' name='profileURL' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setUserName:'>
+<arg declared_type='NSString*' index='0' name='userName' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setUsid:'>
+<arg declared_type='NSString*' index='0' name='usid' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='userName'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='usid'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+</class>
+<class name='UMSocialAccountManager'>
+<method class_method='true' selector='isLogin'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method class_method='true' selector='isLoginWithAnonymous'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method class_method='true' selector='isLoginWithSnsAccount'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method class_method='true' selector='isOauthWithPlatform:'>
+<arg declared_type='NSString*' index='0' name='platformType' type='@'/>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method class_method='true' selector='postCustomAccount:completion:'>
+<arg declared_type='UMSocialCustomAccount*' index='0' name='customAccount' type='@'/>
+<arg declared_type='UMSocialDataServiceCompletion' function_pointer='true' index='1' name='completion' type='@?'>
+<arg declared_type='UMSocialResponseEntity*' type='@'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<retval declared_type='void' type='v'/>
+</method>
+<method class_method='true' selector='postSnsAccount:completion:'>
+<arg declared_type='UMSocialAccountEntity*' index='0' name='snsAccount' type='@'/>
+<arg declared_type='UMSocialDataServiceCompletion' function_pointer='true' index='1' name='completion' type='@?'>
+<arg declared_type='UMSocialResponseEntity*' type='@'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<retval declared_type='void' type='v'/>
+</method>
+<method class_method='true' selector='setIsLoginWithAnonymous:'>
+<arg declared_type='BOOL' index='0' name='anonymous' type='B'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method class_method='true' selector='setSnsAccount:'>
+<arg declared_type='UMSocialAccountEntity*' index='0' name='snsAccount' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method class_method='true' selector='socialAccountDictionary'>
+<retval declared_type='NSDictionary*' type='@'/>
+</method>
+</class>
+<class name='UMSocialBar'>
+<method selector='barButtons'>
+<retval declared_type='NSMutableArray*' type='@'/>
+</method>
+<method selector='initWithUMSocialData:withViewController:'>
+<arg declared_type='UMSocialData*' index='0' name='socialData' type='@'/>
+<arg declared_type='UIViewController*' index='1' name='viewController' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='requestUpdateButtonNumber'>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setBarButtons:'>
+<arg declared_type='NSMutableArray*' index='0' name='barButtons' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setSocialData:'>
+<arg declared_type='UMSocialData*' index='0' name='socialData' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setSocialUIDelegate:'>
+<arg declared_type='id' index='0' name='socialUIDelegate' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='socialData'>
+<retval declared_type='UMSocialData*' type='@'/>
+</method>
+<method selector='socialUIDelegate'>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='updateButtonNumber'>
+<retval declared_type='void' type='v'/>
+</method>
+</class>
+<class name='UMSocialButton'>
+<method selector='buttonName'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='clickHandler'>
+<retval declared_type='ClickHandler' function_pointer='true' type='@?'>
+<retval declared_type='void' type='v'/>
+</retval>
+</method>
+<method selector='initWithButtonName:controllerService:controller:'>
+<arg declared_type='NSString*' index='0' name='buttonName' type='@'/>
+<arg declared_type='UMSocialControllerServiceComment*' index='1' name='controllerService' type='@'/>
+<arg declared_type='UIViewController*' index='2' name='controller' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='initWithButtonName:socialData:controller:'>
+<arg declared_type='NSString*' index='0' name='buttonName' type='@'/>
+<arg declared_type='UMSocialData*' index='1' name='socialData' type='@'/>
+<arg declared_type='UIViewController*' index='2' name='controller' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='setButtonName:'>
+<arg declared_type='NSString*' index='0' name='buttonName' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setClickHandler:'>
+<arg declared_type='ClickHandler' function_pointer='true' index='0' name='clickHandler' type='@?'>
+<retval declared_type='void' type='v'/>
+</arg>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setSocialUIDelegate:'>
+<arg declared_type='id' index='0' name='socialUIDelegate' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='socialUIDelegate'>
+<retval declared_type='id' type='@'/>
+</method>
+</class>
+<class name='UMSocialConfig'>
+<method class_method='true' selector='addSocialSnsPlatform:'>
+<arg declared_type='NSArray*' index='0' name='snsPlatformArray' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method class_method='true' selector='setBoundsSizeForiPad:'>
+<arg declared_type='CGSize' index='0' name='size' type='{CGSize=ff}' type64='{CGSize=dd}'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method class_method='true' selector='setDefaultColor:'>
+<arg declared_type='UIColor*' index='0' name='defaultColor' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method class_method='true' selector='setFinishToastIsHidden:position:'>
+<arg declared_type='BOOL' index='0' name='isHidden' type='B'/>
+<arg declared_type='UMSocialiToastPosition' index='1' name='toastPosition' type='i'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method class_method='true' selector='setFollowWeiboUids:'>
+<arg declared_type='NSDictionary*' index='0' name='weiboUids' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method class_method='true' selector='setNavigationBarConfig:'>
+<arg declared_type='UMNavigationBarConfig' function_pointer='true' index='0' name='navigationConfig' type='@?'>
+<arg declared_type='UINavigationBar*' type='@'/>
+<arg declared_type='UIButton*' type='@'/>
+<arg declared_type='UIButton*' type='@'/>
+<arg declared_type='UIButton*' type='@'/>
+<arg declared_type='UIButton*' type='@'/>
+<arg declared_type='UINavigationItem*' type='@'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<retval declared_type='void' type='v'/>
+</method>
+<method class_method='true' selector='setQQAppId:url:importClasses:'>
+<arg declared_type='NSString*' index='0' name='appId' type='@'/>
+<arg declared_type='NSString*' index='1' name='url' type='@'/>
+<arg declared_type='NSArray*' index='2' name='classes' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method class_method='true' selector='setShareGridViewTheme:'>
+<arg declared_type='UMGridViewConfig' function_pointer='true' index='0' name='gridViewConfig' type='@?'>
+<arg declared_type='CGContextRef' type='^{CGContext=}'/>
+<arg declared_type='UIImageView*' type='@'/>
+<arg declared_type='UILabel*' type='@'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<retval declared_type='void' type='v'/>
+</method>
+<method class_method='true' selector='setShareQzoneWithQQSDK:url:importClasses:'>
+<arg declared_type='BOOL' index='0' name='useQQSDK' type='B'/>
+<arg declared_type='NSString*' index='1' name='urlString' type='@'/>
+<arg declared_type='NSArray*' index='2' name='classes' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method class_method='true' selector='setShouldCommentWithLocation:'>
+<arg declared_type='BOOL' index='0' name='shouldCommentWithLocation' type='B'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method class_method='true' selector='setShouldCommentWithShare:'>
+<arg declared_type='BOOL' index='0' name='shouldCommentWithShare' type='B'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method class_method='true' selector='setShouldShareSynchronous:'>
+<arg declared_type='BOOL' index='0' name='shouldShareSynchronous' type='B'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method class_method='true' selector='setSnsPlatformNames:'>
+<arg declared_type='NSArray*' index='0' name='platformNames' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method class_method='true' selector='setSupportQzoneSSO:importClasses:'>
+<arg declared_type='BOOL' index='0' name='supportQzoneSSO' type='B'/>
+<arg declared_type='NSArray*' index='1' name='classes' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method class_method='true' selector='setSupportSinaSSO:'>
+<arg declared_type='BOOL' index='0' name='supportSinaSSO' type='B'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method class_method='true' selector='setSupportedInterfaceOrientations:'>
+<arg declared_type='UIInterfaceOrientationMask' index='0' name='interfaceOrientations' type='I' type64='Q'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method class_method='true' selector='setTableViewCellConfig:'>
+<arg declared_type='UMTableViewCellConfig' function_pointer='true' index='0' name='tableViewCellConfig' type='@?'>
+<arg declared_type='UITableViewCell*' type='@'/>
+<arg declared_type='UMSViewControllerType' type='i'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<retval declared_type='void' type='v'/>
+</method>
+<method class_method='true' selector='setTheme:'>
+<arg declared_type='UMSocialTheme' index='0' name='theme' type='i'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method class_method='true' selector='shareInstance'>
+<retval declared_type='UMSocialConfig*' type='@'/>
+</method>
+</class>
+<class name='UMSocialControllerService'>
+<method selector='currentNavigationController'>
+<retval declared_type='UINavigationController*' type='@'/>
+</method>
+<method selector='currentSnsPlatformName'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='currentViewController'>
+<retval declared_type='UIViewController*' type='@'/>
+</method>
+<method class_method='true' selector='defaultControllerService'>
+<retval declared_type='UMSocialControllerService*' type='@'/>
+</method>
+<method selector='getSnsAccountController'>
+<retval declared_type='UINavigationController*' type='@'/>
+</method>
+<method selector='getSocialAccountController'>
+<retval declared_type='UINavigationController*' type='@'/>
+</method>
+<method selector='getSocialIconActionSheetInController:'>
+<arg declared_type='UIViewController*' index='0' name='controller' type='@'/>
+<retval declared_type='UMSocialIconActionSheet*' type='@'/>
+</method>
+<method selector='getSocialLoginController'>
+<retval declared_type='UINavigationController*' type='@'/>
+</method>
+<method selector='getSocialOauthController:'>
+<arg declared_type='NSString*' index='0' name='platformType' type='@'/>
+<retval declared_type='UINavigationController*' type='@'/>
+</method>
+<method selector='getSocialShareEditController:'>
+<arg declared_type='NSString*' index='0' name='platformType' type='@'/>
+<retval declared_type='UINavigationController*' type='@'/>
+</method>
+<method selector='getSocialShareListController'>
+<retval declared_type='UINavigationController*' type='@'/>
+</method>
+<method selector='getSocialViewController:withSnsType:'>
+<arg declared_type='UMSViewControllerType' index='0' name='viewControllerType' type='i'/>
+<arg declared_type='NSString*' index='1' name='snsName' type='@'/>
+<retval declared_type='UIViewController*' type='@'/>
+</method>
+<method selector='initWithUMSocialData:'>
+<arg declared_type='UMSocialData*' index='0' name='socialData' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='nextViewController'>
+<retval declared_type='UMSViewControllerType' type='i'/>
+</method>
+<method selector='setCurrentNavigationController:'>
+<arg declared_type='UINavigationController*' index='0' name='currentNavigationController' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setCurrentSnsPlatformName:'>
+<arg declared_type='NSString*' index='0' name='currentSnsPlatformName' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setCurrentViewController:'>
+<arg declared_type='UIViewController*' index='0' name='currentViewController' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setNextViewController:'>
+<arg declared_type='UMSViewControllerType' index='0' name='nextViewController' type='i'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setShareText:shareImage:socialUIDelegate:'>
+<arg declared_type='NSString*' index='0' name='shareText' type='@'/>
+<arg declared_type='UIImage*' index='1' name='shareImage' type='@'/>
+<arg declared_type='id' index='2' name='socialUIDelegate' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setSocialData:'>
+<arg declared_type='UMSocialData*' index='0' name='socialData' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setSocialUIDelegate:'>
+<arg declared_type='id' index='0' name='socialUIDelegate' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='socialData'>
+<retval declared_type='UMSocialData*' type='@'/>
+</method>
+<method selector='socialDataService'>
+<retval declared_type='UMSocialDataService*' type='@'/>
+</method>
+<method selector='socialUIDelegate'>
+<retval declared_type='id' type='@'/>
+</method>
+</class>
+<class name='UMSocialControllerServiceComment'>
+<method class_method='true' selector='defaultControllerService'>
+<retval declared_type='UMSocialControllerServiceComment*' type='@'/>
+</method>
+<method selector='getSocialCommentListController'>
+<retval declared_type='UINavigationController*' type='@'/>
+</method>
+</class>
+<class name='UMSocialCustomAccount'>
+<method selector='birthday'>
+<retval declared_type='NSDate*' type='@'/>
+</method>
+<method selector='customData'>
+<retval declared_type='NSDictionary*' type='@'/>
+</method>
+<method selector='gender'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='iconUrl'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='initWithUserName:'>
+<arg declared_type='NSString*' index='0' name='userName' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='profileUrl'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='setBirthday:'>
+<arg declared_type='NSDate*' index='0' name='birthday' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setCustomData:'>
+<arg declared_type='NSDictionary*' index='0' name='customData' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setGender:'>
+<arg declared_type='NSString*' index='0' name='gender' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setIconUrl:'>
+<arg declared_type='NSString*' index='0' name='iconUrl' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setProfileUrl:'>
+<arg declared_type='NSString*' index='0' name='profileUrl' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setUserName:'>
+<arg declared_type='NSString*' index='0' name='userName' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setUsid:'>
+<arg declared_type='NSString*' index='0' name='usid' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='userName'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='usid'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+</class>
+<class name='UMSocialData'>
+<method class_method='true' selector='appKey'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='commentImage'>
+<retval declared_type='UIImage*' type='@'/>
+</method>
+<method selector='commentText'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method class_method='true' selector='defaultData'>
+<retval declared_type='UMSocialData*' type='@'/>
+</method>
+<method selector='extConfig'>
+<retval declared_type='UMSocialExtConfig*' type='@'/>
+</method>
+<method selector='getNumber:'>
+<arg declared_type='UMSNumberType' index='0' name='numberType' type='i'/>
+<retval declared_type='NSInteger' type='i' type64='q'/>
+</method>
+<method selector='identifier'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='initWithIdentifier:'>
+<arg declared_type='NSString*' index='0' name='identifier' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='initWithIdentifier:withTitle:'>
+<arg declared_type='NSString*' index='0' name='identifier' type='@'/>
+<arg declared_type='NSString*' index='1' name='title' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='isLike'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method class_method='true' selector='openLog:'>
+<arg declared_type='BOOL' index='0' name='openLog' type='B'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method class_method='true' selector='setAppKey:'>
+<arg declared_type='NSString*' index='0' name='appKey' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setCommentImage:'>
+<arg declared_type='UIImage*' index='0' name='commentImage' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setCommentText:'>
+<arg declared_type='NSString*' index='0' name='commentText' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setExtConfig:'>
+<arg declared_type='UMSocialExtConfig*' index='0' name='extConfig' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setIdentifier:'>
+<arg declared_type='NSString*' index='0' name='identifier' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setShareImage:'>
+<arg declared_type='UIImage*' index='0' name='shareImage' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setShareText:'>
+<arg declared_type='NSString*' index='0' name='shareText' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setTitle:'>
+<arg declared_type='NSString*' index='0' name='title' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setUrlResource:'>
+<arg declared_type='UMSocialUrlResource*' index='0' name='urlResource' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='shareImage'>
+<retval declared_type='UIImage*' type='@'/>
+</method>
+<method selector='shareText'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='socialAccount'>
+<retval declared_type='NSDictionary*' type='@'/>
+</method>
+<method selector='title'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='urlResource'>
+<retval declared_type='UMSocialUrlResource*' type='@'/>
+</method>
+</class>
+<class name='UMSocialDataService'>
+<method selector='completion'>
+<retval declared_type='UMSocialDataServiceCompletion' function_pointer='true' type='@?'>
+<arg declared_type='UMSocialResponseEntity*' type='@'/>
+<retval declared_type='void' type='v'/>
+</retval>
+</method>
+<method class_method='true' selector='defaultDataService'>
+<retval declared_type='UMSocialDataService*' type='@'/>
+</method>
+<method selector='initWithUMSocialData:'>
+<arg declared_type='UMSocialData*' index='0' name='socialData' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='postAddLikeOrCancelWithCompletion:'>
+<arg declared_type='UMSocialDataServiceCompletion' function_pointer='true' index='0' name='completion' type='@?'>
+<arg declared_type='UMSocialResponseEntity*' type='@'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='postCommentWithContent:completion:'>
+<arg declared_type='NSString*' index='0' name='content' type='@'/>
+<arg declared_type='UMSocialDataServiceCompletion' function_pointer='true' index='1' name='completion' type='@?'>
+<arg declared_type='UMSocialResponseEntity*' type='@'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='postCommentWithContent:image:templateText:location:shareToSNSWithUsid:completion:'>
+<arg declared_type='NSString*' index='0' name='content' type='@'/>
+<arg declared_type='UIImage*' index='1' name='image' type='@'/>
+<arg declared_type='NSString*' index='2' name='templateText' type='@'/>
+<arg declared_type='CLLocation*' index='3' name='location' type='@'/>
+<arg declared_type='NSDictionary*' index='4' name='shareToSNS' type='@'/>
+<arg declared_type='UMSocialDataServiceCompletion' function_pointer='true' index='5' name='completion' type='@?'>
+<arg declared_type='UMSocialResponseEntity*' type='@'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='postSNSWithTypes:content:image:location:urlResource:completion:'>
+<arg declared_type='NSArray*' index='0' name='platformTypes' type='@'/>
+<arg declared_type='NSString*' index='1' name='content' type='@'/>
+<arg declared_type='UIImage*' index='2' name='image' type='@'/>
+<arg declared_type='CLLocation*' index='3' name='location' type='@'/>
+<arg declared_type='UMSocialUrlResource*' index='4' name='urlResource' type='@'/>
+<arg declared_type='UMSocialDataServiceCompletion' function_pointer='true' index='5' name='completion' type='@?'>
+<arg declared_type='UMSocialResponseEntity*' type='@'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='postSNSWithTypes:content:image:location:urlResource:presentedController:completion:'>
+<arg declared_type='NSArray*' index='0' name='platformTypes' type='@'/>
+<arg declared_type='NSString*' index='1' name='content' type='@'/>
+<arg declared_type='UIImage*' index='2' name='image' type='@'/>
+<arg declared_type='CLLocation*' index='3' name='location' type='@'/>
+<arg declared_type='UMSocialUrlResource*' index='4' name='urlResource' type='@'/>
+<arg declared_type='UIViewController*' index='5' name='presentedController' type='@'/>
+<arg declared_type='UMSocialDataServiceCompletion' function_pointer='true' index='6' name='completion' type='@?'>
+<arg declared_type='UMSocialResponseEntity*' type='@'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='requestAddFollow:followedUsid:completion:'>
+<arg declared_type='NSString*' index='0' name='platformType' type='@'/>
+<arg declared_type='NSArray*' index='1' name='usids' type='@'/>
+<arg declared_type='UMSocialDataServiceCompletion' function_pointer='true' index='2' name='completion' type='@?'>
+<arg declared_type='UMSocialResponseEntity*' type='@'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='requestBindToSnsWithType:completion:'>
+<arg declared_type='NSString*' index='0' name='platformType' type='@'/>
+<arg declared_type='UMSocialDataServiceCompletion' function_pointer='true' index='1' name='completion' type='@?'>
+<arg declared_type='UMSocialResponseEntity*' type='@'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='requestCommentList:completion:'>
+<arg declared_type='long long' index='0' name='lastCommentTime' type='q'/>
+<arg declared_type='UMSocialDataServiceCompletion' function_pointer='true' index='1' name='completion' type='@?'>
+<arg declared_type='UMSocialResponseEntity*' type='@'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='requestSnsFriends:completion:'>
+<arg declared_type='NSString*' index='0' name='platformType' type='@'/>
+<arg declared_type='UMSocialDataServiceCompletion' function_pointer='true' index='1' name='completion' type='@?'>
+<arg declared_type='UMSocialResponseEntity*' type='@'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='requestSnsInformation:completion:'>
+<arg declared_type='NSString*' index='0' name='platformType' type='@'/>
+<arg declared_type='UMSocialDataServiceCompletion' function_pointer='true' index='1' name='completion' type='@?'>
+<arg declared_type='UMSocialResponseEntity*' type='@'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='requestSocialAccountWithCompletion:'>
+<arg declared_type='UMSocialDataServiceCompletion' function_pointer='true' index='0' name='completion' type='@?'>
+<arg declared_type='UMSocialResponseEntity*' type='@'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='requestSocialDataWithCompletion:'>
+<arg declared_type='UMSocialDataServiceCompletion' function_pointer='true' index='0' name='completion' type='@?'>
+<arg declared_type='UMSocialResponseEntity*' type='@'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='requestUnBindToSnsWithCompletion:'>
+<arg declared_type='UMSocialDataServiceCompletion' function_pointer='true' index='0' name='completion' type='@?'>
+<arg declared_type='UMSocialResponseEntity*' type='@'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='requestUnOauthWithType:completion:'>
+<arg declared_type='NSString*' index='0' name='platformType' type='@'/>
+<arg declared_type='UMSocialDataServiceCompletion' function_pointer='true' index='1' name='completion' type='@?'>
+<arg declared_type='UMSocialResponseEntity*' type='@'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setCompletion:'>
+<arg declared_type='UMSocialDataServiceCompletion' function_pointer='true' index='0' name='completion' type='@?'>
+<arg declared_type='UMSocialResponseEntity*' type='@'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setSocialData:'>
+<arg declared_type='UMSocialData*' index='0' name='socialData' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setUMSocialDelegate:'>
+<arg declared_type='id' index='0' name='delegate' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='socialData'>
+<retval declared_type='UMSocialData*' type='@'/>
+</method>
+<method selector='socialDataDelegate'>
+<retval declared_type='id' type='@'/>
+</method>
+</class>
+<class name='UMSocialEmailData'>
+<method selector='setTitle:'>
+<arg declared_type='NSString*' index='0' name='title' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='title'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+</class>
+<class name='UMSocialExtConfig'>
+<method selector='doubanData'>
+<retval declared_type='UMSocialDoubanData*' type='@'/>
+</method>
+<method selector='emailData'>
+<retval declared_type='UMSocialEmailData*' type='@'/>
+</method>
+<method selector='facebookData'>
+<retval declared_type='UMSocialFacebookData*' type='@'/>
+</method>
+<method selector='instagramData'>
+<retval declared_type='UMSocialInstagramData*' type='@'/>
+</method>
+<method selector='lwsessionData'>
+<retval declared_type='UMSocialLWSessionData*' type='@'/>
+</method>
+<method selector='lwtimelineData'>
+<retval declared_type='UMSocialLWTimelineData*' type='@'/>
+</method>
+<method selector='qqData'>
+<retval declared_type='UMSocialQQData*' type='@'/>
+</method>
+<method selector='qzoneData'>
+<retval declared_type='UMSocialQzoneData*' type='@'/>
+</method>
+<method selector='renrenData'>
+<retval declared_type='UMSocialRenrenData*' type='@'/>
+</method>
+<method selector='setDoubanData:'>
+<arg declared_type='UMSocialDoubanData*' index='0' name='doubanData' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setEmailData:'>
+<arg declared_type='UMSocialEmailData*' index='0' name='emailData' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setFacebookData:'>
+<arg declared_type='UMSocialFacebookData*' index='0' name='facebookData' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setInstagramData:'>
+<arg declared_type='UMSocialInstagramData*' index='0' name='instagramData' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setLwsessionData:'>
+<arg declared_type='UMSocialLWSessionData*' index='0' name='lwsessionData' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setLwtimelineData:'>
+<arg declared_type='UMSocialLWTimelineData*' index='0' name='lwtimelineData' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setQqData:'>
+<arg declared_type='UMSocialQQData*' index='0' name='qqData' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setQzoneData:'>
+<arg declared_type='UMSocialQzoneData*' index='0' name='qzoneData' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setRenrenData:'>
+<arg declared_type='UMSocialRenrenData*' index='0' name='renrenData' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setSinaData:'>
+<arg declared_type='UMSocialSinaData*' index='0' name='sinaData' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setSmsData:'>
+<arg declared_type='UMSocialSmsData*' index='0' name='smsData' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setTencentData:'>
+<arg declared_type='UMSocialTencentData*' index='0' name='tencentData' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setTitle:'>
+<arg declared_type='NSString*' index='0' name='title' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setTwitterData:'>
+<arg declared_type='UMSocialTwitterData*' index='0' name='twitterData' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setWechatFavoriteData:'>
+<arg declared_type='UMSocialWechatFavorite*' index='0' name='wechatFavoriteData' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setWechatSessionData:'>
+<arg declared_type='UMSocialWechatSessionData*' index='0' name='wechatSessionData' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setWechatTimelineData:'>
+<arg declared_type='UMSocialWechatTimelineData*' index='0' name='wechatTimelineData' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setWxMediaObject:'>
+<arg declared_type='id' index='0' name='wxMediaObject' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setWxMessageType:'>
+<arg declared_type='UMSocialWXMessageType' index='0' name='wxMessageType' type='i'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setYxsessionData:'>
+<arg declared_type='UMSocialYXSessionData*' index='0' name='yxsessionData' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setYxtimelineData:'>
+<arg declared_type='UMSocialYXTimelineData*' index='0' name='yxtimelineData' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='sinaData'>
+<retval declared_type='UMSocialSinaData*' type='@'/>
+</method>
+<method selector='smsData'>
+<retval declared_type='UMSocialSmsData*' type='@'/>
+</method>
+<method selector='tencentData'>
+<retval declared_type='UMSocialTencentData*' type='@'/>
+</method>
+<method selector='title'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='twitterData'>
+<retval declared_type='UMSocialTwitterData*' type='@'/>
+</method>
+<method selector='wechatFavoriteData'>
+<retval declared_type='UMSocialWechatFavorite*' type='@'/>
+</method>
+<method selector='wechatSessionData'>
+<retval declared_type='UMSocialWechatSessionData*' type='@'/>
+</method>
+<method selector='wechatTimelineData'>
+<retval declared_type='UMSocialWechatTimelineData*' type='@'/>
+</method>
+<method selector='wxMediaObject'>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='wxMessageType'>
+<retval declared_type='UMSocialWXMessageType' type='i'/>
+</method>
+<method selector='yxsessionData'>
+<retval declared_type='UMSocialYXSessionData*' type='@'/>
+</method>
+<method selector='yxtimelineData'>
+<retval declared_type='UMSocialYXTimelineData*' type='@'/>
+</method>
+</class>
+<class name='UMSocialFacebookData'>
+<method selector='setTitle:'>
+<arg declared_type='NSString*' index='0' name='title' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setUrlString:'>
+<arg declared_type='NSString*' index='0' name='urlString' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='title'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='urlString'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+</class>
+<class name='UMSocialIconActionSheet'>
+<method selector='dismiss'>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='showInView:'>
+<arg declared_type='UIView*' index='0' name='showView' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+</class>
+<class name='UMSocialLaiwangHandler'>
+<method class_method='true' selector='setLaiwangAppId:appSecret:appDescription:urlStirng:'>
+<arg declared_type='NSString*' index='0' name='laiwangAppId' type='@'/>
+<arg declared_type='NSString*' index='1' name='appSecret' type='@'/>
+<arg declared_type='NSString*' index='2' name='description' type='@'/>
+<arg declared_type='NSString*' index='3' name='urlString' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+</class>
+<class name='UMSocialQQData'>
+<method selector='qqMessageType'>
+<retval declared_type='UMSocialQQMessageType' type='i'/>
+</method>
+<method selector='setQqMessageType:'>
+<arg declared_type='UMSocialQQMessageType' index='0' name='qqMessageType' type='i'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setTitle:'>
+<arg declared_type='NSString*' index='0' name='title' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setWebUrl:'>
+<arg declared_type='NSString*' index='0' name='webUrl' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='title'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='webUrl'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+</class>
+<class name='UMSocialQzoneData'>
+<method selector='appName'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='setAppName:'>
+<arg declared_type='NSString*' index='0' name='appName' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setThumbUrl:'>
+<arg declared_type='NSString*' index='0' name='thumbUrl' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setTitle:'>
+<arg declared_type='NSString*' index='0' name='title' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setUrl:'>
+<arg declared_type='NSString*' index='0' name='url' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='thumbUrl'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='title'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='url'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+</class>
+<class name='UMSocialRenrenData'>
+<method selector='appName'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='setAppName:'>
+<arg declared_type='NSString*' index='0' name='appName' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setUrl:'>
+<arg declared_type='NSString*' index='0' name='url' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='url'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+</class>
+<class name='UMSocialResponseEntity'>
+<method selector='data'>
+<retval declared_type='NSDictionary*' type='@'/>
+</method>
+<method selector='description'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='error'>
+<retval declared_type='NSError*' type='@'/>
+</method>
+<method selector='message'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='responseCode'>
+<retval declared_type='UMSResponseCode' type='i'/>
+</method>
+<method selector='responseType'>
+<retval declared_type='UMSResponse' type='i'/>
+</method>
+<method selector='setData:'>
+<arg declared_type='NSDictionary*' index='0' name='data' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setError:'>
+<arg declared_type='NSError*' index='0' name='error' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setMessage:'>
+<arg declared_type='NSString*' index='0' name='message' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setResponseCode:'>
+<arg declared_type='UMSResponseCode' index='0' name='responseCode' type='i'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setResponseType:'>
+<arg declared_type='UMSResponse' index='0' name='responseType' type='i'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setViewControllerType:'>
+<arg declared_type='UMSViewControllerType' index='0' name='viewControllerType' type='i'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='viewControllerType'>
+<retval declared_type='UMSViewControllerType' type='i'/>
+</method>
+</class>
+<class name='UMSocialSnsData'>
+<method selector='setShareImage:'>
+<arg declared_type='UIImage*' index='0' name='shareImage' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setShareText:'>
+<arg declared_type='NSString*' index='0' name='shareText' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setSnsName:'>
+<arg declared_type='NSString*' index='0' name='snsName' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setUrlResource:'>
+<arg declared_type='UMSocialUrlResource*' index='0' name='urlResource' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='shareImage'>
+<retval declared_type='UIImage*' type='@'/>
+</method>
+<method selector='shareText'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='snsName'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='urlResource'>
+<retval declared_type='UMSocialUrlResource*' type='@'/>
+</method>
+</class>
+<class name='UMSocialSnsPlatform'>
+<method selector='bigImageName'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='displayName'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='initWithPlatformName:'>
+<arg declared_type='NSString*' index='0' name='platformName' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='loginClickHandler'>
+<retval declared_type='UMSocialSnsPlatformLoginHandler' function_pointer='true' type='@?'>
+<arg declared_type='UIViewController*' type='@'/>
+<arg declared_type='UMSocialControllerService*' type='@'/>
+<arg declared_type='BOOL' type='B'/>
+<arg declared_type='UMSocialDataServiceCompletion' function_pointer='true' type='@?'>
+<arg declared_type='UMSocialResponseEntity*' type='@'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<retval declared_type='void' type='v'/>
+</retval>
+</method>
+<method selector='loginName'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='platformName'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='setBigImageName:'>
+<arg declared_type='NSString*' index='0' name='bigImageName' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setDisplayName:'>
+<arg declared_type='NSString*' index='0' name='displayName' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setLoginClickHandler:'>
+<arg declared_type='UMSocialSnsPlatformLoginHandler' function_pointer='true' index='0' name='loginClickHandler' type='@?'>
+<arg declared_type='UIViewController*' type='@'/>
+<arg declared_type='UMSocialControllerService*' type='@'/>
+<arg declared_type='BOOL' type='B'/>
+<arg declared_type='UMSocialDataServiceCompletion' function_pointer='true' type='@?'>
+<arg declared_type='UMSocialResponseEntity*' type='@'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<retval declared_type='void' type='v'/>
+</arg>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setLoginName:'>
+<arg declared_type='NSString*' index='0' name='loginName' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setPlatformName:'>
+<arg declared_type='NSString*' index='0' name='platformName' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setShareToType:'>
+<arg declared_type='UMSocialSnsType' index='0' name='shareToType' type='i'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setSmallImageName:'>
+<arg declared_type='NSString*' index='0' name='smallImageName' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setSmallImageOffName:'>
+<arg declared_type='NSString*' index='0' name='smallImageOffName' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setSnsClickHandler:'>
+<arg declared_type='UMSocialSnsPlatformClickHandler' function_pointer='true' index='0' name='snsClickHandler' type='@?'>
+<arg declared_type='UIViewController*' type='@'/>
+<arg declared_type='UMSocialControllerService*' type='@'/>
+<arg declared_type='BOOL' type='B'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='shareToType'>
+<retval declared_type='UMSocialSnsType' type='i'/>
+</method>
+<method selector='smallImageName'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='smallImageOffName'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='snsClickHandler'>
+<retval declared_type='UMSocialSnsPlatformClickHandler' function_pointer='true' type='@?'>
+<arg declared_type='UIViewController*' type='@'/>
+<arg declared_type='UMSocialControllerService*' type='@'/>
+<arg declared_type='BOOL' type='B'/>
+<retval declared_type='void' type='v'/>
+</retval>
+</method>
+</class>
+<class name='UMSocialSnsPlatformManager'>
+<method selector='allSnsPlatformDictionary'>
+<retval declared_type='NSDictionary*' type='@'/>
+</method>
+<method selector='allSnsValuesArray'>
+<retval declared_type='NSArray*' type='@'/>
+</method>
+<method class_method='true' selector='getSnsPlatformString:'>
+<arg declared_type='UMSocialSnsType' index='0' name='socialSnsType' type='i'/>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method class_method='true' selector='getSnsPlatformStringFromIndex:'>
+<arg declared_type='NSInteger' index='0' name='snsIndex' type='i' type64='q'/>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method class_method='true' selector='getSocialPlatformWithName:'>
+<arg declared_type='NSString*' index='0' name='snsName' type='@'/>
+<retval declared_type='UMSocialSnsPlatform*' type='@'/>
+</method>
+<method selector='setAllSnsPlatformDictionary:'>
+<arg declared_type='NSDictionary*' index='0' name='allSnsPlatformDictionary' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method class_method='true' selector='sharedInstance'>
+<retval declared_type='UMSocialSnsPlatformManager*' type='@'/>
+</method>
+</class>
+<class name='UMSocialSnsService'>
+<method class_method='true' selector='applicationDidBecomeActive'>
+<retval declared_type='void' type='v'/>
+</method>
+<method class_method='true' selector='handleOpenURL:wxApiDelegate:'>
+<arg declared_type='NSURL*' index='0' name='url' type='@'/>
+<arg declared_type='id' index='1' name='wxApiDelegate' type='@'/>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method class_method='true' selector='presentSnsController:appKey:shareText:shareImage:shareToSnsNames:delegate:'>
+<arg declared_type='UIViewController*' index='0' name='controller' type='@'/>
+<arg declared_type='NSString*' index='1' name='appKey' type='@'/>
+<arg declared_type='NSString*' index='2' name='shareText' type='@'/>
+<arg declared_type='UIImage*' index='3' name='shareImage' type='@'/>
+<arg declared_type='NSArray*' index='4' name='snsNames' type='@'/>
+<arg declared_type='id' index='5' name='delegate' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method class_method='true' selector='presentSnsIconSheetView:appKey:shareText:shareImage:shareToSnsNames:delegate:'>
+<arg declared_type='UIViewController*' index='0' name='controller' type='@'/>
+<arg declared_type='NSString*' index='1' name='appKey' type='@'/>
+<arg declared_type='NSString*' index='2' name='shareText' type='@'/>
+<arg declared_type='UIImage*' index='3' name='shareImage' type='@'/>
+<arg declared_type='NSArray*' index='4' name='snsNames' type='@'/>
+<arg declared_type='id' index='5' name='delegate' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method class_method='true' selector='sharedInstance'>
+<retval declared_type='UMSocialSnsService*' type='@'/>
+</method>
+</class>
+<class name='UMSocialTencentData'>
+<method selector='author'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='setAuthor:'>
+<arg declared_type='NSString*' index='0' name='author' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setTitle:'>
+<arg declared_type='NSString*' index='0' name='title' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='title'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+</class>
+<class name='UMSocialUrlResource'>
+<method selector='initWithSnsResourceType:url:'>
+<arg declared_type='UMSocialUrlResourceType' index='0' name='resourceType' type='i'/>
+<arg declared_type='NSString*' index='1' name='url' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='resourceType'>
+<retval declared_type='UMSocialUrlResourceType' type='i'/>
+</method>
+<method selector='setResourceType:'>
+<arg declared_type='UMSocialUrlResourceType' index='0' name='resourceType' type='i'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setResourceType:url:'>
+<arg declared_type='UMSocialUrlResourceType' index='0' name='resourceType' type='i'/>
+<arg declared_type='NSString*' index='1' name='url' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setUrl:'>
+<arg declared_type='NSString*' index='0' name='url' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='url'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+</class>
+<class name='UMSocialWechatFavorite'>
+<method selector='fileData'>
+<retval declared_type='NSData*' type='@'/>
+</method>
+<method selector='setFileData:'>
+<arg declared_type='NSData*' index='0' name='fileData' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setTitle:'>
+<arg declared_type='NSString*' index='0' name='title' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setUrl:'>
+<arg declared_type='NSString*' index='0' name='url' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setWxMessageType:'>
+<arg declared_type='UMSocialWXMessageType' index='0' name='wxMessageType' type='i'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='title'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='url'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='wxMessageType'>
+<retval declared_type='UMSocialWXMessageType' type='i'/>
+</method>
+</class>
+<class name='UMSocialWechatHandler'>
+<method class_method='true' selector='setWXAppId:url:'>
+<arg declared_type='NSString*' index='0' name='appId' type='@'/>
+<arg declared_type='NSString*' index='1' name='url' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+</class>
+<class name='UMSocialWechatSessionData'>
+<method selector='extInfo'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='fileData'>
+<retval declared_type='NSData*' type='@'/>
+</method>
+<method selector='setExtInfo:'>
+<arg declared_type='NSString*' index='0' name='extInfo' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setFileData:'>
+<arg declared_type='NSData*' index='0' name='fileData' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setTitle:'>
+<arg declared_type='NSString*' index='0' name='title' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setUrl:'>
+<arg declared_type='NSString*' index='0' name='url' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setWxMessageType:'>
+<arg declared_type='UMSocialWXMessageType' index='0' name='wxMessageType' type='i'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='title'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='url'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='wxMessageType'>
+<retval declared_type='UMSocialWXMessageType' type='i'/>
+</method>
+</class>
+<class name='UMSocialWechatTimelineData'>
+<method selector='fileData'>
+<retval declared_type='NSData*' type='@'/>
+</method>
+<method selector='setFileData:'>
+<arg declared_type='NSData*' index='0' name='fileData' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setTitle:'>
+<arg declared_type='NSString*' index='0' name='title' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setUrl:'>
+<arg declared_type='NSString*' index='0' name='url' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setWxMessageType:'>
+<arg declared_type='UMSocialWXMessageType' index='0' name='wxMessageType' type='i'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='title'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='url'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='wxMessageType'>
+<retval declared_type='UMSocialWXMessageType' type='i'/>
+</method>
+</class>
+<class name='UMSocialYXSessionData'>
+<method selector='setYxMessageType:'>
+<arg declared_type='UMSocialYXMessageType' index='0' name='yxMessageType' type='i'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='yxMessageType'>
+<retval declared_type='UMSocialYXMessageType' type='i'/>
+</method>
+</class>
+<class name='UMSocialYXTimelineData'>
+<method selector='setYxMessageType:'>
+<arg declared_type='UMSocialYXMessageType' index='0' name='yxMessageType' type='i'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='yxMessageType'>
+<retval declared_type='UMSocialYXMessageType' type='i'/>
+</method>
+</class>
+<class name='WXApi'>
+<method class_method='true' selector='getApiVersion'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method class_method='true' selector='getWXAppInstallUrl'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method class_method='true' selector='handleOpenURL:delegate:'>
+<arg declared_type='NSURL*' index='0' name='url' type='@'/>
+<arg declared_type='id' index='1' name='delegate' type='@'/>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method class_method='true' selector='isWXAppInstalled'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method class_method='true' selector='isWXAppSupportApi'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method class_method='true' selector='openWXApp'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method class_method='true' selector='registerApp:'>
+<arg declared_type='NSString*' index='0' name='appid' type='@'/>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method class_method='true' selector='registerApp:withDescription:'>
+<arg declared_type='NSString*' index='0' name='appid' type='@'/>
+<arg declared_type='NSString*' index='1' name='appdesc' type='@'/>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method class_method='true' selector='sendReq:'>
+<arg declared_type='BaseReq*' index='0' name='req' type='@'/>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method class_method='true' selector='sendResp:'>
+<arg declared_type='BaseResp*' index='0' name='resp' type='@'/>
+<retval declared_type='BOOL' type='B'/>
+</method>
+</class>
+<class name='WXAppExtendObject'>
+<method selector='extInfo'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='fileData'>
+<retval declared_type='NSData*' type='@'/>
+</method>
+<method class_method='true' selector='object'>
+<retval declared_type='WXAppExtendObject*' type='@'/>
+</method>
+<method selector='setExtInfo:'>
+<arg declared_type='NSString*' index='0' name='extInfo' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setFileData:'>
+<arg declared_type='NSData*' index='0' name='fileData' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setUrl:'>
+<arg declared_type='NSString*' index='0' name='url' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='url'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+</class>
+<class name='WXEmoticonObject'>
+<method selector='emoticonData'>
+<retval declared_type='NSData*' type='@'/>
+</method>
+<method class_method='true' selector='object'>
+<retval declared_type='WXEmoticonObject*' type='@'/>
+</method>
+<method selector='setEmoticonData:'>
+<arg declared_type='NSData*' index='0' name='emoticonData' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+</class>
+<class name='WXFileObject'>
+<method selector='fileData'>
+<retval declared_type='NSData*' type='@'/>
+</method>
+<method selector='fileExtension'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method class_method='true' selector='object'>
+<retval declared_type='WXFileObject*' type='@'/>
+</method>
+<method selector='setFileData:'>
+<arg declared_type='NSData*' index='0' name='fileData' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setFileExtension:'>
+<arg declared_type='NSString*' index='0' name='fileExtension' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+</class>
+<class name='WXImageObject'>
+<method selector='imageData'>
+<retval declared_type='NSData*' type='@'/>
+</method>
+<method selector='imageUrl'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method class_method='true' selector='object'>
+<retval declared_type='WXImageObject*' type='@'/>
+</method>
+<method selector='setImageData:'>
+<arg declared_type='NSData*' index='0' name='imageData' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setImageUrl:'>
+<arg declared_type='NSString*' index='0' name='imageUrl' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+</class>
+<class name='WXMediaMessage'>
+<method selector='description'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='mediaObject'>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='mediaTagName'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method class_method='true' selector='message'>
+<retval declared_type='WXMediaMessage*' type='@'/>
+</method>
+<method selector='setDescription:'>
+<arg declared_type='NSString*' index='0' name='description' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setMediaObject:'>
+<arg declared_type='id' index='0' name='mediaObject' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setMediaTagName:'>
+<arg declared_type='NSString*' index='0' name='mediaTagName' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setThumbData:'>
+<arg declared_type='NSData*' index='0' name='thumbData' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setThumbImage:'>
+<arg declared_type='id' index='0' name='image' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setTitle:'>
+<arg declared_type='NSString*' index='0' name='title' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='thumbData'>
+<retval declared_type='NSData*' type='@'/>
+</method>
+<method selector='title'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+</class>
+<class name='WXMusicObject'>
+<method selector='musicDataUrl'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='musicLowBandDataUrl'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='musicLowBandUrl'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='musicUrl'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method class_method='true' selector='object'>
+<retval declared_type='WXMusicObject*' type='@'/>
+</method>
+<method selector='setMusicDataUrl:'>
+<arg declared_type='NSString*' index='0' name='musicDataUrl' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setMusicLowBandDataUrl:'>
+<arg declared_type='NSString*' index='0' name='musicLowBandDataUrl' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setMusicLowBandUrl:'>
+<arg declared_type='NSString*' index='0' name='musicLowBandUrl' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setMusicUrl:'>
+<arg declared_type='NSString*' index='0' name='musicUrl' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+</class>
+<class name='WXVideoObject'>
+<method class_method='true' selector='object'>
+<retval declared_type='WXVideoObject*' type='@'/>
+</method>
+<method selector='setVideoLowBandUrl:'>
+<arg declared_type='NSString*' index='0' name='videoLowBandUrl' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setVideoUrl:'>
+<arg declared_type='NSString*' index='0' name='videoUrl' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='videoLowBandUrl'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='videoUrl'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+</class>
+<class name='WXWebpageObject'>
+<method class_method='true' selector='object'>
+<retval declared_type='WXWebpageObject*' type='@'/>
+</method>
+<method selector='setWebpageUrl:'>
+<arg declared_type='NSString*' index='0' name='webpageUrl' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='webpageUrl'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+</class>
+<informal_protocol name='UMSocialDataDelegate'>
+<method selector='didFinishGetUMSocialDataResponse:' type='v12@0:4@8' type64='v24@0:8@16'>
+<arg declared_type='UMSocialResponseEntity*' index='0' name='response' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+</informal_protocol>
+<informal_protocol name='UMSocialUIDelegate'>
+<method selector='closeOauthWebViewController:socialControllerService:' type='B16@0:4@8@12' type64='B32@0:8@16@24'>
+<arg declared_type='UINavigationController*' index='0' name='navigationCtroller' type='@'/>
+<arg declared_type='UMSocialControllerService*' index='1' name='socialControllerService' type='@'/>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='didCloseUIViewController:' type='v12@0:4i8' type64='v20@0:8i16'>
+<arg declared_type='UMSViewControllerType' index='0' name='fromViewControllerType' type='i'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='didFinishGetUMSocialDataInViewController:' type='v12@0:4@8' type64='v24@0:8@16'>
+<arg declared_type='UMSocialResponseEntity*' index='0' name='response' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='didSelectSocialPlatform:withSocialData:' type='v16@0:4@8@12' type64='v32@0:8@16@24'>
+<arg declared_type='NSString*' index='0' name='platformName' type='@'/>
+<arg declared_type='UMSocialData*' index='1' name='socialData' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='isDirectShareInIconActionSheet' type='B8@0:4' type64='B16@0:8'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+</informal_protocol>
+<informal_protocol name='WXApiDelegate'>
+<method selector='onReq:' type='v12@0:4@8' type64='v24@0:8@16'>
+<arg declared_type='BaseReq*' index='0' name='req' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='onResp:' type='v12@0:4@8' type64='v24@0:8@16'>
+<arg declared_type='BaseResp*' index='0' name='resp' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+</informal_protocol>
+</signatures>

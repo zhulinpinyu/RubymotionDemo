@@ -1,0 +1,65 @@
+<?xml version='1.0'?>
+<signatures version='1.0'>
+<constant const='true' declared_type='NSString*' name='kAPNetworkDidCloseNotification' type='@'/>
+<constant const='true' declared_type='NSString*' name='kAPNetworkDidLoginNotification' type='@'/>
+<constant const='true' declared_type='NSString*' name='kAPNetworkDidReceiveMessageNotification' type='@'/>
+<constant const='true' declared_type='NSString*' name='kAPNetworkDidRegisterNotification' type='@'/>
+<constant const='true' declared_type='NSString*' name='kAPNetworkDidSetupNotification' type='@'/>
+<constant const='true' declared_type='NSString*' name='kAPServiceErrorNotification' type='@'/>
+<class name='APService'>
+<method class_method='true' selector='filterValidTags:'>
+<arg declared_type='NSSet*' index='0' name='tags' type='@'/>
+<retval declared_type='NSSet*' type='@'/>
+</method>
+<method class_method='true' selector='handleRemoteNotification:'>
+<arg declared_type='NSDictionary*' index='0' name='remoteInfo' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method class_method='true' selector='openUDID'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method class_method='true' selector='registerDeviceToken:'>
+<arg declared_type='NSData*' index='0' name='deviceToken' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method class_method='true' selector='registerForRemoteNotificationTypes:'>
+<arg declared_type='int' index='0' name='types' type='i'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method class_method='true' selector='setAlias:callbackSelector:object:'>
+<arg declared_type='NSString*' index='0' name='alias' type='@'/>
+<arg declared_type='SEL' index='1' name='cbSelector' type=':'/>
+<arg declared_type='id' index='2' name='theTarget' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method class_method='true' selector='setTags:alias:'>
+<arg declared_type='NSSet*' index='0' name='tags' type='@'/>
+<arg declared_type='NSString*' index='1' name='alias' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method class_method='true' selector='setTags:alias:callbackSelector:object:'>
+<arg declared_type='NSSet*' index='0' name='tags' type='@'/>
+<arg declared_type='NSString*' index='1' name='alias' type='@'/>
+<arg declared_type='SEL' index='2' name='cbSelector' type=':'/>
+<arg declared_type='id' index='3' name='theTarget' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method class_method='true' selector='setTags:alias:callbackSelector:target:'>
+<arg declared_type='NSSet*' index='0' name='tags' type='@'/>
+<arg declared_type='NSString*' index='1' name='alias' type='@'/>
+<arg declared_type='SEL' index='2' name='cbSelector' type=':'/>
+<arg declared_type='id' index='3' name='theTarget' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method class_method='true' selector='setTags:callbackSelector:object:'>
+<arg declared_type='NSSet*' index='0' name='tags' type='@'/>
+<arg declared_type='SEL' index='1' name='cbSelector' type=':'/>
+<arg declared_type='id' index='2' name='theTarget' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method class_method='true' selector='setupWithOption:'>
+<arg declared_type='NSDictionary*' index='0' name='launchingOption' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+</class>
+</signatures>
