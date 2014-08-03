@@ -1,6 +1,6 @@
-<img src="/demo/_screen/01.png" width="200">
-<img src="/demo/_screen/02.png" width="200">
-<img src="/demo/_screen/03.png" width="200">
+<img src="demo/_screen/01.png" width="200">
+<img src="demo/_screen/02.png" width="200">
+<img src="demo/_screen/03.png" width="200">
 
 
 **1 功能**
