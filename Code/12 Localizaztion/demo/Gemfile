@@ -1,0 +1,9 @@
+source "http://ruby.taobao.org"
+
+gem "rake"
+
+# ProMotion
+gem "ProMotion", "~> 2.0"
+gem 'bubble-wrap'
+gem 'motion-localization'
+gem 'sugarcube', :require => 'sugarcube-localized'
