@@ -1,4 +1,5 @@
 class AppDelegate < PM::Delegate
+  include BLE
   status_bar true, animation: :none
 
   def on_load(app, options)

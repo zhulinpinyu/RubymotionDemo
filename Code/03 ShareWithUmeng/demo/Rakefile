@@ -8,4 +8,17 @@ Bundler.require
 Motion::Project::App.setup do |app|
   # Use `rake config' to see complete project settings.
   app.name = 'demo'
+
+  app.libs                  += %w(/usr/lib/libz.dylib /usr/lib/libsqlite3.dylib /usr/lib/libiconv.dylib)
+  
+  app.frameworks            += %w(UIKit Foundation CFNetwork SystemConfiguration MobileCoreServices QuartzCore CoreGraphics MessageUI CoreTelephony CoreLocation)
+
+
+  app.vendor_project('vendor/MobClick',
+                     :static,
+                     :products => ['libMobClickLibrary.a'])
+
+  app.vendor_project('vendor/UMSocial', :static,
+                     :products => ['libUMSocial_Sdk_3.3.6.a'])
+
 end

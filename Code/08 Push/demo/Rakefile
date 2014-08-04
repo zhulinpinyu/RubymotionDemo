@@ -8,4 +8,12 @@ Bundler.require
 Motion::Project::App.setup do |app|
   # Use `rake config' to see complete project settings.
   app.name = 'demo'
+  app.identifier   = "com.your_company.app_name"
+
+  # 开发版需要，发布的时候需要删除以下这句
+  app.entitlements['aps-environment'] = 'development'
+
+  app.vendor_project('vendor/JPush', :static,
+                     :products => ['libPushSDK.a'])
+
 end

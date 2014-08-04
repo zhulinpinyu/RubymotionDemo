@@ -8,4 +8,13 @@ Bundler.require
 Motion::Project::App.setup do |app|
   # Use `rake config' to see complete project settings.
   app.name = 'demo'
+
+  # 允许在后台运行时也可以与蓝牙通迅
+  app.info_plist['UIBackgroundModes'] = ['bluetooth-central', 'bluetooth-peripheral']
+
+  app.libs                  += %w(/usr/lib/libz.dylib)
+  
+  # 加截核心蓝牙库
+  app.frameworks            += %w(CoreBluetooth)
+
 end
