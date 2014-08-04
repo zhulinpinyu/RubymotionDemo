@@ -7,4 +7,4 @@ gem "ProMotion", "~> 2.0"
 gem "bubble-wrap"
 gem 'motion-cocoapods', '~> 1.4.1'
 gem 'cocoapods', '~> 0.32.1'
-gem "afmotion", "~> 2.1"
+

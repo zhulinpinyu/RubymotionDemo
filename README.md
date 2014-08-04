@@ -19,3 +19,5 @@
 [**09: DiggMotion iPhone App源代码**](https://coding.net/u/smartweb/p/RubyMotionDemo/git/tree/master/Code/09%20DiggMotion)
 
 [**10: 创建一个Gem**](https://coding.net/u/smartweb/p/RubyMotionDemo/git/tree/master/Code/10%20WriteAGem)
+
+[**11: 从相册选择多张图片**](https://coding.net/u/smartweb/p/RubyMotionDemo/git/tree/master/Code/11%20MultiImagePicker)

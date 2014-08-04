@@ -10,8 +10,7 @@ Motion::Project::App.setup do |app|
   app.name = 'demo'
 
   app.pods do
-    pod 'SVProgressHUD'
-    pod "AFNetworking", "~> 2.0"
+    pod 'WSAssetPickerController'
   end
 
 end
