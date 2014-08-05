@@ -2,10 +2,12 @@
 1 支持多语言，中文和英语
 
 **2 依赖的Gem**
-``ProMotion``
-``bubble-wrap``
-``motion-localization``
-``sugarcube``
+```
+ProMotion
+bubble-wrap
+motion-localization
+sugarcube
+```
 
 **3 安装方法**
 安装相关的Gem
