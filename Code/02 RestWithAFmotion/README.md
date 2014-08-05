@@ -1,28 +1,29 @@
-**1 功能**
-1 读取DiggMotion.com的列表信息
-2 提交链接到diggmotion.com
+# 使用AFMotion进行网络接口的常见REST操作
 
-**2 依赖的Gem**
-``ProMotion``
-``bubble-wrap``
-``motion-cocoapods``
-``cocoapods``
-``afmotion``
+## 功能
+* 读取DiggMotion.com的列表信息
+* 提交链接到diggmotion.com
 
-**2 依赖的Cocopods**
-``SVProgressHUD``
-``AFNetworking``
+## 依赖的Gem
+
+```
+ProMotion
+bubble-wrap
+motion-cocoapods
+cocoapods
+afmotion
+
+## 依赖的Cocopods
+```
+SVProgressHUD
+AFNetworking
+```
 
 
-**3 安装方法**
+## 安装方法
 安装相关的Gem
 ``bundle install``
 安装Cocoapods
 ``rake pod:install``
 运行程序
 ``rake``
-
-**4 截图**
-<img src="https://coding.net/u/smartweb/p/RubyMotionDemo/git/raw/master/Code/01%20PassDataBetweenViewController/demo/_screen/01.png" width="300"/>
-<img src="https://coding.net/u/smartweb/p/RubyMotionDemo/git/blob/master/Code/01%20PassDataBetweenViewController/demo/_screen/02.png" width="300"/>
-<img src="./demo/_screen/03.png" width="300"/>
