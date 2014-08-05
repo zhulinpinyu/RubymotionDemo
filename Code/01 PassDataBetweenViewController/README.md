@@ -1,6 +1,4 @@
-<img src="https://coding.net/u/smartweb/p/RubyMotionDemo/git/raw/master/Code/01%20PassDataBetweenViewController/demo/_screen/01.png" width="300"/>
-<img src="https://coding.net/u/smartweb/p/RubyMotionDemo/git/blob/master/Code/01%20PassDataBetweenViewController/demo/_screen/02.png" width="300"/>
-<img src="./demo/_screen/03.png" width="300"/>
+
 
 
 **1 功能**
@@ -17,3 +15,8 @@
 ``bundle install``
 运行程序
 ``rake``
+
+**4 截图**
+<img src="https://coding.net/u/smartweb/p/RubyMotionDemo/git/raw/master/Code/01%20PassDataBetweenViewController/demo/_screen/01.png" width="300"/>
+<img src="https://coding.net/u/smartweb/p/RubyMotionDemo/git/blob/master/Code/01%20PassDataBetweenViewController/demo/_screen/02.png" width="300"/>
+<img src="./demo/_screen/03.png" width="300"/>
