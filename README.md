@@ -21,3 +21,5 @@
 [**10: 创建一个Gem**](https://coding.net/u/smartweb/p/RubyMotionDemo/git/tree/master/Code/10%20WriteAGem)
 
 [**11: 从相册选择多张图片**](https://coding.net/u/smartweb/p/RubyMotionDemo/git/tree/master/Code/11%20MultiImagePicker)
+
+[**12: 支持多语言**](https://coding.net/u/smartweb/p/RubyMotionDemo/git/tree/master/Code/11%20Localization)
